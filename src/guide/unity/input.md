@@ -79,7 +79,7 @@ FairyGUI支持多点触摸的处理。每个手指都会按照TouchBegin->TouchM
 
 ## VR输入处理
 
-VR里输入一般使用凝视输入，或者手柄输入，针对这些新的输入方式，FairyGUI提供了封装支持，也就是说，在VR应用里，你仍然可以像处理鼠标或者触摸输入一样处理VR的输入，无任何区别。
+VR里输入一般使用凝视输入，或者手柄输入，针对这些新的输入方式，FairyGUI提供了封装支持，也就是说，在VR应用里，你仍然可以像处理鼠标或者触摸输入一样处理VR的输入，无任何区别，也就是说UI逻辑不需要做任何修改。
 
 首先，需要把这些外部输入传入FairyGUI。在Stage类里提供了这些API：
 
@@ -96,7 +96,34 @@ VR里输入一般使用凝视输入，或者手柄输入，针对这些新的输
 
 SetCustomInput可以放在Update里调用，而且必须**每帧调用**。如果使用了SetCustomInput，则FairyGUI不再处理鼠标或者触摸输入。
 
-通过这种方式处理VR输入，UI逻辑不需要做任何修改。
+使用示例：
+
+```csharp
+
+SteamVR_TrackedObject controller;
+SteamVR_Controller.Device controllerDevice;
+
+void Start()
+{
+    controller = ...
+    controllerDevice = ...
+}
+
+void Update() 
+{
+    Vector3 pos = controller.transform.position;
+    Vector3 dir = controller.transform.forward;
+    bool trigger_down = controllerDevice.GetPress(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
+
+    RaycastHit rh;
+    if (Physics.Raycast(pos, dir, out rh))
+    {
+        Stage.inst.SetCustomInput(rh, trigger_down);
+    }
+}
+
+```
+
 
 ## 键盘输入
 
