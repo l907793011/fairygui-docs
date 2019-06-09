@@ -19,14 +19,18 @@ FairyGUI使用内置的机制进行鼠标和触摸事件的处理，不使用射
     }
 ```
 
-这种检测不仅适用于点击，也适用于悬停。例如，如果鼠标悬停在UI上，这个判断也是真。
+这种检测不仅适用于点击，也适用于悬停。例如，如果鼠标悬停在UI上，这个判断也是真。**如果你觉得屏幕上都没有UI了这个还是返回真，那就真的是有UI**，特别是全屏界面，没设置穿透时，它的空白区域也是接受输入的。你可以通过打印GRoot.inst.touchTarget检查。
 
 和鼠标/触摸相关的事件有：
 
 - `onTouchBegin` 鼠标按键按下（左、中、右键），或者手指按下。鼠标按钮可以从context.inputEvent.button获得，0-左键,1-中键,2-右键。
-- `onTouchMove` 鼠标指针移动或者手指在屏幕上移动。这个事件只有两种情况会触发，1、在onTouchBegin里调用了context.CaptureTouch()，那么后续的移动事件都会在这个对象上触发（无论手指或指针位置是不是在该对象上方）。2、舞台的onTouchMove始终会触发，即Stage.inst.onTouchMove，它不需要使用CaptureTouch捕获。在PC平台上鼠标只要移动，就可以触发；在手机平台上，只有手指按下后移动才会触发。
+- `onTouchMove` 鼠标指针移动或者手指在屏幕上移动。这个事件只有两种情况会触发：
+  - 在onTouchBegin里调用了context.CaptureTouch()，那么后续的移动事件都会在这个对象上触发（无论手指或指针位置是不是在该对象上方）。
+  - 舞台的onTouchMove始终会触发，即Stage.inst.onTouchMove，它不需要使用CaptureTouch捕获。在PC平台上鼠标只要移动，就可以触发；在手机平台上，只有手指按下后移动才会触发。
 - `onTouchEnd` 鼠标按键释放或者手指从屏幕上离开。如果鼠标或者触摸位置已经不在组件范围内了，那么组件的TouchEnd事件是不会触发的，如果确实需要，可以在onTouchBegin里调用context.CaptureTouch()请求捕获。
-- `onClick` 鼠标或者手指点击。可以从context.inputEvent.isDoubleClick判断是否双击。**如果你在找长按事件，那么请使用LongPressGesture[(长按手势)](#手势)。**
+- `onClick` 鼠标或者手指点击。可以从context.inputEvent.isDoubleClick判断是否双击。
+  **如果你在找长按事件，那么请使用LongPressGesture[(长按手势)](#手势)。**
+  **在手指按下后，如果调用Stage.inst.CancelClick，手指抬起时就不会触发Click事件。**
 - `onRightClick` 鼠标右键点击。
 
 在任何事件（即不只是鼠标/触摸相关的事件）回调中都可以获得当前鼠标或手指位置，以及点击的对象，例如：
@@ -60,7 +64,7 @@ FairyGUI使用内置的机制进行鼠标和触摸事件的处理，不使用射
     GObject obj = GRoot.inst.touchTarget;
 
     //判断是不是在某个组件内
-    Debug.Log(testComponent.IsAncestorOf(obj));
+    Debug.Log(testComponent==obj || testComponent.IsAncestorOf(obj));
 ```
 
 ## 多点触摸
