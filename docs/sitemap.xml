@@ -2,394 +2,387 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.fairygui.com/product/index.html</loc>
+    <loc>http://www.fairygui.com/showcase/index.html</loc>
     
-    <lastmod>2018-11-20T12:07:34.727Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/examples/index.html</loc>
-    
-    <lastmod>2018-11-20T12:01:41.201Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/product/release_notes.html</loc>
-    
-    <lastmod>2018-11-20T10:16:01.469Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/component.html</loc>
-    
-    <lastmod>2018-11-20T09:46:23.279Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/product/sdk_release_notes.html</loc>
-    
-    <lastmod>2018-11-20T09:37:17.520Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/loader.html</loc>
-    
-    <lastmod>2018-11-20T09:35:41.843Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/image.html</loc>
-    
-    <lastmod>2018-11-20T09:35:17.268Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/object.html</loc>
-    
-    <lastmod>2018-11-20T07:29:58.034Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/index.html</loc>
-    
-    <lastmod>2018-11-19T12:40:58.705Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/laya/index.html</loc>
-    
-    <lastmod>2018-11-17T03:49:07.895Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/unity/index.html</loc>
-    
-    <lastmod>2018-11-16T10:26:01.673Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/unity/faq.html</loc>
-    
-    <lastmod>2018-11-16T08:46:37.009Z</lastmod>
+    <lastmod>2019-09-23T09:18:03.257Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.fairygui.com/guide/unity/input.html</loc>
     
-    <lastmod>2018-11-14T08:36:13.120Z</lastmod>
+    <lastmod>2019-06-18T11:55:55.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.fairygui.com/guide/editor/text.html</loc>
+    <loc>http://www.fairygui.com/product/index.html</loc>
     
-    <lastmod>2018-11-12T13:33:10.642Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/upgrade_binary_format.html</loc>
-    
-    <lastmod>2018-11-12T11:45:26.535Z</lastmod>
+    <lastmod>2019-06-14T00:43:35.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.fairygui.com/showcase/index.html</loc>
+    <loc>http://www.fairygui.com/guide/index.html</loc>
     
-    <lastmod>2018-11-01T10:34:41.261Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/controller.html</loc>
-    
-    <lastmod>2018-11-01T02:03:26.463Z</lastmod>
+    <lastmod>2019-06-14T00:42:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.fairygui.com/guide/editor/scrollpane.html</loc>
+    <loc>http://www.fairygui.com/product/release_notes.html</loc>
     
-    <lastmod>2018-10-30T03:09:31.770Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/list.html</loc>
-    
-    <lastmod>2018-10-29T02:58:37.635Z</lastmod>
+    <lastmod>2019-06-14T00:38:14.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.fairygui.com/guide/editor/adaptation.html</loc>
+    <loc>http://www.fairygui.com/guide/editor/component.html</loc>
     
-    <lastmod>2018-10-25T08:11:34.006Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/unity/insert3d.html</loc>
-    
-    <lastmod>2018-10-23T03:00:05.527Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/richtext.html</loc>
-    
-    <lastmod>2018-10-18T06:44:34.601Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/index.html</loc>
-    
-    <lastmod>2018-10-11T03:48:36.439Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/combobox.html</loc>
-    
-    <lastmod>2018-10-11T03:44:22.990Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/popup.html</loc>
-    
-    <lastmod>2018-10-11T03:44:16.518Z</lastmod>
+    <lastmod>2019-05-08T10:11:51.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.fairygui.com/guide/unity/transform.html</loc>
     
-    <lastmod>2018-10-09T05:57:12.203Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/button.html</loc>
-    
-    <lastmod>2018-09-27T02:44:27.086Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/window.html</loc>
-    
-    <lastmod>2018-09-21T07:57:06.538Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/egret/index.html</loc>
-    
-    <lastmod>2018-09-09T01:03:45.496Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/transition.html</loc>
-    
-    <lastmod>2018-09-08T14:54:53.556Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/graph.html</loc>
-    
-    <lastmod>2018-09-08T14:40:02.066Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/dragdrop.html</loc>
-    
-    <lastmod>2018-08-07T07:26:42.710Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/cocos2dx/index.html</loc>
-    
-    <lastmod>2018-07-29T14:47:00.892Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/service/index.html</loc>
-    
-    <lastmod>2018-07-25T13:04:20.089Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/unity/drawcall.html</loc>
-    
-    <lastmod>2018-07-05T02:59:27.112Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/unity/font.html</loc>
-    
-    <lastmod>2018-06-22T04:03:58.124Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/about/index.html</loc>
-    
-    <lastmod>2018-06-05T06:24:24.161Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/unity/event.html</loc>
-    
-    <lastmod>2018-04-03T09:55:57.083Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/unity/special.html</loc>
-    
-    <lastmod>2018-03-18T18:25:56.959Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/movieclip.html</loc>
-    
-    <lastmod>2018-03-13T02:52:09.297Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/slider.html</loc>
-    
-    <lastmod>2018-03-08T14:48:38.907Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/label.html</loc>
-    
-    <lastmod>2018-03-05T04:04:12.282Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/cry/transform.html</loc>
-    
-    <lastmod>2018-02-02T07:16:57.864Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/cry/index.html</loc>
-    
-    <lastmod>2018-02-02T07:14:58.480Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/cry/input.html</loc>
-    
-    <lastmod>2018-02-02T07:11:24.528Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/cry/event.html</loc>
-    
-    <lastmod>2018-02-02T07:11:21.272Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/unity/lua.html</loc>
-    
-    <lastmod>2018-01-26T17:44:14.072Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/scrollbar.html</loc>
-    
-    <lastmod>2018-01-26T12:32:56.952Z</lastmod>
+    <lastmod>2019-05-08T10:08:48.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.fairygui.com/guide/unity/atlas.html</loc>
     
-    <lastmod>2018-01-26T12:17:01.784Z</lastmod>
+    <lastmod>2019-05-07T02:53:17.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/transition.html</loc>
+    
+    <lastmod>2019-03-28T12:54:37.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/unity/faq.html</loc>
+    
+    <lastmod>2019-03-15T10:09:31.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/unity/font.html</loc>
+    
+    <lastmod>2019-03-14T03:49:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/product/unity_release_notes.html</loc>
+    
+    <lastmod>2019-03-13T03:45:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/index.html</loc>
+    
+    <lastmod>2019-02-28T01:36:37.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/object.html</loc>
+    
+    <lastmod>2019-02-12T08:46:44.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/scrollpane.html</loc>
+    
+    <lastmod>2019-01-23T11:27:33.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/unity/insert3d.html</loc>
+    
+    <lastmod>2019-01-21T14:31:21.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/graph.html</loc>
+    
+    <lastmod>2019-01-21T10:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/service/index.html</loc>
+    
+    <lastmod>2019-01-21T10:10:45.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/window.html</loc>
+    
+    <lastmod>2019-01-21T05:25:33.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/product/sdk_release_notes.html</loc>
+    
+    <lastmod>2019-01-21T04:30:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/button.html</loc>
+    
+    <lastmod>2019-01-15T09:53:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/unity/lua.html</loc>
+    
+    <lastmod>2019-01-10T06:51:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/image.html</loc>
+    
+    <lastmod>2018-12-20T11:05:24.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/richtext.html</loc>
+    
+    <lastmod>2018-12-20T03:46:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/movieclip.html</loc>
+    
+    <lastmod>2018-12-19T09:27:25.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/examples/index.html</loc>
+    
+    <lastmod>2018-12-14T05:47:51.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/sdk/creator.html</loc>
+    
+    <lastmod>2018-12-14T05:45:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/sdk/egret.html</loc>
+    
+    <lastmod>2018-12-14T05:36:35.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/sdk/laya.html</loc>
+    
+    <lastmod>2018-12-14T05:32:45.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/sdk/cryengine.html</loc>
+    
+    <lastmod>2018-12-14T05:13:17.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/loader.html</loc>
+    
+    <lastmod>2018-12-14T05:11:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/slider.html</loc>
+    
+    <lastmod>2018-12-14T05:09:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/text.html</loc>
+    
+    <lastmod>2018-12-14T05:06:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/popup.html</loc>
+    
+    <lastmod>2018-12-14T05:05:10.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/list.html</loc>
+    
+    <lastmod>2018-12-14T05:03:10.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/dragdrop.html</loc>
+    
+    <lastmod>2018-12-14T04:58:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/controller.html</loc>
+    
+    <lastmod>2018-12-14T04:49:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/combobox.html</loc>
+    
+    <lastmod>2018-12-14T04:46:47.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/adaptation.html</loc>
+    
+    <lastmod>2018-12-14T04:22:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/sdk/cocos2dx.html</loc>
+    
+    <lastmod>2018-12-12T10:10:13.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/unity/special.html</loc>
+    
+    <lastmod>2018-11-23T13:41:01.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/unity/index.html</loc>
+    
+    <lastmod>2018-11-23T02:38:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/upgrade_binary_format.html</loc>
+    
+    <lastmod>2018-11-12T11:45:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/unity/drawcall.html</loc>
+    
+    <lastmod>2018-07-05T02:59:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/about/index.html</loc>
+    
+    <lastmod>2018-06-05T06:24:24.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/unity/event.html</loc>
+    
+    <lastmod>2018-04-03T09:55:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/label.html</loc>
+    
+    <lastmod>2018-03-05T04:04:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/scrollbar.html</loc>
+    
+    <lastmod>2018-01-26T12:32:56.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.fairygui.com/guide/editor/group.html</loc>
     
-    <lastmod>2018-01-08T08:54:38.286Z</lastmod>
+    <lastmod>2018-01-08T08:54:38.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.fairygui.com/guide/unity/uipainter.html</loc>
     
-    <lastmod>2017-09-28T04:32:17.261Z</lastmod>
+    <lastmod>2017-09-28T04:32:17.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/sdk/index.html</loc>
+    
+    <lastmod>2017-09-24T13:34:26.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.fairygui.com/index.html</loc>
     
-    <lastmod>2017-09-08T22:58:28.095Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/haxe/index.html</loc>
-    
-    <lastmod>2017-09-08T22:58:27.894Z</lastmod>
+    <lastmod>2017-09-08T22:58:28.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.fairygui.com/guide/editor/relation.html</loc>
     
-    <lastmod>2017-09-08T22:58:27.894Z</lastmod>
+    <lastmod>2017-09-08T22:58:27.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.fairygui.com/guide/editor/progressbar.html</loc>
     
-    <lastmod>2017-09-08T22:58:27.894Z</lastmod>
+    <lastmod>2017-09-08T22:58:27.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.fairygui.com/2017/09/09/index/</loc>
+    <loc>http://www.fairygui.com/2019/06/22/index/</loc>
     
-    <lastmod>2017-09-08T22:58:27.872Z</lastmod>
+    <lastmod>2017-09-08T22:58:27.000Z</lastmod>
     
   </url>
   

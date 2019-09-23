@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - 输入处理</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide_unity"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -349,7 +349,7 @@
     
     <h2 id="鼠标-触摸输入"><a href="#鼠标-触摸输入" class="headerlink" title="鼠标/触摸输入"></a>鼠标/触摸输入</h2><p>FairyGUI使用内置的机制进行鼠标和触摸事件的处理，不使用射线。如果确实要使用射线，可以将UIPanel的“HitTest Mode”设置为“Raycast”。无论哪种点击检测模式，下面的事件处理机制都一样。</p>
 <p>如果要区分点击UI还是点击场景里的对象，可以使用下面的方法：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="keyword">if</span>(Stage.isTouchOnUI) <span class="comment">//点在了UI上</span></div><div class="line">&#123;</div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span> <span class="comment">//没有点在UI上</span></div><div class="line">&#123;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(Stage.isTouchOnUI) <span class="comment">//点在了UI上</span></span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="comment">//没有点在UI上</span></span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这种检测不仅适用于点击，也适用于悬停。例如，如果鼠标悬停在UI上，这个判断也是真。<strong>如果你觉得屏幕上都没有UI了这个还是返回真，那就真的是有UI</strong>，特别是全屏界面，没设置穿透时，它的空白区域也是接受输入的。你可以通过打印GRoot.inst.touchTarget检查。</p>
 <p>和鼠标/触摸相关的事件有：</p>
 <ul>
@@ -362,19 +362,21 @@
 <li><code>onTouchEnd</code> 鼠标按键释放或者手指从屏幕上离开。如果鼠标或者触摸位置已经不在组件范围内了，那么组件的TouchEnd事件是不会触发的，如果确实需要，可以在onTouchBegin里调用context.CaptureTouch()请求捕获。</li>
 <li><code>onClick</code> 鼠标或者手指点击。可以从context.inputEvent.isDoubleClick判断是否双击。<br><strong>如果你在找长按事件，那么请使用LongPressGesture<a href="#手势">(长按手势)</a>。</strong><br><strong>在手指按下后，如果调用Stage.inst.CancelClick，手指抬起时就不会触发Click事件。</strong></li>
 <li><code>onRightClick</code> 鼠标右键点击。</li>
+<li><code>onRollOver</code> 鼠标或者手指移入一个元件时触发。</li>
+<li><code>onRollOut</code> 鼠标或者手指移出一个元件时触发。</li>
 </ul>
 <p>在任何事件（即不只是鼠标/触摸相关的事件）回调中都可以获得当前鼠标或手指位置，以及点击的对象，例如：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">AnyEventHandler</span>(<span class="params">EventContext context</span>)</span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    <span class="comment">//点击位置，注意是屏幕坐标，要转换本地坐标要使用GlobalToLocal</span></div><div class="line">    Debug.Log(context.inputEvent.x + <span class="string">", "</span> + context.inputEvent.y);</div><div class="line"></div><div class="line">    <span class="comment">//获取点击的对象（在鼠标/触摸事件中）</span></div><div class="line">    Debug.Log((GObject)context.sender);</div><div class="line">    <span class="comment">//如果事件是冒泡的，可以获得最底层的对象。但要注意，这里的对象类型是DisplayObject，不是GObject。</span></div><div class="line">    Debug.Log((DisplayObject)context.initiator);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">AnyEventHandler</span>(<span class="params">EventContext context</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//点击位置，注意是屏幕坐标，要转换本地坐标要使用GlobalToLocal</span></span><br><span class="line">    Debug.Log(context.inputEvent.x + <span class="string">", "</span> + context.inputEvent.y);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//获取点击的对象（在鼠标/触摸事件中）</span></span><br><span class="line">    Debug.Log((GObject)context.sender);</span><br><span class="line">    <span class="comment">//如果事件是冒泡的，可以获得最底层的对象。但要注意，这里的对象类型是DisplayObject，不是GObject。</span></span><br><span class="line">    Debug.Log((DisplayObject)context.initiator);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>如果不在事件中，需要获得当前鼠标或者手指的位置，可以用：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//这是鼠标的位置，或者最后一个手指的位置</span></div><div class="line">Vector2 pos1 = Stage.inst.touchPosition;</div><div class="line"></div><div class="line"><span class="comment">//获取指定手指的位置，参数是手指id</span></div><div class="line">Vector2 pos2 = Stage.inst.GetTouchPosition(<span class="number">1</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//这是鼠标的位置，或者最后一个手指的位置</span></span><br><span class="line">Vector2 pos1 = Stage.inst.touchPosition;</span><br><span class="line"></span><br><span class="line"><span class="comment">//获取指定手指的位置，参数是手指id</span></span><br><span class="line">Vector2 pos2 = Stage.inst.GetTouchPosition(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
 <p>在任何时候，如果需要获得当前点击的对象，或者鼠标下的对象，都可以通过以下的方式获得：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">GObject obj = GRoot.inst.touchTarget;</div><div class="line"></div><div class="line"><span class="comment">//判断是不是在某个组件内</span></div><div class="line">Debug.Log(testComponent==obj || testComponent.IsAncestorOf(obj));</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">GObject obj = GRoot.inst.touchTarget;</span><br><span class="line"></span><br><span class="line"><span class="comment">//判断是不是在某个组件内</span></span><br><span class="line">Debug.Log(testComponent==obj || testComponent.IsAncestorOf(obj));</span><br></pre></td></tr></table></figure>
 <h2 id="多点触摸"><a href="#多点触摸" class="headerlink" title="多点触摸"></a>多点触摸</h2><p>FairyGUI支持多点触摸的处理。每个手指都会按照TouchBegin-&gt;TouchMove-&gt;TouchEnd流程派发事件，可以使用EventContext.inputEvent.touchId区分不同的手指。一般来说，普通的点击事件无需关心手指id，只有需要用到整个触摸流程的才需要处理。</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//这是当前按下的手指的数量</span></div><div class="line"><span class="keyword">int</span> touchCount = Stage.inst.touchCount;</div><div class="line"></div><div class="line"><span class="comment">//获得当前所有按下的手指id</span></div><div class="line"><span class="keyword">int</span>[] touchIDs = Stage.inst.GetAllTouch(<span class="literal">null</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//这是当前按下的手指的数量</span></span><br><span class="line"><span class="keyword">int</span> touchCount = Stage.inst.touchCount;</span><br><span class="line"></span><br><span class="line"><span class="comment">//获得当前所有按下的手指id</span></span><br><span class="line"><span class="keyword">int</span>[] touchIDs = Stage.inst.GetAllTouch(<span class="literal">null</span>);</span><br></pre></td></tr></table></figure>
 <p>如果你不想使用多点触摸功能，可以使用Unity的API：Input.multiTouchEnabled = false关闭。</p>
 <h2 id="VR输入处理"><a href="#VR输入处理" class="headerlink" title="VR输入处理"></a>VR输入处理</h2><p>VR里输入一般使用凝视输入，或者手柄输入，针对这些新的输入方式，FairyGUI提供了封装支持，也就是说，在VR应用里，你仍然可以像处理鼠标或者触摸输入一样处理VR的输入，无任何区别，也就是说UI逻辑不需要做任何修改。</p>
 <p>首先，需要把这些外部输入传入FairyGUI。在Stage类里提供了这些API：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SetCustomInput</span>(<span class="params"><span class="keyword">ref</span> RaycastHit hit, <span class="keyword">bool</span> buttonDown</span>)</span>;</div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SetCustomInput</span>(<span class="params"><span class="keyword">ref</span> RaycastHit hit, <span class="keyword">bool</span> buttonDown, <span class="keyword">bool</span> buttonUp</span>)</span>;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SetCustomInput</span>(<span class="params"><span class="keyword">ref</span> RaycastHit hit, <span class="keyword">bool</span> buttonDown</span>)</span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SetCustomInput</span>(<span class="params"><span class="keyword">ref</span> RaycastHit hit, <span class="keyword">bool</span> buttonDown, <span class="keyword">bool</span> buttonUp</span>)</span>;</span><br></pre></td></tr></table></figure>
 <ul>
 <li><p><code>hit</code> 没有手柄的，这里传入眼睛的射线（其实就是摄像机的射线）击中的目标；有手柄的，传入手柄射线击中的目标。</p>
 </li>
@@ -385,16 +387,16 @@
 </ul>
 <p>SetCustomInput可以放在Update里调用，而且必须<strong>每帧调用</strong>。如果使用了SetCustomInput，则FairyGUI不再处理鼠标或者触摸输入。</p>
 <p>使用示例：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"></div><div class="line">SteamVR_TrackedObject controller;</div><div class="line">SteamVR_Controller.Device controllerDevice;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">Start</span>(<span class="params"></span>)</span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    controller = ...</div><div class="line">    controllerDevice = ...</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">Update</span>(<span class="params"></span>) </span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    Vector3 pos = controller.transform.position;</div><div class="line">    Vector3 dir = controller.transform.forward;</div><div class="line">    <span class="keyword">bool</span> trigger_down = controllerDevice.GetPress(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);</div><div class="line"></div><div class="line">    RaycastHit rh;</div><div class="line">    <span class="keyword">if</span> (Physics.Raycast(pos, dir, <span class="keyword">out</span> rh))</div><div class="line">    &#123;</div><div class="line">        Stage.inst.SetCustomInput(rh, trigger_down);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">SteamVR_TrackedObject controller;</span><br><span class="line">SteamVR_Controller.Device controllerDevice;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Start</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    controller = ...</span><br><span class="line">    controllerDevice = ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Update</span>(<span class="params"></span>) </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Vector3 pos = controller.transform.position;</span><br><span class="line">    Vector3 dir = controller.transform.forward;</span><br><span class="line">    <span class="keyword">bool</span> trigger_down = controllerDevice.GetPress(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);</span><br><span class="line"></span><br><span class="line">    RaycastHit rh;</span><br><span class="line">    <span class="keyword">if</span> (Physics.Raycast(pos, dir, <span class="keyword">out</span> rh))</span><br><span class="line">    &#123;</span><br><span class="line">        Stage.inst.SetCustomInput(rh, trigger_down);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="键盘输入"><a href="#键盘输入" class="headerlink" title="键盘输入"></a>键盘输入</h2><p>侦听键盘输入的方法是：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">Stage.inst.onKeyDown.Add(OnKeyDown);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">OnKeyDown</span>(<span class="params">EventContext context</span>)</span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    Debug.Log(context.inputEvent.keyCode);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">Stage.inst.onKeyDown.Add(OnKeyDown);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">OnKeyDown</span>(<span class="params">EventContext context</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Debug.Log(context.inputEvent.keyCode);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>在手机上是通过原生的键盘输入。键盘弹出时，派发GTextInput.onFocusIn事件，键盘收回时，派发GTextInput.onFocusOut事件。</p>
 <p>Unity在键盘输入时自带了一个额外的输入框，如果你不需要这个输入框，希望像微信那样弹出自己的输入框，你需要自行编写原生代码，FairyGUI这边提供的支持有：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//定义自己的键盘</span></div><div class="line">KeyBoard yourKeyboard;</div><div class="line"></div><div class="line">Stage.inst.keyboard = yourKeyboard;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//定义自己的键盘</span></span><br><span class="line">KeyBoard yourKeyboard;</span><br><span class="line"></span><br><span class="line">Stage.inst.keyboard = yourKeyboard;</span><br></pre></td></tr></table></figure>
 <p><strong>复制粘贴问题</strong></p>
-<p>当使用DLL形式的插件时，因为DLL默认是为移动平台编译的，所以不支持复制粘贴（如果要支持，需要自己写原生代码支持）。如果是在PC平台上使用时，需要将<a href="https://github.com/fairygui/FairyGUI-unity/blob/master/Examples.Unity5/Assets/FairyGUI/CopyPastePatch.cs" target="_blank" rel="external">CopyPastePatch.cs</a>放到工程里，并在游戏启动时调用CopyPastePatch.Apply()，就可以在PC平台激活复制粘贴功能。<strong>如果你是使用源码形式的插件，不需要进行这个处理。</strong></p>
+<p>当使用DLL形式的插件时，因为DLL默认是为移动平台编译的，所以不支持复制粘贴（如果要支持，需要自己写原生代码支持）。如果是在PC平台上使用时，需要将<a href="https://github.com/fairygui/FairyGUI-unity/blob/master/Examples.Unity5/Assets/FairyGUI/CopyPastePatch.cs" target="_blank" rel="noopener">CopyPastePatch.cs</a>放到工程里，并在游戏启动时调用CopyPastePatch.Apply()，就可以在PC平台激活复制粘贴功能。<strong>如果你是使用源码形式的插件，不需要进行这个处理。</strong></p>
 <h2 id="手势"><a href="#手势" class="headerlink" title="手势"></a>手势</h2><p>FairyGUI提供了手势的支持。使用手势的方式是：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">LongPressGesture gesture = <span class="keyword">new</span> LongPressGesture(targetObject);</div><div class="line">gesture.onAction.Add(OnGestureAction);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">LongPressGesture gesture = <span class="keyword">new</span> LongPressGesture(targetObject);</span><br><span class="line">gesture.onAction.Add(OnGestureAction);</span><br></pre></td></tr></table></figure>
 <p>targetObject是接收手势的元件，注意一定要是可触摸的。图片是不可触摸的，一般建议用组件，或者装载器。如果你需要全屏幕监测手势，那么可以直接用GRoot.inst作为targetObject（需1.9.0 SDK或更高版本支持）</p>
 <p>常用的手势有：</p>
 <p><code>LongPressGesture</code> 长按手势。可以设定长按触发的时间，还可以控制长按触发后继续触发通知的时间间隔。</p>
@@ -420,5 +422,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>
