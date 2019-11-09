@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - 发行日志</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "product"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link current">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link current">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -120,7 +120,14 @@
     
       <h1>发行日志</h1>
     
-    <h2 id="5-0"><a href="#5-0" class="headerlink" title="5.0"></a>5.0</h2><ol>
+    <h2 id="5-0-4"><a href="#5-0-4" class="headerlink" title="5.0.4"></a>5.0.4</h2><ol>
+<li>大幅优化了依赖查询的速度。</li>
+<li>修正了发布对话框里部分设置没有保存的bug。</li>
+<li>修正了纹理集大小设置为4的倍数没有生效的bug。</li>
+<li>修正了导出资源包功能失效的bug。</li>
+<li>命令行发布增加了-t参数，用于指定哪个分支。</li>
+</ol>
+<h2 id="5-0"><a href="#5-0" class="headerlink" title="5.0"></a>5.0</h2><ol>
 <li>编辑器界面优化，现在可以自定义布局。</li>
 <li>增加了项目分支功能。</li>
 <li>增加了多语言预览功能。</li>
@@ -141,8 +148,13 @@
 <li>取消了包纹理数量的限制。</li>
 <li>修正了部分系统中的字体不出现在字体选择对话框的bug。</li>
 <li>修正了编辑器窗口在Mac系统中移动时会抖动的bug。</li>
+<li>增加了树形列表的，对应类为GTree。列表属性里勾选“树视图”即可。</li>
+<li>带布局的高级组增加“排除隐藏对象”、“禁用自动计算包围”、“仅伸缩指定索引元件”三个选项。</li>
+<li>滚动容器可设置属性“浮动”，设置后滚动条不占用视口空间。</li>
+<li>滚动条增加了最小值的设置。</li>
+<li>滑动条增加了最小值的设置，增加了“整数输入”的设置，可以于分段功能。</li>
 </ol>
-<p><a href="https://mp.weixin.qq.com/s/pYEz595w0qo_MLXvskoDmA" target="_blank" rel="external">详情</a></p>
+<p><a href="https://mp.weixin.qq.com/s/pYEz595w0qo_MLXvskoDmA" target="_blank" rel="noopener">详情</a></p>
 <h2 id="3-10"><a href="#3-10" class="headerlink" title="3.10"></a>3.10</h2><ol>
 <li>修正了Mac下按Command+箭头键时，可能使撤销功能失效的bug。</li>
 <li>修正了3.10.6引入的一个bug，修改了文档，保存后再按ctrl+z撤销，文档没有正确标记为已修改。</li>
@@ -205,7 +217,7 @@
 <li>组件的图标现在能根据组件的扩展属性不同而显示不同的图标，例如按钮将显示按钮的图标，标签则显示标签的图标，便于快速区分。</li>
 <li>增加了在舞台上选中一个或多个元件，按住ALT键，再拖动元件，即可快速生成元件的副本。</li>
 <li>调整了数字输入框中鼠标滚轮的行为。旧版本中，只要将鼠标指针置于输入框上方时，就可以用鼠标滚动微调数值，现在调整为输入框激活后，才可以用鼠标滚动微调数值。这是为了避免在一些滚动容器里鼠标滚轮的行为冲突。这意味着，右边的属性面板现在可以正常使用鼠标滚轮上下滚动了。</li>
-<li>旋转属性改为可以输入小数。注意：Unity SDK必须同步升级，否则如果旋转值为小数时，创建UI时会出现解析错误的异常；如果不方便升级，那么请参阅<a href="https://github.com/fairygui/FairyGUI-unity/commit/6f6db79fafc5b27aeec3ff0c21257cccaf6e70ad" target="_blank" rel="external">Commit:6f6db79fafc5b27aeec3ff0c21257cccaf6e70ad</a>，自行修改这部分即可。其他的SDK则不会报错，但解析时会丢失小数部分。\</li>
+<li>旋转属性改为可以输入小数。注意：Unity SDK必须同步升级，否则如果旋转值为小数时，创建UI时会出现解析错误的异常；如果不方便升级，那么请参阅<a href="https://github.com/fairygui/FairyGUI-unity/commit/6f6db79fafc5b27aeec3ff0c21257cccaf6e70ad" target="_blank" rel="noopener">Commit:6f6db79fafc5b27aeec3ff0c21257cccaf6e70ad</a>，自行修改这部分即可。其他的SDK则不会报错，但解析时会丢失小数部分。\</li>
 <li>透明度输入改为0-1，不是原来的0-100（不影响发布）。</li>
 <li>优化了界面显示。</li>
 <li>组合框Item编辑界面增加了“发布时清除”属性。</li>
@@ -261,8 +273,8 @@
 </ol>
 <h2 id="3-5"><a href="#3-5" class="headerlink" title="3.5"></a>3.5</h2><ol>
 <li>增加了Cry Engine和Havok Vision两种新项目类型。</li>
-<li>增加了自定义数据。可以在两个地方输入自定义的数据：<br><img src="../../images/20180105004522.png" alt=""> <img src="../../images/20180105004541.png" alt=""></li>
-<li>Laya和Egret项目增加了一个发布选项，通过此选项可以控制发布的描述文件是否压缩。默认是压缩的。如果你已经使用了web服务器的gzip压缩功能，又或者打包时会另外压缩，那可以选择不压缩的格式。<br><img src="../../images/20180105005321.png" alt=""></li>
+<li>增加了自定义数据。可以在两个地方输入自定义的数据：<br><img src="../../images/20180105004522.png" alt> <img src="../../images/20180105004541.png" alt></li>
+<li>Laya和Egret项目增加了一个发布选项，通过此选项可以控制发布的描述文件是否压缩。默认是压缩的。如果你已经使用了web服务器的gzip压缩功能，又或者打包时会另外压缩，那可以选择不压缩的格式。<br><img src="../../images/20180105005321.png" alt></li>
 <li>增加了大文本输入对话框。在任意文本输入的地方，按快捷键Ctrl+Enter，就可以弹出一个对话框用于输入，解决原来在属性面板录入长度较大文本的不方便的问题。</li>
 </ol>
 <h2 id="3-4"><a href="#3-4" class="headerlink" title="3.4"></a>3.4</h2><ol>
@@ -338,7 +350,7 @@
 <li>提醒信息。如果当前文档内有同名对象，会显示黄色叹号。</li>
 <li>点击可在库中定位这个组件。</li>
 </ul>
-<ol>
+<ol start="4">
 <li>动画编辑增加了设置帧频的功能。</li>
 <li>修正了发布时如果最大大小的纹理集都装不下至少一个图时卡死的bug。</li>
 <li>WAV、OGG等声音格式现在可以在编辑器预览（例如在动效中播放）。</li>
@@ -433,5 +445,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>
