@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - Unity SDK更新日志</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "product"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link current">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link current">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -120,7 +120,13 @@
     
       <h1>Unity SDK更新日志</h1>
     
-    <h2 id="3-4-0"><a href="#3-4-0" class="headerlink" title="3.4.0"></a>3.4.0</h2><ol>
+    <h2 id="3-5-0"><a href="#3-5-0" class="headerlink" title="3.5.0"></a>3.5.0</h2><ol>
+<li>适配了5.0版本的编辑器的新功能。</li>
+<li>修正了自定义遮罩多层嵌套时的显示bug。</li>
+<li>修正了阿拉伯字体的一些显示问题（by AQ）。</li>
+<li>修正了TouchScreenKeyboard使用上的一些问题。</li>
+</ol>
+<h2 id="3-4-0"><a href="#3-4-0" class="headerlink" title="3.4.0"></a>3.4.0</h2><ol>
 <li>增加了对多显示器的支持。</li>
 <li>增加了DynamicFont(name, font),可以自行传入由ab载入的字体。</li>
 <li>修正了动效里Hook可能被调用两次的bug。</li>
@@ -140,7 +146,7 @@
 <li>在鼠标或手指按下后移动一段位置再回到当初按下的位置，不再判定为Click事件。</li>
 <li>对于没有设置为滚动的列表，不再在TouchBegin时设置选中状态，而是统一为点击事件，避免了单选按钮被选中但不触发onClickItem。</li>
 <li>优化了事件系统，降低了UI构建时的GC开销。</li>
-<li>优化了Lua支持，注意FairyGUI.lua有修改，而LuaUIHelper.cs这个类已经不再需要。内置了对tolua的支持，详情参考<a href="https://github.com/fairygui/FairyGUI-unity/tree/master/LuaSupport" target="_blank" rel="external">LuaSupport</a>。</li>
+<li>优化了Lua支持，注意FairyGUI.lua有修改，而LuaUIHelper.cs这个类已经不再需要。内置了对tolua的支持，详情参考<a href="https://github.com/fairygui/FairyGUI-unity/tree/master/LuaSupport" target="_blank" rel="noopener">LuaSupport</a>。</li>
 <li>UIConfig.enhancedTextOutlineEffect默认值改成了false。因为如果使用8方向的描边实现，很小段的文字都会产生大量三角形，所有默认还是保守的设置好。</li>
 <li>GTween.catchCallbackExceptions和Timers.catchCallbackExceptions默认值都改成false，避免新手遇到异常不知道怎么解决。</li>
 <li>增加了UIConfig.richTextRowVerticalAlign控制图文混排时图片和文字的垂直对齐方式。默认值为Bottom，也就是图片也文字的底部对齐。但旧版本默认是中线对齐的。</li>
@@ -149,15 +155,15 @@
 <li>修改了带引号的文本折行处理不正确的bug。</li>
 <li>修改了阿拉伯文字显示的一些bug。</li>
 <li>优化了GProgress.TweenValue，在连续调用时仍能平滑过渡。</li>
-<li><p>重构了底层图形系统，现在可以更方便的创建各种形状，例如饼型，线条，多边形，正多边形，雷达图等，可以更方便的操纵网格实现形变。同时，显著降低了UI界面改变时的GC开销。Demo Basics-&gt;Graph 已更新，反映这些新特性。<strong>请注意更新着色器</strong>。<br><img src="../images/20190106125438.png" alt=""></p>
+<li><p>重构了底层图形系统，现在可以更方便的创建各种形状，例如饼型，线条，多边形，正多边形，雷达图等，可以更方便的操纵网格实现形变。同时，显著降低了UI界面改变时的GC开销。Demo Basics-&gt;Graph 已更新，反映这些新特性。<strong>请注意更新着色器</strong>。<br><img src="../images/20190106125438.png" alt></p>
 </li>
 <li><p>如果将图片变形为任意多边形，会由于线性插值的原因造成图片的畸变，现在底层会自动对UV进行特殊设置解决。例如如果在旧版本，将组件设置为透视模拟，再旋转x轴或者y轴，可能会发生显示内容畸变，新版本则能正确显示。（需要Unity 5.2或更新版本才支持）</p>
 </li>
 <li>FairyGUI-Text-Brighter.shader已经移除，不再提供这种特殊的效果，因为Unity对文字的渲染效果也在不断改进，还是保持原样的Unity效果好。这个只影响PC，因为移动平台上从来没有使用过这个着色器。 </li>
-<li>增加了一个翻书效果的Demo: TurnPage，提供了一个可扩展性很强，支持封面封底，支持硬页软页，使用虚拟化技术的翻页效果。<br><img src="../images/turn_page.gif" alt=""></li>
+<li>增加了一个翻书效果的Demo: TurnPage，提供了一个可扩展性很强，支持封面封底，支持硬页软页，使用虚拟化技术的翻页效果。<br><img src="../images/turn_page.gif" alt></li>
 </ol>
 <h2 id="3-2-0"><a href="#3-2-0" class="headerlink" title="3.2.0"></a>3.2.0</h2><ol>
-<li>增加了一个Unity组件DisplayObjectInfo，可以在Inspector下查看和修改GameObject对应的UI节点的信息。支持了网易的UI自动化测试工具<a href="https://github.com/AirtestProject/Poco-SDK/tree/master/Unity3D" target="_blank" rel="external">AirTest</a>。但默认不挂这个新组件，要启用这个功能，在Scripting Define Symbols里添加<strong>FAIRYGUI_TEST</strong>。</li>
+<li>增加了一个Unity组件DisplayObjectInfo，可以在Inspector下查看和修改GameObject对应的UI节点的信息。支持了网易的UI自动化测试工具<a href="https://github.com/AirtestProject/Poco-SDK/tree/master/Unity3D" target="_blank" rel="noopener">AirTest</a>。但默认不挂这个新组件，要启用这个功能，在Scripting Define Symbols里添加<strong>FAIRYGUI_TEST</strong>。</li>
 </ol>
 <h2 id="3-1-0"><a href="#3-1-0" class="headerlink" title="3.1.0"></a>3.1.0</h2><ol>
 <li>改进了文字描边由原来的4次叠加增加到8次叠加，效果更好。但可以通过设置UIConfig.enhancedTextOutlineEffect=false强制为原来的4次叠加效果。</li>
@@ -247,5 +253,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>
