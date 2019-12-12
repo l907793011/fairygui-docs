@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - 按钮</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide_editor"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -99,6 +99,26 @@
 	                
 	                <li>
 	                    <a href="/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/branch.html" class="sidebar-link">分支</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/publish.html" class="sidebar-link">发布</a>
 	                </li>
 	            
 	                
@@ -198,7 +218,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                    <a href="/guide/editor/tree.html" class="sidebar-link">树</a>
 	                </li>
 	            
 	                
@@ -213,17 +233,37 @@
 	            
 	                
 	                <li>
+	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/guide/editor/transition.html" class="sidebar-link">动效</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">自适应</a>
+	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">适配</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/upgrade_binary_format.html" class="sidebar-link">升级到二进制包格式</a>
+	                    <a href="/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/export.html" class="sidebar-link">导入和导出资源包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/plugin.html" class="sidebar-link">插件</a>
 	                </li>
 	            
 	
@@ -350,18 +390,18 @@
     <p>按钮是FairyGUI里最常用的扩展组件。他用于多个用途，例如传统UI框架中的RadioButton、Checkbox、List Item等，在FairyGUI里通通都是按钮。</p>
 <h2 id="创建按钮"><a href="#创建按钮" class="headerlink" title="创建按钮"></a>创建按钮</h2><p>可以通过两种方式创建按钮组件。</p>
 <ul>
-<li>点击主菜单“资源”-&gt;“新建按钮”，按照向导的提示一步步完成。</li>
-</ul>
-<p><img src="../../images/20170803143326.png" alt=""></p>
-<ul>
-<li>新建一个组件，然后在组件属性里选择扩展为“按钮”。然后创建一个控制器，点击“按钮模板”，选择一个按钮模板。</li>
+<li><p>点击主菜单“资源-&gt;新建按钮”，按照向导的提示一步步完成。</p>
+<p><img src="../../images/QQ20191210-233538.png" alt></p>
+</li>
+<li><p>新建一个组件，然后在组件属性里选择扩展为“按钮”。然后创建一个控制器，点击<img src="../../images/QQ20191210-233616.png" alt>，选择一个按钮模板。</p>
+</li>
 </ul>
 <h2 id="设计属性"><a href="#设计属性" class="headerlink" title="设计属性"></a>设计属性</h2><p>在组件编辑状态下，按钮组件的属性面板是：</p>
-<p><img src="../../images/20170803143647.png" alt=""></p>
+<p><img src="../../images/QQ20191210-233721.png" alt></p>
 <ul>
 <li><p><code>模式</code> 有三种按钮模式选择。</p>
 <ul>
-<li><code>普通按钮</code> 用于点击-&gt;响应的用途，无状态。</li>
+<li><code>普通按钮</code> 用于点击响应的用途，无状态。</li>
 <li><code>单选按钮</code> 有一个是否选中的状态。被点击后处于选中状态，再点击仍然保持选中状态。如果要实现单选按钮组，那可以将多个单选按钮的“连接”属性绑定到同一个控制器，具体请参考<a href="controller.html#和按钮的联动">控制器</a>。</li>
 <li><code>复选按钮</code> 有一个是否选中的状态。被点击后处于选中状态，再点击则变成不选中状态。</li>
 </ul>
@@ -372,13 +412,12 @@
 </li>
 <li><p><code>按下效果</code> 用控制器可以随意控制按钮在不同页面的形态，但出于方便，内置了几种常用的按钮按下效果。</p>
 <ul>
-<li><code>缩放</code> 按下时按钮变大或变小。按下缩放是通过改变按钮组件的ScaleX和ScaleY实现的。注意：设置了按下缩放后，按钮初始化时会自动将轴心设置为（0.5，0.5）。<em>(除了Unity平台，其他平台可能会有设置了按下变小，当正好按在按钮边缘时会出现有按下效果，但不触发点击事件的问题。解决方案是使用按下变大而不是按下变小。如果一定要按下变小，建议阀值不要太大，稍微有效果就可以，)</em></li>
-<li><code>变暗</code> 按下时按钮呈现变暗的状态。变暗实际是通过改变按钮组件内所有图片的颜色实现的，<strong>如果你还有对按钮内图片的颜色的单独设置，这可能会发生冲突，导致颜色设置丢失。</strong> <em>（因为Egret和Laya平台不支持图片变色，所以变暗也不可用。其实在手机上，用缩放效果更合适。）</em></li>
+<li><code>缩放</code> 按下时按钮变大或变小。按下缩放是通过改变按钮组件的ScaleX和ScaleY实现的。注意：设置了按下缩放后，按钮初始化时会自动将轴心设置为（0.5，0.5）。<strong>(除了Unity平台，其他平台可能会有设置了按下变小，当正好按在按钮边缘时会出现有按下效果，但不触发点击事件的问题。解决方案是使用按下变大而不是按下变小。如果一定要按下变小，建议阀值不要太大，稍微有效果就可以，)</strong></li>
+<li><code>变暗</code> 按下时按钮呈现变暗的状态。变暗实际是通过改变按钮组件内所有图片的颜色实现的，<strong>如果你还有对按钮内图片的颜色的单独设置，这可能会发生冲突，导致颜色设置丢失。</strong></li>
 </ul>
 </li>
 </ul>
-<p><strong>命名约定</strong></p>
-<ul>
+<h2 id="制作说明"><a href="#制作说明" class="headerlink" title="制作说明"></a>制作说明</h2><ul>
 <li><p><code>button</code> 按钮控制器必须命名为“button”，如果你不需要按钮有特殊效果，那么这个控制器不是必须的。</p>
 <p>按钮控制器各个页面的说明：</p>
 <p><code>up</code> 按钮正常的状态；<br><code>down</code> 普通按钮按下时的状态/单选或多选按钮被选中时的状态；<br><code>over</code> 当鼠标指针悬浮在按钮上方时的状态；<br><code>selectedOver</code> 当单选或多选按钮选中时，鼠标指针悬浮到按钮上方时的状态；<br><code>disabled</code> 按钮不可用时的状态；<br><code>selectedDisabled</code> 当单选或多选按钮选中时，按钮不可用时的状态。</p>
@@ -391,13 +430,13 @@
 </ul>
 <p>注意：按钮组件内并非只能有“title”和“icon”，你可以放置任何元件，例如放置任意多的文本、装载器等。“title”和“icon”的设定只是用于按钮组件在编辑器实例化时能够直观设置而已。</p>
 <h2 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h2><p>在舞台上选中一个按钮组件，右边的属性面板列表出现：</p>
-<p><img src="../../images/20170803150509.png" alt=""></p>
+<p><img src="../../images/QQ20191211-093100.png" alt></p>
 <ul>
-<li><p><code>状态</code> 单选按钮或多选按钮可以设置按钮是否处于选中状态。</p>
+<li><p><code>状态</code> 单选按钮或多选按钮可以设置按钮是否处于选中状态。普通按钮属性没有意义。</p>
 </li>
-<li><p><code>标题</code> 设置的文本将赋值到按钮组件内的“title”元件的文本属性。如果不存在“title”元件，则什么事都不会发生。<br>这里的输入框比较小，如果要输入大文本，则可以在输入激活时，按CTRL+ENTER，然后会弹出一个专门用于输入文本的窗口。</p>
+<li><p><code>标题</code> 设置的文本将赋值到按钮组件内的“title”元件的文本属性。如果不存在“title”元件，则什么事都不会发生。</p>
 </li>
-<li><p><code>选中时标题</code> 当按钮处于选中状态时，设置标题属性为这里设置的值；当按钮处于不选中状态时，恢复原标题属性的值。</p>
+<li><p><code>选中时标题</code> 当按钮处于选中状态时，设置“title”元件的文本属性为这里设置的值；当按钮处于不选中状态时，恢复原标题属性的值。</p>
 </li>
 <li><p><code>标题颜色</code> 默认的标题颜色是按钮组件内的“title”元件的文字颜色，勾选后，可以修改文字颜色。如果不存在“title”元件，则什么事都不会发生。</p>
 </li>
@@ -405,7 +444,7 @@
 </li>
 <li><p><code>图标</code> 设置的URL将赋值到按钮组件内的“icon”元件的图标属性。如果不存在“icon”元件，则什么事都不会发生。</p>
 </li>
-<li><p><code>选中时图标</code> 当按钮处于选中状态时，设置图标属性为这里设置的值；当按钮处于不选中状态时，恢复原图标属性的值。</p>
+<li><p><code>选中时图标</code> 当按钮处于选中状态时，设置按钮组件内的“icon”元件的图标属性为这里设置的值；当按钮处于不选中状态时，恢复原图标属性的值。</p>
 </li>
 <li><p><code>点击声音</code> 勾选后可以重新设置按钮的点击音效，覆盖按钮在设计期的设置。</p>
 </li>
@@ -415,23 +454,23 @@
 </li>
 </ul>
 <h2 id="GButton"><a href="#GButton" class="headerlink" title="GButton"></a>GButton</h2><p>设置按钮的标题或者图标，你甚至不需要强制对象为GButton的类型，直接用GObject提供的接口就可以，例如：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">GObject obj = gcom.GetChild(<span class="string">"n1"</span>);</div><div class="line">obj.text = <span class="string">"hello"</span>;</div><div class="line">obj.icon = <span class="string">"ui://包名/图片名"</span>;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">GObject obj = gcom.GetChild(<span class="string">"n1"</span>);</span><br><span class="line">obj.text = <span class="string">"hello"</span>;</span><br><span class="line">obj.icon = <span class="string">"ui://包名/图片名"</span>;</span><br></pre></td></tr></table></figure>
 <p>如果是单选或者多选按钮，下面的方法设置是否选中：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">GButton button = gcom.GetChild(<span class="string">"n1"</span>).asButton;</div><div class="line">button.selected = <span class="literal">true</span>;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">button.selected = <span class="literal">true</span>;</span><br></pre></td></tr></table></figure>
 <p>通常对于单选/多选按钮，用户点击后就能切换状态。如果你不需要这样，希望只能通过API改变状态，那么可以：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//关闭后你只能通过改变selected属性修改按钮状态，用户点击不会改变状态。</span></div><div class="line">button.changeStateOnClick = <span class="literal">false</span>;</div></pre></td></tr></table></figure>
-<p>通过代码设置按钮与控制器的联动的方式是：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">button.pageOption.controller = aController;</div><div class="line">button.pageOption.index = <span class="number">1</span>; <span class="comment">//通过索引设置</span></div><div class="line">button.pageOption.name = <span class="string">"page_name"</span>; <span class="comment">//或通过页面名称设置</span></div></pre></td></tr></table></figure>
-<p>按钮全局声音的设置为：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//Unity版本要求一个AudioClip对象，如果是使用库里面的资源，那么可以使用：</span></div><div class="line">UIConfig.buttonSound = (NAudioClip)UIPackage.GetItemAssetByURL(<span class="string">"ui://包名/声音名"</span>);</div><div class="line"></div><div class="line"><span class="comment">//其他版本要求一个资源url，即：</span></div><div class="line">UIConfig.buttonSound = <span class="string">"ui://包名/声音名"</span>;</div><div class="line"></div><div class="line"><span class="comment">//全局音量    </span></div><div class="line">UIConfig.buttonSoundVolumeScale = <span class="number">1</span>f;</div></pre></td></tr></table></figure>
-<p>这个设置只能在创建任何UI前设置。如果要控制全局声音的开关或音量，可以这样：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//开关声音(Laya和Egret自己有提供声音开关，不需要用这个，请查阅他们的文档）</span></div><div class="line">GRoot.inst.EnabledSound();</div><div class="line">GRoot.inst.DisableSound();</div><div class="line"></div><div class="line"><span class="comment">//调整全局声音音量，这个包括按钮声音和动效播放的声音</span></div><div class="line">GRoot.inst.soundVolume = <span class="number">0.5</span>f;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//关闭后你只能通过改变selected属性修改按钮状态，用户点击不会改变状态。</span></span><br><span class="line">button.changeStateOnClick = <span class="literal">false</span>;</span><br></pre></td></tr></table></figure>
+<p>按钮全局声音的设置方式为：</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Unity版本要求一个AudioClip对象，如果是使用库里面的资源，那么可以使用：</span></span><br><span class="line">UIConfig.buttonSound = (NAudioClip)UIPackage.GetItemAssetByURL(<span class="string">"ui://包名/声音名"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//其他版本要求一个资源url，即：</span></span><br><span class="line">UIConfig.buttonSound = <span class="string">"ui://包名/声音名"</span>;</span><br></pre></td></tr></table></figure>
+<p>按钮全局声音的音量设置方式为：</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//全局音量</span></span><br><span class="line">UIConfig.buttonSoundVolumeScale = <span class="number">1f</span>;</span><br></pre></td></tr></table></figure>
+<p>这个设置只能在创建任何UI前设置。如果要动态控制全局声音（包括动态里的音效）的开关或音量，Unity平台可以用以下的方式，其他平台则需要查阅引擎提供的功能。</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">GRoot.inst.EnabledSound();</span><br><span class="line">GRoot.inst.DisableSound();</span><br><span class="line"></span><br><span class="line"><span class="comment">//调整全局声音音量，这个包括按钮声音和动效播放的声音</span></span><br><span class="line">GRoot.inst.soundVolume = <span class="number">0.5f</span>;</span><br></pre></td></tr></table></figure>
 <p>监听普通按钮点击的方式为：（注意，点击事件不只是按钮有，任何支持触摸的元件都有，例如普通组件、装载器、图形等，他们的点击事件注册方式和按钮是相同的。）</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//Unity/Cry/MonoGame</span></div><div class="line">button.onClick.Add(onClick);</div><div class="line"></div><div class="line"><span class="comment">//AS3</span></div><div class="line">button.addClickListener(onClick);</div><div class="line"></div><div class="line"><span class="comment">//Egret</span></div><div class="line">button.addClickListener(<span class="keyword">this</span>.onClick, <span class="keyword">this</span>);</div><div class="line"></div><div class="line"><span class="comment">//Laya</span></div><div class="line">button.onClick(<span class="keyword">this</span>, <span class="keyword">this</span>.onClick);</div><div class="line"></div><div class="line"><span class="comment">//Cocos2dx</span></div><div class="line">button-&gt;addClickListener(CC_CALLBACK_1(AClass::onClick, this));</div><div class="line"></div><div class="line"><span class="comment">//CocosCreator</span></div><div class="line">button.onClick(<span class="keyword">this</span>.onClick, <span class="keyword">this</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Unity/Cry/MonoGame</span></span><br><span class="line">button.onClick.Add(onClick);</span><br><span class="line"></span><br><span class="line"><span class="comment">//AS3</span></span><br><span class="line">button.addClickListener(onClick);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Egret</span></span><br><span class="line">button.addClickListener(<span class="keyword">this</span>.onClick, <span class="keyword">this</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Laya</span></span><br><span class="line">button.onClick(<span class="keyword">this</span>, <span class="keyword">this</span>.onClick);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Cocos2dx</span></span><br><span class="line">button-&gt;addClickListener(CC_CALLBACK_1(AClass::onClick, this));</span><br><span class="line"></span><br><span class="line"><span class="comment">//CocosCreator</span></span><br><span class="line">button.onClick(<span class="keyword">this</span>.onClick, <span class="keyword">this</span>);</span><br></pre></td></tr></table></figure>
 <p>按钮可以模拟触发点击：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//模拟触发点击，只会有一个触发的表现，以及改变按钮状态，不会触发侦听按钮的点击事件。</span></div><div class="line">button.FireClick(<span class="literal">true</span>);</div><div class="line"></div><div class="line"><span class="comment">//如果同时要触发点击事件，需要额外调用：(仅Unity/Cry示例，其他平台自己研究）</span></div><div class="line">button.onClick.Call();</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//模拟触发点击，只会有一个触发的表现，以及改变按钮状态，不会触发侦听按钮的点击事件。</span></span><br><span class="line">button.FireClick(<span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//如果同时要触发点击事件，需要额外调用：(仅Unity/Cry示例，其他平台自己研究）</span></span><br><span class="line">button.onClick.Call();</span><br></pre></td></tr></table></figure>
 <p>单选和多选按钮状态改变时有通知事件：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//Unity/Cry/MonoGame</span></div><div class="line">button.onChanged.Add(onChanged);</div><div class="line"></div><div class="line"><span class="comment">//AS3</span></div><div class="line">button.addEventListener(StateChangeEvent.CHANGED, onChanged);</div><div class="line"></div><div class="line"><span class="comment">//Egret</span></div><div class="line">button.addEventListener(StateChangeEvent.CHANGED, <span class="keyword">this</span>.onChanged, <span class="keyword">this</span>);</div><div class="line"></div><div class="line"><span class="comment">//Laya</span></div><div class="line">button.<span class="keyword">on</span>(fairygui.Events.STATE_CHANGED, <span class="keyword">this</span>, <span class="keyword">this</span>.onChanged);</div><div class="line"></div><div class="line"><span class="comment">//Cocos2dx</span></div><div class="line">button-&gt;addEventListener(UIEventType::Changed, CC_CALLBACK_1(AClass::onChanged, this));</div><div class="line"></div><div class="line"><span class="comment">//CocosCreator</span></div><div class="line">button.<span class="keyword">on</span>(fgui.Event.STATUS_CHANGED, <span class="keyword">this</span>.onChanged, <span class="keyword">this</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Unity/Cry/MonoGame</span></span><br><span class="line">button.onChanged.Add(onChanged);</span><br><span class="line"></span><br><span class="line"><span class="comment">//AS3</span></span><br><span class="line">button.addEventListener(StateChangeEvent.CHANGED, onChanged);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Egret</span></span><br><span class="line">button.addEventListener(StateChangeEvent.CHANGED, <span class="keyword">this</span>.onChanged, <span class="keyword">this</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Laya</span></span><br><span class="line">button.<span class="keyword">on</span>(fairygui.Events.STATE_CHANGED, <span class="keyword">this</span>, <span class="keyword">this</span>.onChanged);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Cocos2dx</span></span><br><span class="line">button-&gt;addEventListener(UIEventType::Changed, CC_CALLBACK_1(AClass::onChanged, this));</span><br><span class="line"></span><br><span class="line"><span class="comment">//CocosCreator</span></span><br><span class="line">button.<span class="keyword">on</span>(fgui.Event.STATUS_CHANGED, <span class="keyword">this</span>.onChanged, <span class="keyword">this</span>);</span><br></pre></td></tr></table></figure>
     
     <div class="footer">
       发现错误或想贡献文档?
@@ -449,5 +488,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>

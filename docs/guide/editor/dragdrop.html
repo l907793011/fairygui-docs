@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - Drag&Drop</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide_editor"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -99,6 +99,26 @@
 	                
 	                <li>
 	                    <a href="/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/branch.html" class="sidebar-link">分支</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/publish.html" class="sidebar-link">发布</a>
 	                </li>
 	            
 	                
@@ -198,7 +218,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                    <a href="/guide/editor/tree.html" class="sidebar-link">树</a>
 	                </li>
 	            
 	                
@@ -213,17 +233,37 @@
 	            
 	                
 	                <li>
+	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/guide/editor/transition.html" class="sidebar-link">动效</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">自适应</a>
+	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">适配</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/upgrade_binary_format.html" class="sidebar-link">升级到二进制包格式</a>
+	                    <a href="/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/export.html" class="sidebar-link">导入和导出资源包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/plugin.html" class="sidebar-link">插件</a>
 	                </li>
 	            
 	
@@ -348,20 +388,20 @@
       <h1>Drag&Drop</h1>
     
     <h2 id="自由拖放"><a href="#自由拖放" class="headerlink" title="自由拖放"></a>自由拖放</h2><p>使一个元件能够被拖动，很简单，设置draggable属性就可以了，例如：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">aObject.draggable = <span class="literal">true</span>;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">aObject.draggable = <span class="literal">true</span>;</span><br></pre></td></tr></table></figure>
 <p>设置后当玩家按住元件，就可以随意拖动它。可以设置一个矩形限制拖动范围：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//注意这里的矩形范围使用的是舞台上的坐标，不是元件的本地坐标。</span></div><div class="line">aObject.dragBounds = <span class="keyword">new</span> Rect(<span class="number">100</span>,<span class="number">100</span>,<span class="number">200</span>,<span class="number">200</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//注意这里的矩形范围使用的是舞台上的坐标，不是元件的本地坐标。</span></span><br><span class="line">aObject.dragBounds = <span class="keyword">new</span> Rect(<span class="number">100</span>,<span class="number">100</span>,<span class="number">200</span>,<span class="number">200</span>);</span><br></pre></td></tr></table></figure>
 <p>拖动开始、拖动的过程和拖动结束都可以获得通知：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//Unity/Cry</span></div><div class="line">aObject.onDragStart.Add(onDragStart);</div><div class="line">aObject.onDragMove.Add(onDragMove);</div><div class="line">aObject.onDragEnd.Add(onDragEnd);</div><div class="line"></div><div class="line"><span class="comment">//AS3</span></div><div class="line">aObject.addEventListener(DragEvent.DRAG_START, onDragStart);</div><div class="line">aObject.addEventListener(DragEvent.DRAG_MOVING, onDragMove);</div><div class="line">aObject.addEventListener(DragEvent.DRAG_END, onDragEnd);</div><div class="line"></div><div class="line"><span class="comment">//Egret</span></div><div class="line">aObject.addEventListener(fairygui.DragEvent.DRAG_START, <span class="keyword">this</span>.onDragStart, <span class="keyword">this</span>);</div><div class="line">aObject.addEventListener(fairygui.DragEvent.DRAG_MOVING, <span class="keyword">this</span>.onDragMove, <span class="keyword">this</span>);</div><div class="line">aObject.addEventListener(fairygui.DragEvent.DRAG_END, <span class="keyword">this</span>.onDragEnd, <span class="keyword">this</span>);</div><div class="line"></div><div class="line"><span class="comment">//Laya</span></div><div class="line">aObject.<span class="keyword">on</span>(fairygui.Events.DRAG_START, <span class="keyword">this</span>, <span class="keyword">this</span>.onDragStart);</div><div class="line">aObject.<span class="keyword">on</span>(fairygui.Events.DRAG_MOVE, <span class="keyword">this</span>, <span class="keyword">this</span>.onDragMove);</div><div class="line">aObject.<span class="keyword">on</span>(fairygui.Events.DRAG_END, <span class="keyword">this</span>, <span class="keyword">this</span>.onDragEnd);</div><div class="line"></div><div class="line"><span class="comment">//Cocos2dx</span></div><div class="line">aObject-&gt;addEventListener(UIEventType::DragStart, CC_CALLBACK_1(AClass::onDragStart, this));</div><div class="line">aObject-&gt;addEventListener(UIEventType::DragMove, CC_CALLBACK_1(AClass::onDragMove, this));</div><div class="line">aObject-&gt;addEventListener(UIEventType::DragEnd, CC_CALLBACK_1(AClass::onDragEnd, this));</div><div class="line"></div><div class="line"><span class="comment">//CocosCreator</span></div><div class="line">aObject.<span class="keyword">on</span>(fgui.Event.DRAG_START, <span class="keyword">this</span>.onDragStart, <span class="keyword">this</span>);</div><div class="line">aObject.<span class="keyword">on</span>(fgui.Event.DRAG_MOVING, <span class="keyword">this</span>.onDragMove, <span class="keyword">this</span>);</div><div class="line">aObject.<span class="keyword">on</span>(fgui.Event.DRAG_END, <span class="keyword">this</span>.onDragEnd, <span class="keyword">this</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Unity/Cry</span></span><br><span class="line">aObject.onDragStart.Add(onDragStart);</span><br><span class="line">aObject.onDragMove.Add(onDragMove);</span><br><span class="line">aObject.onDragEnd.Add(onDragEnd);</span><br><span class="line"></span><br><span class="line"><span class="comment">//AS3</span></span><br><span class="line">aObject.addEventListener(DragEvent.DRAG_START, onDragStart);</span><br><span class="line">aObject.addEventListener(DragEvent.DRAG_MOVING, onDragMove);</span><br><span class="line">aObject.addEventListener(DragEvent.DRAG_END, onDragEnd);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Egret</span></span><br><span class="line">aObject.addEventListener(fairygui.DragEvent.DRAG_START, <span class="keyword">this</span>.onDragStart, <span class="keyword">this</span>);</span><br><span class="line">aObject.addEventListener(fairygui.DragEvent.DRAG_MOVING, <span class="keyword">this</span>.onDragMove, <span class="keyword">this</span>);</span><br><span class="line">aObject.addEventListener(fairygui.DragEvent.DRAG_END, <span class="keyword">this</span>.onDragEnd, <span class="keyword">this</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Laya</span></span><br><span class="line">aObject.<span class="keyword">on</span>(fairygui.Events.DRAG_START, <span class="keyword">this</span>, <span class="keyword">this</span>.onDragStart);</span><br><span class="line">aObject.<span class="keyword">on</span>(fairygui.Events.DRAG_MOVE, <span class="keyword">this</span>, <span class="keyword">this</span>.onDragMove);</span><br><span class="line">aObject.<span class="keyword">on</span>(fairygui.Events.DRAG_END, <span class="keyword">this</span>, <span class="keyword">this</span>.onDragEnd);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Cocos2dx</span></span><br><span class="line">aObject-&gt;addEventListener(UIEventType::DragStart, CC_CALLBACK_1(AClass::onDragStart, this));</span><br><span class="line">aObject-&gt;addEventListener(UIEventType::DragMove, CC_CALLBACK_1(AClass::onDragMove, this));</span><br><span class="line">aObject-&gt;addEventListener(UIEventType::DragEnd, CC_CALLBACK_1(AClass::onDragEnd, this));</span><br><span class="line"></span><br><span class="line"><span class="comment">//CocosCreator</span></span><br><span class="line">aObject.<span class="keyword">on</span>(fgui.Event.DRAG_START, <span class="keyword">this</span>.onDragStart, <span class="keyword">this</span>);</span><br><span class="line">aObject.<span class="keyword">on</span>(fgui.Event.DRAG_MOVING, <span class="keyword">this</span>.onDragMove, <span class="keyword">this</span>);</span><br><span class="line">aObject.<span class="keyword">on</span>(fgui.Event.DRAG_END, <span class="keyword">this</span>.onDragEnd, <span class="keyword">this</span>);</span><br></pre></td></tr></table></figure>
 <h2 id="转换拖动"><a href="#转换拖动" class="headerlink" title="转换拖动"></a>转换拖动</h2><p>如果不希望点击元件的任何地方都可以拖动，那么可以用转换拖动的方式。例如FairyGUI里的窗口，点击它的标题栏，就可以拖动窗口，我们以这个为例子分析怎么实现：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//设置拖动区域为可拖动，然后侦听拖动开始事件</span></div><div class="line">_dragArea.draggable = <span class="literal">true</span>;</div><div class="line">_dragArea.onDragStart.Add(onDragStart);</div><div class="line"></div><div class="line"><span class="comment">//Unity/Cry/MonoGame</span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">onDragStart</span>(<span class="params">EventContext context</span>)</span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    <span class="comment">//取消掉源拖动，也就是_dragArea不会被实际拖动</span></div><div class="line">    context.PreventDefault();</div><div class="line"></div><div class="line">    <span class="comment">//设置窗口处于拖动状态。context.data是手指的id。</span></div><div class="line">    <span class="keyword">this</span>.StartDrag((<span class="keyword">int</span>)context.data);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//Laya</span></div><div class="line">onDragStart(evt:laya.events.Event) &#123;</div><div class="line">    <span class="keyword">var</span> obj: fairygui.GObject = fairygui.GObject.cast(evt.currentTarget);</div><div class="line"></div><div class="line">    <span class="comment">//取消对原目标的拖动，换成一个替代品</span></div><div class="line">    obj.stopDrag();</div><div class="line"></div><div class="line">    <span class="keyword">this</span>.startDrag();</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//CocosCreator</span></div><div class="line">onDragStart(evt:fgui.Event) &#123;</div><div class="line">    <span class="keyword">let</span> obj:fgui.GObject = fgui.GObject.cast(evt.currentTarget);</div><div class="line">    </div><div class="line">    <span class="comment">//取消对原目标的拖动，换成一个替代品</span></div><div class="line">    obj.stopDrag();</div><div class="line"></div><div class="line">    <span class="keyword">this</span>.startDrag();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//设置拖动区域为可拖动，然后侦听拖动开始事件</span></span><br><span class="line">_dragArea.draggable = <span class="literal">true</span>;</span><br><span class="line">_dragArea.onDragStart.Add(onDragStart);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Unity/Cry/MonoGame</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">onDragStart</span>(<span class="params">EventContext context</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//取消掉源拖动，也就是_dragArea不会被实际拖动</span></span><br><span class="line">    context.PreventDefault();</span><br><span class="line"></span><br><span class="line">    <span class="comment">//设置窗口处于拖动状态。context.data是手指的id。</span></span><br><span class="line">    <span class="keyword">this</span>.StartDrag((<span class="keyword">int</span>)context.data);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Laya</span></span><br><span class="line">onDragStart(evt:laya.events.Event) &#123;</span><br><span class="line">    <span class="keyword">var</span> obj: fairygui.GObject = fairygui.GObject.cast(evt.currentTarget);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//取消对原目标的拖动，换成一个替代品</span></span><br><span class="line">    obj.stopDrag();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.startDrag();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//CocosCreator</span></span><br><span class="line">onDragStart(evt:fgui.Event) &#123;</span><br><span class="line">    <span class="keyword">let</span> obj:fgui.GObject = fgui.GObject.cast(evt.currentTarget);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//取消对原目标的拖动，换成一个替代品</span></span><br><span class="line">    obj.stopDrag();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.startDrag();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>通过以上的方式，实现当_dragArea被尝试拖动时，会转换为Window自身的拖动。</p>
 <h2 id="替身拖动"><a href="#替身拖动" class="headerlink" title="替身拖动"></a>替身拖动</h2><p>拖动只能在元件的父组件内移动，如果你需要在全屏幕内移动，那么需要用到替身拖动。替身拖动的启动方式需要先作转换：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">aObject.draggable = <span class="literal">true</span>;</div><div class="line">aObject.onDragStart.Add(onDragStart);</div><div class="line"></div><div class="line"><span class="comment">//Unity/Cry/MonoGame</span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">onDragStart</span>(<span class="params">EventContext context</span>)</span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    <span class="comment">//取消掉源拖动</span></div><div class="line">    context.PreventDefault();</div><div class="line"></div><div class="line">    <span class="comment">//icon是这个对象的替身图片，userData可以是任意数据，底层不作解析。context.data是手指的id。</span></div><div class="line">    DragDropManager.inst.StartDrag(<span class="literal">null</span>, icon, userData, (<span class="keyword">int</span>)context.data);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">aObject.draggable = <span class="literal">true</span>;</span><br><span class="line">aObject.onDragStart.Add(onDragStart);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Unity/Cry/MonoGame</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">onDragStart</span>(<span class="params">EventContext context</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//取消掉源拖动</span></span><br><span class="line">    context.PreventDefault();</span><br><span class="line"></span><br><span class="line">    <span class="comment">//icon是这个对象的替身图片，userData可以是任意数据，底层不作解析。context.data是手指的id。</span></span><br><span class="line">    DragDropManager.inst.StartDrag(<span class="literal">null</span>, icon, userData, (<span class="keyword">int</span>)context.data);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>使用了替身拖动后，如果要检测拖动结束，不能再监听原来的对象，而应该使用：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//Unity/Cry/MonoGame</span></div><div class="line">DragDropManager.inst.dragAgent.onDragEnd.Add(onDragEnd);</div><div class="line"></div><div class="line"><span class="comment">//CocosCreator</span></div><div class="line">DragDropManager.inst.dragAgent.<span class="keyword">on</span>(fgui.Event.DRAG_END, <span class="keyword">this</span>.onDragEnd, <span class="keyword">this</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Unity/Cry/MonoGame</span></span><br><span class="line">DragDropManager.inst.dragAgent.onDragEnd.Add(onDragEnd);</span><br><span class="line"></span><br><span class="line"><span class="comment">//CocosCreator</span></span><br><span class="line">DragDropManager.inst.dragAgent.<span class="keyword">on</span>(fgui.Event.DRAG_END, <span class="keyword">this</span>.onDragEnd, <span class="keyword">this</span>);</span><br></pre></td></tr></table></figure>
 <p>DragDropManager还提供了常用的拖-&gt;放功能，如果一个组件需要接收其他元件拖动到它里面并释放的事件，可以使用：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">aComponent.onDrop.Add(onDrop);</div><div class="line"></div><div class="line"><span class="comment">//Unity/Cry/MonoGame</span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">onDrop</span>(<span class="params">EventContext context</span>)</span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    <span class="comment">//这里context.data就是StartDrag里传入的userData</span></div><div class="line">    Debug.Log(context.data);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//CocosCreator</span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">onDrop</span>(<span class="params">dropTarget:fgui.GObject, userData:any</span>) </span>&#123;</div><div class="line">    <span class="comment">//这里sourceData是StartDrag传入的userData</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">aComponent.onDrop.Add(onDrop);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Unity/Cry/MonoGame</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">onDrop</span>(<span class="params">EventContext context</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//这里context.data就是StartDrag里传入的userData</span></span><br><span class="line">    Debug.Log(context.data);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//CocosCreator</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">onDrop</span>(<span class="params">dropTarget:fgui.GObject, userData:any</span>)</span> &#123;</span><br><span class="line">    <span class="comment">//这里sourceData是StartDrag传入的userData</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>DragDropManager使用了一个图片资源表达替身，这个图片是用装载器显示的。这个装载器是DragDropManager.inst.dragAgent，你可以调整它的参数以适应实际项目需求。</p>
 <p>如果你的替身不是一个图片那么简单，比如你需要用一个组件作为替身，那么你可以定义自己的DragDropManager，直接复制一个DragDropManager，在上面修改写你自己的逻辑，然后使用你这个DragDropManager即可。DragDropManager这个类的设计就没有考虑到所有实际情况的，它只是作为一个参考。</p>
 
@@ -382,5 +422,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>

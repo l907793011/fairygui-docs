@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - 装载器</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide_editor"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -99,6 +99,26 @@
 	                
 	                <li>
 	                    <a href="/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/branch.html" class="sidebar-link">分支</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/publish.html" class="sidebar-link">发布</a>
 	                </li>
 	            
 	                
@@ -198,7 +218,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                    <a href="/guide/editor/tree.html" class="sidebar-link">树</a>
 	                </li>
 	            
 	                
@@ -213,17 +233,37 @@
 	            
 	                
 	                <li>
+	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/guide/editor/transition.html" class="sidebar-link">动效</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">自适应</a>
+	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">适配</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/upgrade_binary_format.html" class="sidebar-link">升级到二进制包格式</a>
+	                    <a href="/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/export.html" class="sidebar-link">导入和导出资源包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/plugin.html" class="sidebar-link">插件</a>
 	                </li>
 	            
 	
@@ -347,14 +387,14 @@
     
       <h1>装载器</h1>
     
-    <p>装载器的用途是动态载入资源。点击主工具栏中的<img src="../../images/20170728201500.png" alt="">按钮，生成一个装载器。</p>
-<h2 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h2><p><img src="../../images/20180705094612.png" alt=""></p>
+    <p>装载器的用途是动态载入资源。点击主工具栏中的<img src="../../images/sidetb_07.png" alt>按钮，生成一个装载器。</p>
+<h2 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h2><p><img src="../../images/QQ20191211-163313.png" alt></p>
 <ul>
-<li><p><code>URL</code> URL指向的资源可以是图片、动画或者组件。</p>
+<li><p><code>URL</code> URL指向的资源可以是图片、动画或者组件。如果选中<img src="../../images/QQ20191211-163332.png" alt>，则发布时会自动清空这里设置的值。</p>
 </li>
 <li><p><code>自动大小</code> 设置装载器是否根据内容的大小自动调整自身的大小。例如，如果图片的大小是100x100，则装载器的大小自动变成100x100。</p>
 </li>
-<li><p><code>填充处理</code> 当需要显示的图片或动画与装载器大小不相同时使用的缩放策略。注意如果你设置了自动大小，那这个填充处理就无意义了。因为这个选项只是当装载器大小与内容大小不一致时的处理方式。</p>
+<li><p><code>填充处理</code> 当需要显示的图片或动画与装载器大小不相同时使用的缩放策略。</p>
 <ul>
 <li><code>无</code> 内容不会发生任何缩放。</li>
 <li><code>等比缩放（显示全部）</code> 按照最小比率缩放，不变形，一边可能留空白。</li>
@@ -363,8 +403,13 @@
 <li><code>等比缩放（适应宽度）</code> 内容宽度占满装载器宽度，高度等比缩放。</li>
 <li><code>自由缩放</code> 内容缩放至占满装载器矩形范围，不保持比例。</li>
 </ul>
+<p>备注：</p>
+<ol>
+<li><strong>如果设置了自动大小，那这个填充处理就无意义了。因为这个选项只是当装载器大小与内容大小不一致时的处理方式。</strong></li>
+<li><strong>装载器没有剪裁功能，如果要剪裁超出部分，需要把装载器放入一个溢出隐藏的组件。</strong></li>
+</ol>
 </li>
-<li><p><code>仅允许缩小</code> 勾选后，装载器加载的内容将永远不被放大，但可以被缩小。</p>
+<li><p><code>仅允许缩小</code> 勾选后，在处理<code>填充处理</code>时，装载器加载的内容将永远不被放大，但可以被缩小。</p>
 </li>
 <li><p><code>对齐</code> 设置装载器内容的对齐方式。</p>
 </li>
@@ -372,15 +417,15 @@
 </li>
 <li><p><code>播放</code> 如果内容是动画，可以设置动画是播放还是停止，如果内容是图片，这个设置无意义。</p>
 </li>
-<li><p><code>颜色</code> 修改动画各个颜色通道的值，使动画产生变色的效果。<em>（注：Egret、Laya版本目前是通过滤镜实现的，效率较低，不推荐使用此功能）。</em></p>
+<li><p><code>颜色</code> 修改颜色，使装载器的内容产生变色的效果。</p>
 </li>
-<li><p><code>亮度</code> 调整动画的明暗。这个实际是通过修改<code>颜色</code>属性实现的，和设置颜色为灰阶颜色一样的效果。</p>
+<li><p><code>亮度</code> 调整明暗。这个实际是通过修改<code>颜色</code>属性实现的，和设置颜色为灰阶颜色一样的效果。</p>
 </li>
-<li><p><code>填充方法</code> 设置填充方法可以实现图片的一些裁剪效果。详细说明请参考图片的<a href="image.html#实例属性">填充方法</a>。<em>（注：目前支持的引擎有：Unity、Starling、Laya、Egret、MonoGame, CocosCreator支持水平，垂直和360度）</em></p>
+<li><p><code>填充方法</code> 设置填充方法可以实现图片的一些裁剪效果。详细说明请参考图片的<a href="image.html#实例属性">填充方法</a>。</p>
 </li>
 </ul>
 <h2 id="GLoader"><a href="#GLoader" class="headerlink" title="GLoader"></a>GLoader</h2><p>装载器支持动态创建，动态创建装载器一定要设置装载器的大小，否则显示不出来。例如：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">GLoader aLoader = <span class="keyword">new</span> GLoader();</div><div class="line">aLoader.SetSize(<span class="number">100</span>,<span class="number">100</span>);</div><div class="line">aLoader.url = <span class="string">"ui://包名/图片名"</span>;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">GLoader aLoader = <span class="keyword">new</span> GLoader();</span><br><span class="line">aLoader.SetSize(<span class="number">100</span>,<span class="number">100</span>);</span><br><span class="line">aLoader.url = <span class="string">"ui://包名/图片名"</span>;</span><br></pre></td></tr></table></figure>
 <p>GLoader可以载入图片、动画和组件。如果是UI包里的资源，那么通过“ui://包名/图片名”这种格式的地址就可以载入。但实际项目中，可能我们还需要载入和显示一些不在UI包里的，我们称之为“外部”的图片。默认的GLoader具有有限度的的加载外部资源的能力，它们是：</p>
 <ul>
 <li>AS3 使用flash.display.Loader加载的外部资源。</li>
@@ -390,16 +435,16 @@
 <li>Unity 使用Resources.Load加载的外部贴图资源。</li>
 </ul>
 <p>例如：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//AS3，加载一个网络图片</span></div><div class="line">aLoader.url = “http:<span class="comment">//www.fairygui.com/logo.png”;</span></div><div class="line"></div><div class="line"><span class="comment">//Egret，这里demoRes是resources.json里定义的一个资源</span></div><div class="line">aLoader.url = “demoRes”;</div><div class="line"></div><div class="line"><span class="comment">//Unity, 这里加载的是路径为Assets/Resources/demo/aimage的一个贴图</span></div><div class="line">aLoader.url = “demo/aimage”;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//AS3，加载一个网络图片</span></span><br><span class="line">aLoader.url = “http:<span class="comment">//www.fairygui.com/logo.png”;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Egret，这里demoRes是resources.json里定义的一个资源</span></span><br><span class="line">aLoader.url = “demoRes”;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Unity, 这里加载的是路径为Assets/Resources/demo/aimage的一个贴图</span></span><br><span class="line">aLoader.url = “demo/aimage”;</span><br></pre></td></tr></table></figure>
 <p>如果这些默认的外部加载机制不能满足你的需求，例如，你希望从AssetBundle中获取资源，或者你需要加入缓存机制（这是有必要的，如果需要重复加载，建议做缓存），或者需要控制素材的生命期（这也是必要的，因为GLoader不会销毁外部载入的资源），那么你需要扩展GLoader。</p>
 <ol>
 <li><p>首先编写你的Loader类，有两个重点方法需要重写：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="keyword">class</span> <span class="title">MyGLoader</span>  : <span class="title">GLoader</span></div><div class="line">&#123;</div><div class="line">    <span class="function"><span class="keyword">override</span> <span class="keyword">protected</span> function <span class="title">LoadExternal</span>(<span class="params"></span>)</span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="comment">/*</span></div><div class="line"><span class="comment">        开始外部载入，地址在url属性</span></div><div class="line"><span class="comment">        载入完成后调用OnExternalLoadSuccess</span></div><div class="line"><span class="comment">        载入失败调用OnExternalLoadFailed</span></div><div class="line"><span class="comment"></span></div><div class="line"><span class="comment">        注意：如果是外部载入，在载入结束后，调用OnExternalLoadSuccess或OnExternalLoadFailed前，</span></div><div class="line"><span class="comment">        比较严谨的做法是先检查url属性是否已经和这个载入的内容不相符。</span></div><div class="line"><span class="comment">        如果不相符，表示loader已经被修改了。</span></div><div class="line"><span class="comment">        这种情况下应该放弃调用OnExternalLoadSuccess或OnExternalLoadFailed。</span></div><div class="line"><span class="comment">        */</span></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">override</span> <span class="keyword">protected</span> function <span class="title">FreeExternal</span>(<span class="params">NTexture texture</span>)</span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="comment">//释放外部载入的资源</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">MyGLoader</span>  : <span class="title">GLoader</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">override</span> <span class="keyword">protected</span> function <span class="title">LoadExternal</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        开始外部载入，地址在url属性</span></span><br><span class="line"><span class="comment">        载入完成后调用OnExternalLoadSuccess</span></span><br><span class="line"><span class="comment">        载入失败调用OnExternalLoadFailed</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">        注意：如果是外部载入，在载入结束后，调用OnExternalLoadSuccess或OnExternalLoadFailed前，</span></span><br><span class="line"><span class="comment">        比较严谨的做法是先检查url属性是否已经和这个载入的内容不相符。</span></span><br><span class="line"><span class="comment">        如果不相符，表示loader已经被修改了。</span></span><br><span class="line"><span class="comment">        这种情况下应该放弃调用OnExternalLoadSuccess或OnExternalLoadFailed。</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">override</span> <span class="keyword">protected</span> function <span class="title">FreeExternal</span>(<span class="params">NTexture texture</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="comment">//释放外部载入的资源</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>注册我们要使用的Loader类。注册完成后，游戏中<strong>所有装载器</strong>都变成由MyGLoader实例化产生。</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">UIObjectFactory.SetLoaderExtension(<span class="keyword">typeof</span>(MyGLoader));</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">UIObjectFactory.SetLoaderExtension(<span class="keyword">typeof</span>(MyGLoader));</span><br></pre></td></tr></table></figure>
 <p>在Unity平台中，如果在某些特殊场合需要将Texture2D对象赋予给GLoader，例如一个视频贴图，那么可以这样做：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//必须注意GLoader不管理外部对象的生命周期，不会主动销毁your_Texture2D</span></div><div class="line">aLoader.texture = <span class="keyword">new</span> NTexture(your_Texture2D);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//必须注意GLoader不管理外部对象的生命周期，不会主动销毁your_Texture2D</span></span><br><span class="line">aLoader.texture = <span class="keyword">new</span> NTexture(your_Texture2D);</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 
@@ -420,5 +465,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>

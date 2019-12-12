@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - 升级到二进制包格式</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide_editor"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -99,6 +99,46 @@
 	                
 	                <li>
 	                    <a href="/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/publish.html" class="sidebar-link">发布</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/plugin.html" class="sidebar-link">插件</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/export.html" class="sidebar-link">导入和导出资源包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/branch.html" class="sidebar-link">分支</a>
 	                </li>
 	            
 	                
@@ -218,7 +258,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">自适应</a>
+	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">适配</a>
 	                </li>
 	            
 	                
@@ -371,7 +411,7 @@
 <li><p>使用新格式后，UI包描述部分占用的内存急剧减少（只有几十KB~几百KB的规模），所以可以不用再管理包的装载卸载，而直接让UIPackage都常驻，再配合使用UnloadAssets和ReloadAssets就可以达到控制内存的效果了（当然这只是建议）。</p>
 </li>
 <li><p>在Unity编辑器中运行时，即使UI包没有放置在Resources下，现在也能够正常加载，路径用全路径即可，当然，打包APP后是不可能加载的，你需要用宏做区别。例如：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//编辑器环境下直接从文件路径中加载，方便测试，正式环境则使用AssetBundle</span></div><div class="line"><span class="meta">#<span class="meta-keyword">if</span> UNITY_EDITOR</span></div><div class="line">    UIPackage.AddPackage(<span class="string">"Assets/SomePath/Package1"</span>);</div><div class="line"><span class="meta">#<span class="meta-keyword">else</span></span></div><div class="line">    UIPackage.AddPackage(ab);</div><div class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//编辑器环境下直接从文件路径中加载，方便测试，正式环境则使用AssetBundle</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> UNITY_EDITOR</span></span><br><span class="line">    UIPackage.AddPackage(<span class="string">"Assets/SomePath/Package1"</span>);</span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">    UIPackage.AddPackage(ab);</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure>
 <p>同样，UIPanel也可以选择任意路径下的包，编辑器下都能够正常显示。运行时则需要保证包在UIPanel激活前加载好。</p>
 </li>
 </ol>
@@ -402,5 +442,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>

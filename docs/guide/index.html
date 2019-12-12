@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - 介绍</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -99,6 +99,26 @@
 	                
 	                <li>
 	                    <a href="/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/branch.html" class="sidebar-link">分支</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/publish.html" class="sidebar-link">发布</a>
 	                </li>
 	            
 	                
@@ -198,7 +218,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                    <a href="/guide/editor/tree.html" class="sidebar-link">树</a>
 	                </li>
 	            
 	                
@@ -213,17 +233,37 @@
 	            
 	                
 	                <li>
+	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/guide/editor/transition.html" class="sidebar-link">动效</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">自适应</a>
+	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">适配</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/upgrade_binary_format.html" class="sidebar-link">升级到二进制包格式</a>
+	                    <a href="/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/export.html" class="sidebar-link">导入和导出资源包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/plugin.html" class="sidebar-link">插件</a>
 	                </li>
 	            
 	
@@ -347,67 +387,10 @@
     
       <h1>介绍</h1>
     
-    <h2 id="学习路径"><a href="#学习路径" class="headerlink" title="学习路径"></a>学习路径</h2><ol>
-<li>下载FairyGUI编辑器。</li>
-<li>下载对应你的开发平台的FairyGUI SDK。</li>
-<li>对照SDK里的例子（包括编辑器里的UI设计，和运行时的代码），阅读全部官网教程或网上的视频教程。<br><a href="http://www.sikiedu.com/course/139" target="_blank" rel="external">视频教程-强大的UI编辑器 - FairyGUI入门教程</a><br><a href="http://www.sikiedu.com/course/170" target="_blank" rel="external">视频教程-狼人杀面杀APP（基于FairyGUI）</a><br>备注：视频教程由第三方提供。</li>
-<li>愉快地开始你的UI制作之旅。</li>
-</ol>
-<h2 id="FairyGUI的独特之处"><a href="#FairyGUI的独特之处" class="headerlink" title="FairyGUI的独特之处"></a>FairyGUI的独特之处</h2><p>FairyGUI提供了一个强大的UI编辑器，<code>使用习惯与Adobe系列软件保持一致</code>，美术设计师和策划都可以轻松上手。</p>
-<p>与市场上其他UI编辑器不同，FairyGUI编辑器重视设计师体验，摒弃了脚本和配置文件这些需要代码思维的操作。借助FairyGUI提供的 <code>组件</code>、<code>关联</code>、<code>控制器</code> 以及 <code>动效</code>，我们可以在不写代码的情况下使用编辑器轻松地制作大量复杂的带有动画效果的自动布局的UI。</p>
-<p>FairyGUI提供了多个游戏引擎SDK：<code>Unity</code>、<code>Cocos2d-x</code>、<code>Cry Egine</code>, <code>MonoGame</code>, <code>Havok Vision/Project Anarchy</code>、<code>Egret</code>、<code>LayaAir</code>、<code>CocosCreator</code>、<code>Haxe</code>、<code>Pixi</code>、<code>Flash</code>、<code>Starling</code>，<code>Corona</code>，未来还将支持<code>UE4</code>、<code>LibGDX</code>等。借助FairyGUI-SDK，你可以轻松在UI中使用3D对象、粒子等元素，而且FairyGUI还解决了环形进度条、像素点击测试、图文混排、循环列表、虚拟列表、曲面UI、VR输入等UI开发中常见的痛点。</p>
-<h2 id="特性列表"><a href="#特性列表" class="headerlink" title="特性列表"></a>特性列表</h2><ul>
-<li><p>所见即所得。操作简易，使用习惯与Adobe系列软件保持一致，策划和美术设计师都可以轻松上手。</p>
-</li>
-<li><p>在编辑器即可组合各种复杂UI组件，无需编写代码。不需要程序员编码扩展UI组件。</p>
-</li>
-<li><p>支持平移、缩放、旋转、倾斜、翻转等常规的2D变换。</p>
-</li>
-<li><p>强大的文本控件。支持动态字体，位图字体，以及外部工具（例如BMFont等）制作的位图字体，同时支持HTML语法和UBB语法，支持复杂的图文混排。输入文本支持IOS原生表情的直接输入。支持字体的描边效果，阴影效果，支持渐变色文字。</p>
-</li>
-<li><p>强大的列表控件，支持横向、纵向、流动、分页等多种布局，支持虚拟列表和循环列表，即使列表项目数量巨大也拒绝卡顿。虚拟列表还支持不等高ITEM、多种ITEM资源混合等高级特性。支持表格、树等高级列表控件。支持贴近，分页等滚动高级特性。</p>
-</li>
-<li><p>支持图片的九宫格和平铺处理，支持九宫格内各个宫格的平铺处理。支持图片变色和灰度。</p>
-</li>
-<li><p>支持基础的绘图功能，例如矩形、圆形、多边形等。</p>
-</li>
-<li><p>支持序列帧动画编辑和使用。自带序列帧动画编辑器，同时支持导入由Flash CS、Animate CC等工具制作的动画。</p>
-</li>
-<li><p>内置扫、捏、扭、长按等多种常用手势支持。内置摇杆支持。</p>
-</li>
-<li><p>编辑器提供时间轴设计UI动效，可以组合透明度、位置、大小、颜色等十几种属性的动画效果。并可实时看到每帧的效果。支持插入声音。支持嵌套动效。</p>
-</li>
-<li><p>支持矩形遮罩和自定义图形遮罩。</p>
-</li>
-<li><p>支持变色、模糊等滤镜。支持BlendMode设置。</p>
-</li>
-<li><p>支持逐像素检测的点击检测方式。</p>
-</li>
-<li><p>支持将UI组件绑定到任何模型上，例如实现曲面UI。</p>
-</li>
-<li><p>内置文本的打字效果。</p>
-</li>
-<li><p>内置窗口管理器，弹出窗口管理器，拖放管理器。</p>
-</li>
-<li><p>支持事件的冒泡机制。</p>
-</li>
-<li><p>封装了所有输入方式的底层细节，无论是鼠标输入、单点触摸输入、多点触摸输入、VR输入，你都只需要使用相同的事件侦听方式处理UI交互。</p>
-</li>
-<li><p>支持在UI层中插入任何3D物体，例如模型、粒子、骨骼动画等，自动处理渲染顺序。</p>
-</li>
-<li><p>编辑状态下使用分散的素材，发布时自动打包图集。支持定义多个图集，Unity版本自动支持抽出A通道的压缩方式。</p>
-</li>
-<li><p>多国语言切换支持。可以实时切换UI语言。</p>
-</li>
-<li><p>各种分辨率自适应。一套UI适用于不同分辨率的设备。</p>
-</li>
-<li><p>支持为编辑器组件自动生成代码。</p>
-</li>
-<li><p>提供插件机制，可以根据项目的需要为编辑器加入个性功能。</p>
-</li>
-<li><p>支持设计图功能，直接将设计图显示在背景，便于对照精准拼接。</p>
-</li>
-</ul>
+    <p>FairyGUI提供了一个强大的UI编辑器，使用习惯与Adobe系列软件保持一致，美术设计师和策划都可以轻松上手。</p>
+<p>与市场上其他UI编辑器不同，FairyGUI编辑器重视设计师体验，摒弃了脚本和配置文件这些需要代码思维的操作。借助FairyGUI提供的<strong>组件</strong>、<strong>关联</strong>、<strong>控制器</strong>和<strong>动效</strong>，我们可以在零代码的情况下轻松地制作复杂的带有动画效果的自动布局的UI。内置的分支和多语言机制，可以全可视化地配置多语言版本或者多渠道版本。FairyGUI还解决了环形进度条、像素点击测试、图文混排、循环列表、虚拟列表、曲面UI、VR输入等UI开发中常见的痛点。</p>
+<p>FairyGUI目前支持的游戏引擎有：<code>Unity</code>、<code>Cocos2d-x</code>、<code>Cry Egine</code>, <code>MonoGame</code>, <code>Havok Vision</code>、<code>Egret</code>、<code>LayaAir</code>、<code>CocosCreator</code>、<code>Haxe</code>、<code>Pixi</code>、<code>Flash</code>、<code>Starling</code>，<code>Corona</code>，未来还将支持<code>UE4</code>等，涵盖手游、页游、端游，力求在全游戏领域提供相同的UI制作体验。</p>
+<p>强烈建议你在使用FairyGUI前阅读这里全部的文字教程。如果你需要视频教程，可以参考网上<a href="http://www.sikiedu.com/course/139" target="_blank" rel="noopener">第三方的视频教程</a>。</p>
 
     
       <div class="guide-links">
@@ -431,5 +414,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>

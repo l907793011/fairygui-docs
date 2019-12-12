@@ -1,7 +1,7 @@
 ---
-title: 自适应
+title: 适配
 type: guide_editor
-order: 220
+order: 35
 ---
 
 FairyGUI为手游开发提供了自动适应各种设备分辨率的UI适配策略，这意味着开发者只需要制作一套UI，就可以适配所有分辨率的设备。
@@ -13,14 +13,14 @@ FairyGUI为手游开发提供了自动适应各种设备分辨率的UI适配策�
 
 ## 全局缩放
 
-Egret/Laya/Cocos2dx/CocosCreator不使用FairyGUI提供的全局缩放，需要使用他们自带的全局缩放策略，请忽略本节内容。参考资料：
+当设计分辨率和设备分辨率不一致时，首先进行的是全局缩放。这个全局缩放对UI内部是透明的，也就是说，所有UI界面都不需要理会这个缩放的存在。例如如果整体放大两倍，一个窗口的大小为400×400像素，那么最终显示到屏幕的窗口大小将为800×800像素，但如果你读取这个窗口的width和height，仍然将返回400×400，内部的所有坐标也不会发生变化。
+
+Egret/Laya/Cocos2dx/CocosCreator不使用FairyGUI提供的全局缩放，需要使用他们自带的全局缩放策略，参考资料：
 - [Egret](http://developer.egret.com/cn/2d/screenAdaptation/explanation) 
 - [LayaAir](https://ldc.layabox.com/doc/?nav=zh-as-1-8-0)
 - [CocosCreator](https://docs.cocos.com/creator/manual/zh/ui/multi-resolution.html)
 
-当设计分辨率和设备分辨率不一致时，首先进行的是全局缩放。这个全局缩放对UI内部是透明的，也就是说，所有UI界面都不需要理会这个缩放的存在。例如如果整体放大两倍，一个窗口的大小为400×400像素，那么最终显示到屏幕的窗口大小将为800×800像素，但如果你读取这个窗口的width和height，仍然将返回400×400，内部的所有坐标也不会发生变化。
-
-设置全局缩放的方式是：
+其他平台设置全局缩放的方式是：
 
 ```csharp
     GRoot.inst.SetContentScaleFactor(1136，640，ScreenMatchMode.MatchWidthOrHeight);
@@ -50,6 +50,7 @@ Egret/Laya/Cocos2dx/CocosCreator不使用FairyGUI提供的全局缩放，需要�
     //设置组件全屏，即大小和逻辑屏幕大小一致。
     //组件的内部应该做好关联处理， 以应对大小改变。
     aComponent.SetSize(GRoot.inst.width, GRoot.inst.height);
+    
     //或者更简洁的方式
     aComponnet.MakeFullScreen();
 ```

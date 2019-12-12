@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - 特色功能</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide_unity"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -99,6 +99,26 @@
 	                
 	                <li>
 	                    <a href="/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/branch.html" class="sidebar-link">分支</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/publish.html" class="sidebar-link">发布</a>
 	                </li>
 	            
 	                
@@ -198,7 +218,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                    <a href="/guide/editor/tree.html" class="sidebar-link">树</a>
 	                </li>
 	            
 	                
@@ -213,17 +233,37 @@
 	            
 	                
 	                <li>
+	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/guide/editor/transition.html" class="sidebar-link">动效</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">自适应</a>
+	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">适配</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/upgrade_binary_format.html" class="sidebar-link">升级到二进制包格式</a>
+	                    <a href="/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/export.html" class="sidebar-link">导入和导出资源包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/plugin.html" class="sidebar-link">插件</a>
 	                </li>
 	            
 	
@@ -357,34 +397,34 @@
 <li>曲面UI</li>
 </ul>
 <p>绘画模式功能依赖一个额外的相机，以及特别定义的两个Layer。相机是<strong>自动生成</strong>的，名字是CaptureCamera，你不需要访问和操作它。两个Layer的名字是<code>VUI</code>和<code>Hidden VUI</code>，如果Unity里没有定义这两个Layer，就会出现警告：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">Please define two layers named &apos;VUI&apos; and &apos;Hidden VUI&apos; &quot;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Please define two layers named &apos;VUI&apos; and &apos;Hidden VUI&apos; &quot;</span><br></pre></td></tr></table></figure>
 <p>这时你要在Layer定义里加上他们，避免出现这个警告。这两个Layer可以随便定义到没使用的层序号（默认是30和31），但要注意所有相机（除了CaptureCamera，它是自动的，不用管）的Culling Mask都<strong>不选择</strong>这两个层。</p>
 <p>除了上面提到的功能会使对象进入绘画模式外，也可以调用API手动触发：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//进入绘画模式</span></div><div class="line">EnterPaintingMode(<span class="keyword">int</span> requestorId, Margin? margin);</div><div class="line"></div><div class="line"><span class="comment">//离开绘画模式</span></div><div class="line">LeavePaintingMode(<span class="keyword">int</span> requestorId);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//进入绘画模式</span></span><br><span class="line">EnterPaintingMode(<span class="keyword">int</span> requestorId, Margin? margin);</span><br><span class="line"></span><br><span class="line"><span class="comment">//离开绘画模式</span></span><br><span class="line">LeavePaintingMode(<span class="keyword">int</span> requestorId);</span><br></pre></td></tr></table></figure>
 <ul>
 <li><code>requestorId</code> 请求者id。当多个请求要求显示对象进入绘画模式时，可以用这个id区分。取值是1、2、4、8、16以此类推。1024内内部保留。用户自定义的id从1024开始。</li>
 <li><code>margin</code> 纹理四周的留空。如果特殊处理后的内容大于原内容，那么这里的设置可以使纹理扩大。</li>
 </ul>
 <p><strong>如果目标对象使用了自定义遮罩，则需要额外的设置才能显示正常。</strong></p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">UIConfig.depthSupportForPaitingMode = <span class="literal">true</span>;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">UIConfig.depthSupportForPaitingMode = <span class="literal">true</span>;</span><br></pre></td></tr></table></figure>
 <h2 id="组件截图"><a href="#组件截图" class="headerlink" title="组件截图"></a>组件截图</h2><p>使用下面的方法可以实现对组件截图的功能。原理是使用FairyGUI提供的<code>绘画模式</code>功能。</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">GObject aObject;</div><div class="line">DisplayObject dObject = aObject.displayObject;</div><div class="line">dObject.EnterPaintingMode(<span class="number">1024</span>, <span class="literal">null</span>);</div><div class="line"></div><div class="line"><span class="comment">//纹理将在本帧渲染后才能更新，所以访问纹理的代码需要延迟到下一帧执行。</span></div><div class="line"><span class="keyword">yield</span> <span class="keyword">return</span> <span class="literal">null</span>;</div><div class="line"></div><div class="line">RenderTexture tex = (RenderTexture)dObject.paintingGraphics.texture.nativeTexture;</div><div class="line"><span class="comment">//得到tex后，你可以使用Unity的方法保存为图片或者进行其他处理。具体处理略。</span></div><div class="line"></div><div class="line"><span class="comment">//处理结束后结束绘画模式。id要和Enter方法的对应。</span></div><div class="line">dObject.LeavePaintingMode(<span class="number">1024</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">GObject aObject;</span><br><span class="line">DisplayObject dObject = aObject.displayObject;</span><br><span class="line">dObject.EnterPaintingMode(<span class="number">1024</span>, <span class="literal">null</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//纹理将在本帧渲染后才能更新，所以访问纹理的代码需要延迟到下一帧执行。</span></span><br><span class="line"><span class="keyword">yield</span> <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">RenderTexture tex = (RenderTexture)dObject.paintingGraphics.texture.nativeTexture;</span><br><span class="line"><span class="comment">//得到tex后，你可以使用Unity的方法保存为图片或者进行其他处理。具体处理略。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//处理结束后结束绘画模式。id要和Enter方法的对应。</span></span><br><span class="line">dObject.LeavePaintingMode(<span class="number">1024</span>);</span><br></pre></td></tr></table></figure>
 <h2 id="表情显示和输入"><a href="#表情显示和输入" class="headerlink" title="表情显示和输入"></a>表情显示和输入</h2><p>FairyGUI支持表情显示和直接输入，即表情图片直接在输入状态下就显示在输入框中，支持PC上的输入，也支持手机原生键盘的输入。例如：</p>
-<p><img src="../../images/20170924151030.png" alt=""></p>
+<p><img src="../../images/20170924151030.png" alt></p>
 <p>使用办法是为富文本或者输入文本定义emojies集合。</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">Dictionay&lt;<span class="keyword">uint</span>, Emoji&gt; emojies = <span class="keyword">new</span> Dictionary&lt;<span class="keyword">uint</span>, Emoji&gt;();</div><div class="line"><span class="comment">//unicodeValue是字符的unicode编码，imageURL是图片路径</span></div><div class="line">emojies.Add(unicodeValue, <span class="keyword">new</span> Emoji(imageURL));</div><div class="line"></div><div class="line">GRichTextField richTextField;</div><div class="line">richTextField.emojies = emojies;</div><div class="line"></div><div class="line">GTextInput textInput;</div><div class="line">textInput.emojies = emojies;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">Dictionay&lt;<span class="keyword">uint</span>, Emoji&gt; emojies = <span class="keyword">new</span> Dictionary&lt;<span class="keyword">uint</span>, Emoji&gt;();</span><br><span class="line"><span class="comment">//unicodeValue是字符的unicode编码，imageURL是图片路径</span></span><br><span class="line">emojies.Add(unicodeValue, <span class="keyword">new</span> Emoji(imageURL));</span><br><span class="line"></span><br><span class="line">GRichTextField richTextField;</span><br><span class="line">richTextField.emojies = emojies;</span><br><span class="line"></span><br><span class="line">GTextInput textInput;</span><br><span class="line">textInput.emojies = emojies;</span><br></pre></td></tr></table></figure>
 <p>每个表情对应一个Unicode编码。表情的来源有两种，一是自定义的表情，另外是手机键盘上自带的表情。</p>
 <p>对于自定义的表情，你可以用任意字符作为表情的代码，可以选取一些几乎不会被用户直接输入的字符。</p>
 <p>对于手机键盘上的表情，一般是使用UCS32编码，即4个字节的Unicode编码。这和我们通常使用的UTF8或者UCS16不同。一般我们在代码里使用的字符，无论是英文还是中文，都可以使用一个char表达，但4字节的Unicode编码在C#需要两个char表达，称为Surrogate Pair。丢掉任何一个char都会造成编码错误。</p>
-<p>例如Unicode编码0x1f600对应的表情为：<img src="../../images/20170924153658.png" alt=""></p>
+<p>例如Unicode编码0x1f600对应的表情为：<img src="../../images/20170924153658.png" alt></p>
 <p>注册这个表情：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">emojies.Add(<span class="number">0x1f600</span>, <span class="keyword">new</span> Emoji(<span class="string">"ui://Emojies/1f600"</span>));</div></pre></td></tr></table></figure>
-<p>IOS上常用的Unicode编码和表情图片资源可以从这里下载：<a href="http://res.fairygui.com/ios-emoji.zip" title="ios-emoji.zip" target="_blank" rel="external">http://res.fairygui.com/ios-emoji.zip</a></p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">emojies.Add(<span class="number">0x1f600</span>, <span class="keyword">new</span> Emoji(<span class="string">"ui://Emojies/1f600"</span>));</span><br></pre></td></tr></table></figure>
+<p>IOS上常用的Unicode编码和表情图片资源可以从这里下载：<a href="http://res.fairygui.com/ios-emoji.zip" title="ios-emoji.zip" target="_blank" rel="noopener">http://res.fairygui.com/ios-emoji.zip</a></p>
 <p>需要注意，0x1f600的Unicode编码在C#里是用两个char表达，即”\U0001f600”，但不代表这两个char的整数值是0x1和0xf600。如果需要对含UCS32编码的文本进行网络传输或者数据库保存，需要确保你的网络层或者数据库接口支持这种编码。可以百度获得这种编码的详细处理方式，关键字是“ios 表情编码”。</p>
 <p>UGUI自带的文字组件没有表情的处理，所以Unity屏蔽了表情的输入。如果要打开这个功能，需要修改Xcode项目下/Classes/UI/Keyboard.mm文件，将FILTER_EMOJIS_IOS_KEYBOARD宏修改为0。</p>
 <h2 id="阿拉伯语言文字显示"><a href="#阿拉伯语言文字显示" class="headerlink" title="阿拉伯语言文字显示"></a>阿拉伯语言文字显示</h2><p>FairyGUI支持从右向左的阿拉伯语言文字显示。如果需要打开此功能，使用源码版本的，需要在Unity Player Settings的Scripting Define Symbols里增加RTL_TEXT_SUPPORT；使用DLL版本的，请自行编译包含这个功能的DLL，或者向谷主索取。</p>
-<p><img src="../../images/20180319022527.png" alt=""></p>
-<h2 id="UI自动化测试"><a href="#UI自动化测试" class="headerlink" title="UI自动化测试"></a>UI自动化测试</h2><p>FairyGUI提供了自动化测试工具<a href="http://airtest.netease.com/" target="_blank" rel="external">AirTest</a>的SDK，方便接入自动化测试。可以从<a href="https://github.com/AirtestProject/Poco-SDK/tree/master/Unity3D" target="_blank" rel="external">这里</a>下载使用。使用时要注意在Scripting Define Symbols里填入FAIRYGUI_TEST。</p>
+<p><img src="../../images/20180319022527.png" alt></p>
+<h2 id="UI自动化测试"><a href="#UI自动化测试" class="headerlink" title="UI自动化测试"></a>UI自动化测试</h2><p>FairyGUI提供了自动化测试工具<a href="http://airtest.netease.com/" target="_blank" rel="noopener">AirTest</a>的SDK，方便接入自动化测试。可以从<a href="https://github.com/AirtestProject/Poco-SDK/tree/master/Unity3D" target="_blank" rel="noopener">这里</a>下载使用。使用时要注意在Scripting Define Symbols里填入FAIRYGUI_TEST。</p>
 
     
     <div class="footer">
@@ -403,5 +443,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>

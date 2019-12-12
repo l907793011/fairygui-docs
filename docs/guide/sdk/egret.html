@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - Egret</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide_sdk"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -99,6 +99,26 @@
 	                
 	                <li>
 	                    <a href="/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/branch.html" class="sidebar-link">分支</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/publish.html" class="sidebar-link">发布</a>
 	                </li>
 	            
 	                
@@ -198,7 +218,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                    <a href="/guide/editor/tree.html" class="sidebar-link">树</a>
 	                </li>
 	            
 	                
@@ -213,17 +233,37 @@
 	            
 	                
 	                <li>
+	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/guide/editor/transition.html" class="sidebar-link">动效</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">自适应</a>
+	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">适配</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/upgrade_binary_format.html" class="sidebar-link">升级到二进制包格式</a>
+	                    <a href="/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/export.html" class="sidebar-link">导入和导出资源包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/plugin.html" class="sidebar-link">插件</a>
 	                </li>
 	            
 	
@@ -349,22 +389,22 @@
     
     <h2 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h2><ol>
 <li><p>将FairyGUI库以及依赖的rawinflate库拷贝到libs目录。（如果你在编辑器发布时没有勾选<code>压缩描述文件</code>，那么这个库是不需要的）。</p>
-<p><img src="../../images/20170809161022.png" alt=""></p>
+<p><img src="../../images/20170809161022.png" alt></p>
 </li>
 <li><p>复制一份rawinflate.min.js，并改名为rawinflate.js。（如果你在编辑器发布时没有勾选<code>压缩描述文件</code>，那么这个库是不需要的）。</p>
 </li>
 <li><p>在egretProperties.json文件中添加:</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">&#123;  </div><div class="line">    <span class="string">"name"</span>: <span class="string">"rawinflate"</span>,  </div><div class="line">    <span class="string">"path"</span>: <span class="string">"./libs/rawinflate"</span>  </div><div class="line">&#125;,  </div><div class="line">&#123;  </div><div class="line">    <span class="string">"name"</span>: <span class="string">"fairygui"</span>,  </div><div class="line">    <span class="string">"path"</span>: <span class="string">"./libs/fairygui"</span>  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">&#123;  </span><br><span class="line">    <span class="string">"name"</span>: <span class="string">"rawinflate"</span>,  </span><br><span class="line">    <span class="string">"path"</span>: <span class="string">"./libs/rawinflate"</span>  </span><br><span class="line">&#125;,  </span><br><span class="line">&#123;  </span><br><span class="line">    <span class="string">"name"</span>: <span class="string">"fairygui"</span>,  </span><br><span class="line">    <span class="string">"path"</span>: <span class="string">"./libs/fairygui"</span>  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>使用FairyGUI编辑器完成UI编辑。发布目录请选择Egret工程的resource/assets目录。发布后得到两个（或以上）文件。</p>
-<p><img src="../../images/20170809161256.png" alt=""></p>
+<p><img src="../../images/20170809161256.png" alt></p>
 </li>
 <li><p>在default.res.json里，将上述的文件添加到定义中。扩展名为fui文件，类型请选择为bin。<strong>注意：Egret自动检测添加的资源，名称通常会自动加上下划线和后缀，例如basic.fui，名称自动设置为“basic_fui”，这里我们要手动将_fui去掉，名称只需要为“basic”。</strong></p>
-<p><img src="../../images/20170809161350.png" alt=""></p>
+<p><img src="../../images/20170809161350.png" alt></p>
 <p>资源一般都加到preload组里，如果你是高阶玩家，也可以试试动态加载。确保在使用到相应的元件前加载好就行。</p>
 </li>
 <li><p>在代码里完成规定的初始化，例如设定默认字体，滚动条等等。</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"> <span class="comment">/**</span></div><div class="line"><span class="comment">  * 创建游戏场景</span></div><div class="line"><span class="comment">  * Create a game scene</span></div><div class="line"><span class="comment">  */</span></div><div class="line"> <span class="function"><span class="keyword">private</span> <span class="title">createGameScene</span>(<span class="params"></span>):<span class="keyword">void</span> </span>&#123;</div><div class="line">     fairygui.UIPackage.addPackage(<span class="string">"basic"</span>);</div><div class="line">     </div><div class="line">     fairygui.UIConfig.defaultFont = <span class="string">"宋体"</span>;</div><div class="line">     fairygui.UIConfig.verticalScrollBar = fairygui.UIPackage.getItemURL(<span class="string">"Basic"</span>, <span class="string">"ScrollBar_VT"</span>);</div><div class="line">     fairygui.UIConfig.horizontalScrollBar = fairygui.UIPackage.getItemURL(<span class="string">"Basic"</span>, <span class="string">"ScrollBar_HZ"</span>);</div><div class="line">     fairygui.UIConfig.popupMenu = fairygui.UIPackage.getItemURL(<span class="string">"Basic"</span>, <span class="string">"PopupMenu"</span>);</div><div class="line">     fairygui.UIConfig.buttonSound = fairygui.UIPackage.getItemURL(<span class="string">"Basic"</span>,<span class="string">"click"</span>);</div><div class="line">     </div><div class="line">     <span class="keyword">this</span>.stage.addChild(fairygui.GRoot.inst.displayObject);</div><div class="line"></div><div class="line">     <span class="keyword">this</span>.mainPanel = <span class="keyword">new</span> MainPanel();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 创建游戏场景</span></span><br><span class="line"><span class="comment">  * Create a game scene</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="function"><span class="keyword">private</span> <span class="title">createGameScene</span>(<span class="params"></span>):<span class="keyword">void</span></span> &#123;</span><br><span class="line">     fairygui.UIPackage.addPackage(<span class="string">"basic"</span>);</span><br><span class="line">     </span><br><span class="line">     fairygui.UIConfig.defaultFont = <span class="string">"宋体"</span>;</span><br><span class="line">     fairygui.UIConfig.verticalScrollBar = fairygui.UIPackage.getItemURL(<span class="string">"Basic"</span>, <span class="string">"ScrollBar_VT"</span>);</span><br><span class="line">     fairygui.UIConfig.horizontalScrollBar = fairygui.UIPackage.getItemURL(<span class="string">"Basic"</span>, <span class="string">"ScrollBar_HZ"</span>);</span><br><span class="line">     fairygui.UIConfig.popupMenu = fairygui.UIPackage.getItemURL(<span class="string">"Basic"</span>, <span class="string">"PopupMenu"</span>);</span><br><span class="line">     fairygui.UIConfig.buttonSound = fairygui.UIPackage.getItemURL(<span class="string">"Basic"</span>,<span class="string">"click"</span>);</span><br><span class="line">     </span><br><span class="line">     <span class="keyword">this</span>.stage.addChild(fairygui.GRoot.inst.displayObject);</span><br><span class="line"></span><br><span class="line">     <span class="keyword">this</span>.mainPanel = <span class="keyword">new</span> MainPanel();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>如果出现“fairygui not defined”的错误，请再一次检查egretProperties.json里是否有fairygui.js的引用。</p>
@@ -372,7 +412,7 @@
 <li>因为rawinflate这个库在小游戏平台有问题，所以直接不使用它。请使用最新编辑器，发布时勾选“不压缩描述文件”就可以了。rawinflate这个库就不会再引用到（也不需要打包了）。</li>
 <li>小游戏不支持fui扩展名，所以在发布界面要把扩展名修改成小游戏支持的扩展名（自己查阅小游戏文档）。代码里不需要改任何东西，因为扩展名是在default.res.json里使用的。</li>
 <li><p>在scripts/wxgame/wxgame.ts里，在适当的地方加上：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">if(filename == &quot;libs/fairygui/fairygui.js&quot; || filename == &quot;libs/fairygui/fairygui.min.js&quot;) &#123;</div><div class="line">    content += &quot;;window.fairygui = fairygui;&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if(filename == &quot;libs/fairygui/fairygui.js&quot; || filename == &quot;libs/fairygui/fairygui.min.js&quot;) &#123;</span><br><span class="line">    content += &quot;;window.fairygui = fairygui;&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>AddPackage有两种方式，一种是传统的传入文件名方式，另一种是直接传入fui整个文件的内容，也就是说不管你内容是从哪里来的。两种方式可以按需选择。</p>
 </li>
@@ -397,5 +437,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>

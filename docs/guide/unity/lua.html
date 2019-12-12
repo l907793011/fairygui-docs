@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - 在Lua中使用</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide_unity"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -99,6 +99,26 @@
 	                
 	                <li>
 	                    <a href="/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/branch.html" class="sidebar-link">分支</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/publish.html" class="sidebar-link">发布</a>
 	                </li>
 	            
 	                
@@ -198,7 +218,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                    <a href="/guide/editor/tree.html" class="sidebar-link">树</a>
 	                </li>
 	            
 	                
@@ -213,17 +233,37 @@
 	            
 	                
 	                <li>
+	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/guide/editor/transition.html" class="sidebar-link">动效</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">自适应</a>
+	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">适配</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/upgrade_binary_format.html" class="sidebar-link">升级到二进制包格式</a>
+	                    <a href="/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/export.html" class="sidebar-link">导入和导出资源包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/plugin.html" class="sidebar-link">插件</a>
 	                </li>
 	            
 	
@@ -350,33 +390,33 @@
     <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
 <li><strong>如果你使用的是ToLua，在Scripting Define Symbols里加上</strong> <code>FAIRYGUI_TOLUA</code>。XLUA则不需要。</li>
 <li><p>如果是ToLua，将以下语句添加到CustomSettings.cs适当的位置，然后重新生成绑定文件。</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"></div><div class="line">_GT(<span class="keyword">typeof</span>(EventContext)),</div><div class="line">_GT(<span class="keyword">typeof</span>(EventDispatcher)),</div><div class="line">_GT(<span class="keyword">typeof</span>(EventListener)),</div><div class="line">_GT(<span class="keyword">typeof</span>(InputEvent)),</div><div class="line">_GT(<span class="keyword">typeof</span>(DisplayObject)),</div><div class="line">_GT(<span class="keyword">typeof</span>(Container)),</div><div class="line">_GT(<span class="keyword">typeof</span>(Stage)),</div><div class="line">_GT(<span class="keyword">typeof</span>(FairyGUI.Controller)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GObject)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GGraph)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GGroup)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GImage)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GLoader)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GMovieClip)),</div><div class="line">_GT(<span class="keyword">typeof</span>(TextFormat)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GTextField)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GRichTextField)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GTextInput)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GComponent)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GList)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GRoot)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GLabel)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GButton)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GComboBox)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GProgressBar)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GSlider)),</div><div class="line">_GT(<span class="keyword">typeof</span>(PopupMenu)),</div><div class="line">_GT(<span class="keyword">typeof</span>(ScrollPane)),</div><div class="line">_GT(<span class="keyword">typeof</span>(Transition)),</div><div class="line">_GT(<span class="keyword">typeof</span>(UIPackage)),</div><div class="line">_GT(<span class="keyword">typeof</span>(Window)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GObjectPool)),</div><div class="line">_GT(<span class="keyword">typeof</span>(Relations)),</div><div class="line">_GT(<span class="keyword">typeof</span>(RelationType)),</div><div class="line">_GT(<span class="keyword">typeof</span>(Timers)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GTween)),</div><div class="line">_GT(<span class="keyword">typeof</span>(GTweener)),</div><div class="line">_GT(<span class="keyword">typeof</span>(EaseType)),</div><div class="line">_GT(<span class="keyword">typeof</span>(TweenValue)),</div><div class="line">_GT(<span class="keyword">typeof</span>(UIObjectFactory)),</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">_GT(<span class="keyword">typeof</span>(EventContext)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(EventDispatcher)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(EventListener)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(InputEvent)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(DisplayObject)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(Container)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(Stage)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(FairyGUI.Controller)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GObject)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GGraph)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GGroup)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GImage)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GLoader)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GMovieClip)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(TextFormat)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GTextField)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GRichTextField)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GTextInput)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GComponent)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GList)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GRoot)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GLabel)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GButton)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GComboBox)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GProgressBar)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GSlider)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(PopupMenu)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(ScrollPane)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(Transition)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(UIPackage)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(Window)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GObjectPool)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(Relations)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(RelationType)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(Timers)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GTween)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(GTweener)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(EaseType)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(TweenValue)),</span><br><span class="line">_GT(<span class="keyword">typeof</span>(UIObjectFactory)),</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>将FairyGUI.lua放入你的lua文件存放目录。</p>
 </li>
 </ol>
 <h2 id="监听事件"><a href="#监听事件" class="headerlink" title="监听事件"></a>监听事件</h2><ol>
 <li><p>普通方法的侦听和删除侦听</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"></div><div class="line">require <span class="string">'FairyGUI'</span></div><div class="line"></div><div class="line"><span class="function">function <span class="title">OnClick</span>(<span class="params"></span>)</span></div><div class="line"><span class="function">	<span class="title">print</span>(<span class="params"><span class="string">'you click'</span></span>)</span></div><div class="line"><span class="function">end</span></div><div class="line"><span class="function"></span></div><div class="line"><span class="function">--也可以带上事件参数</span></div><div class="line"><span class="function">function <span class="title">OnClick</span>(<span class="params">context</span>)</span></div><div class="line"><span class="function">	<span class="title">print</span>(<span class="params"><span class="string">'you click'</span>..context.sender</span>)</span></div><div class="line"><span class="function">end</span></div><div class="line"><span class="function"></span></div><div class="line"><span class="function">UIPackage.<span class="title">AddPackage</span>(<span class="params"><span class="string">'Demo'</span></span>)</span></div><div class="line"><span class="function">local view </span>= UIPackage.CreateObject(<span class="string">'Demo'</span>, <span class="string">'DemoMain'</span>)</div><div class="line">GRoot.inst:AddChild(view)</div><div class="line"></div><div class="line">view.onClick:Add(OnClick)</div><div class="line">--view.onClick:Remove(OnClick)</div><div class="line">--view.onClick:Set(OnClick)</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">require <span class="string">'FairyGUI'</span></span><br><span class="line"></span><br><span class="line"><span class="function">function <span class="title">OnClick</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">	<span class="title">print</span>(<span class="params"><span class="string">'you click'</span></span>)</span></span><br><span class="line"><span class="function">end</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">--也可以带上事件参数</span></span><br><span class="line"><span class="function">function <span class="title">OnClick</span>(<span class="params">context</span>)</span></span><br><span class="line"><span class="function">	<span class="title">print</span>(<span class="params"><span class="string">'you click'</span>..context.sender</span>)</span></span><br><span class="line"><span class="function">end</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">UIPackage.<span class="title">AddPackage</span>(<span class="params"><span class="string">'Demo'</span></span>)</span></span><br><span class="line"><span class="function">local view</span> = UIPackage.CreateObject(<span class="string">'Demo'</span>, <span class="string">'DemoMain'</span>)</span><br><span class="line">GRoot.inst:AddChild(view)</span><br><span class="line"></span><br><span class="line">view.onClick:Add(OnClick)</span><br><span class="line">--view.onClick:Remove(OnClick)</span><br><span class="line">--view.onClick:Set(OnClick)</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<ol>
+<ol start="2">
 <li><p><strong>ToLua支持带self的回调</strong></p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"></div><div class="line">function TestClass:OnClick()</div><div class="line">	print(<span class="string">'you click'</span>)</div><div class="line">end</div><div class="line"></div><div class="line">function TestClass:OnClick(context)</div><div class="line">	print(<span class="string">'you click'</span>..context.sender)</div><div class="line">end</div><div class="line"></div><div class="line">self.view.onClick:Add(TestClass.OnClick, self)</div><div class="line">self.view.onClick:Remove(TestClass.OnClick, self)</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">function TestClass:OnClick()</span><br><span class="line">	print(<span class="string">'you click'</span>)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function TestClass:OnClick(context)</span><br><span class="line">	print(<span class="string">'you click'</span>..context.sender)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">self.view.onClick:Add(TestClass.OnClick, self)</span><br><span class="line">self.view.onClick:Remove(TestClass.OnClick, self)</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <h2 id="使用Window类"><a href="#使用Window类" class="headerlink" title="使用Window类"></a>使用Window类</h2><p>FairyGUI提供的Window类，一般需要开发者自己扩展，例如覆盖OnShown,OnHide等。在Lua里，编写Window扩展的方法是：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">WindowBase = fgui.window_class()</div><div class="line"></div><div class="line">--构建函数</div><div class="line">function WindowBase:ctor()</div><div class="line">end</div><div class="line"></div><div class="line">--可覆盖的函数(可选，不是说必须）</div><div class="line">function WindowBase:OnInit()</div><div class="line">    self.contentPane = UIPackage.CreateObject(<span class="string">"Basics"</span>, <span class="string">"WindowA"</span>);</div><div class="line">end</div><div class="line"></div><div class="line">function WindowBase:OnShown()</div><div class="line">end</div><div class="line"></div><div class="line">function WindowBase:OnHide()</div><div class="line">end</div><div class="line"></div><div class="line">function WindowBase:DoShowAnimation()</div><div class="line">    self:OnShown();</div><div class="line">end</div><div class="line"></div><div class="line">function WindowBase:DoHideAnimation()</div><div class="line">    self:HideImmediately();</div><div class="line">end</div><div class="line"></div><div class="line">--创建并显示窗口</div><div class="line">local win = WindowBase.New();</div><div class="line">win:Show();</div><div class="line"></div><div class="line">也可以继续继承以上得到的Window类，例如:</div><div class="line">MyWindow = fgui.window_class(WindowBase)</div><div class="line"></div><div class="line">在继承类里调用父类方法的:</div><div class="line">function MyWindow:OnInit()</div><div class="line">	WindowBase.OnInit(self)</div><div class="line">end</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">WindowBase = fgui.window_class()</span><br><span class="line"></span><br><span class="line">--构建函数</span><br><span class="line">function WindowBase:ctor()</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">--可覆盖的函数(可选，不是说必须）</span><br><span class="line">function WindowBase:OnInit()</span><br><span class="line">    self.contentPane = UIPackage.CreateObject(<span class="string">"Basics"</span>, <span class="string">"WindowA"</span>);</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function WindowBase:OnShown()</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function WindowBase:OnHide()</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function WindowBase:DoShowAnimation()</span><br><span class="line">    self:OnShown();</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function WindowBase:DoHideAnimation()</span><br><span class="line">    self:HideImmediately();</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">--创建并显示窗口</span><br><span class="line">local win = WindowBase.New();</span><br><span class="line">win:Show();</span><br><span class="line"></span><br><span class="line">也可以继续继承以上得到的Window类，例如:</span><br><span class="line">MyWindow = fgui.window_class(WindowBase)</span><br><span class="line"></span><br><span class="line">在继承类里调用父类方法的:</span><br><span class="line">function MyWindow:OnInit()</span><br><span class="line">	WindowBase.OnInit(self)</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h2 id="自定义扩展"><a href="#自定义扩展" class="headerlink" title="自定义扩展"></a>自定义扩展</h2><p>FairyGUI在C#里可以使用<code>UIObjectFactory.SetPackageItemExtension</code>进行自定义扩展。在Lua里，同样可以这样做。方法如下：</p>
 <ol>
 <li><p>定义扩展类。注意基础类型，不要搞错。例如按钮是GButton，一般的组件则是GComponent。</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"></div><div class="line">MyButton = fgui.extension_class(GButton)</div><div class="line"></div><div class="line">--注意这里不是构造函数，是当组件已经构建完毕后调用的</div><div class="line"></div><div class="line">function MyButton:ctor()</div><div class="line">	print(self:GetChild(<span class="string">'n1'</span>))</div><div class="line">end</div><div class="line"></div><div class="line">--添加自定义的方法和字段</div><div class="line">function MyButton:Test()</div><div class="line">	print(<span class="string">'test'</span>)</div><div class="line">end</div><div class="line"></div><div class="line">local <span class="keyword">get</span> = tolua.initget(MyButton)</div><div class="line">local <span class="keyword">set</span> = tolua.initset(MyButton)</div><div class="line"><span class="keyword">get</span>.myProp = function(self)</div><div class="line">	<span class="keyword">return</span> self._myProp</div><div class="line">end</div><div class="line"></div><div class="line"><span class="keyword">set</span>.myProp = function(self, <span class="keyword">value</span>)</div><div class="line">	self._myProp = <span class="keyword">value</span></div><div class="line">	self:GetChild(<span class="string">'n1'</span>).text = <span class="keyword">value</span></div><div class="line">end</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">MyButton = fgui.extension_class(GButton)</span><br><span class="line"></span><br><span class="line">--注意这里不是构造函数，是当组件已经构建完毕后调用的</span><br><span class="line"></span><br><span class="line">function MyButton:ctor()</span><br><span class="line">	print(self:GetChild(<span class="string">'n1'</span>))</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">--添加自定义的方法和字段</span><br><span class="line">function MyButton:Test()</span><br><span class="line">	print(<span class="string">'test'</span>)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">local <span class="keyword">get</span> = tolua.initget(MyButton)</span><br><span class="line">local <span class="keyword">set</span> = tolua.initset(MyButton)</span><br><span class="line"><span class="keyword">get</span>.myProp = function(self)</span><br><span class="line">	<span class="keyword">return</span> self._myProp</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span>.myProp = function(self, <span class="keyword">value</span>)</span><br><span class="line">	self._myProp = <span class="keyword">value</span></span><br><span class="line">	self:GetChild(<span class="string">'n1'</span>).text = <span class="keyword">value</span></span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>注册扩展类。要在创建任何对象前注册好。</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">fgui.register_extension(<span class="string">"ui://包名/我的按钮"</span>, MyButton)</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">fgui.register_extension(<span class="string">"ui://包名/我的按钮"</span>, MyButton)</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>完成以上两步后，任何“我的按钮”这个资源创建出来的对象都可以使用MyButton访问了。例如：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"></div><div class="line">local myButton = someComponent:GetChild(<span class="string">"myButton"</span>) --这个myButton的资源是“我的按钮”</div><div class="line">myButton:Test()</div><div class="line">myButton.myProp = <span class="string">'hello'</span></div><div class="line"></div><div class="line">local myButton2 = UIPackage.CreateObject(<span class="string">"包名"</span>,<span class="string">"我的按钮"</span>)</div><div class="line">myButton2:Test()</div><div class="line">myButton2.myProp = <span class="string">'world'</span></div></pre></td></tr></table></figure></li>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">local myButton = someComponent:GetChild(<span class="string">"myButton"</span>) --这个myButton的资源是“我的按钮”</span><br><span class="line">myButton:Test()</span><br><span class="line">myButton.myProp = <span class="string">'hello'</span></span><br><span class="line"></span><br><span class="line">local myButton2 = UIPackage.CreateObject(<span class="string">"包名"</span>,<span class="string">"我的按钮"</span>)</span><br><span class="line">myButton2:Test()</span><br><span class="line">myButton2.myProp = <span class="string">'world'</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 
     
@@ -396,5 +436,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>

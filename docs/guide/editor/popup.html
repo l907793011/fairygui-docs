@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - Popup</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide_editor"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -99,6 +99,26 @@
 	                
 	                <li>
 	                    <a href="/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/branch.html" class="sidebar-link">分支</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/publish.html" class="sidebar-link">发布</a>
 	                </li>
 	            
 	                
@@ -198,7 +218,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                    <a href="/guide/editor/tree.html" class="sidebar-link">树</a>
 	                </li>
 	            
 	                
@@ -213,17 +233,37 @@
 	            
 	                
 	                <li>
+	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/guide/editor/transition.html" class="sidebar-link">动效</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">自适应</a>
+	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">适配</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/upgrade_binary_format.html" class="sidebar-link">升级到二进制包格式</a>
+	                    <a href="/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/export.html" class="sidebar-link">导入和导出资源包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/plugin.html" class="sidebar-link">插件</a>
 	                </li>
 	            
 	
@@ -350,20 +390,20 @@
     <p>在UI系统中我们经常需要弹出一些组件，这些组件在用户点击空白地方的情况下就会自动消失。FairyGUI内置了这个功能。</p>
 <h2 id="Popup-管理"><a href="#Popup-管理" class="headerlink" title="Popup 管理"></a>Popup 管理</h2><p>弹出和关闭Popup的API在GRoot中提供。</p>
 <ul>
-<li><code>ShowPopup</code> 弹出一个组件。如果指定了目标，则会调整弹出的位置到目标的下方，形成一个下拉的效果。同时提供了参数可以用来指定是向上弹出或者向下弹出。FairyGUI会根据组件的大小自动计算弹出位置，以确保组件显示不会超出屏幕。例如：</li>
-</ul>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//弹出在当前鼠标位置</span></div><div class="line">GRoot.inst.ShowPopup(aComponent);</div><div class="line"></div><div class="line"><span class="comment">//弹出在aButton的下方</span></div><div class="line">GRoot.inst.ShowPopup(aComponent, aButton);</div><div class="line"></div><div class="line"><span class="comment">//弹出在自定义的位置</span></div><div class="line">GRoot.inst.ShowPopup(aComponent);</div><div class="line">aComponent.SetXY(<span class="number">100</span>, <span class="number">100</span>);</div></pre></td></tr></table></figure>
-<p>窗口也可以通过ShowPopup弹出，这样弹出的窗口也具有了点击空白关闭的特性：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">Window aWindow;</div><div class="line">GRoot.inst.ShowPopup(aWindow);</div><div class="line"></div><div class="line"><span class="comment">//和使用aWindow.Show显示窗口的唯一区别就是多了点击空白关闭的功能，其它用法没有任何区别。</span></div></pre></td></tr></table></figure>
-<ul>
-<li><code>HidePopup</code> 默认情况下，用户点击空白地方就会自动关闭弹出的组件。也可以调用此API手工关闭。可以指定需要关闭的Popup，不指定参数时，所有当前的弹出都关闭。</li>
+<li><p><code>ShowPopup</code> 弹出一个组件。如果指定了目标，则会调整弹出的位置到目标的下方，形成一个下拉的效果。同时提供了参数可以用来指定是向上弹出或者向下弹出。FairyGUI会根据组件的大小自动计算弹出位置，以确保组件显示不会超出屏幕。例如：</p>
+  <figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//弹出在当前鼠标位置</span></span><br><span class="line">GRoot.inst.ShowPopup(aComponent);</span><br><span class="line"></span><br><span class="line"><span class="comment">//弹出在aButton的下方</span></span><br><span class="line">GRoot.inst.ShowPopup(aComponent, aButton);</span><br><span class="line"></span><br><span class="line"><span class="comment">//弹出在自定义的位置</span></span><br><span class="line">GRoot.inst.ShowPopup(aComponent);</span><br><span class="line">aComponent.SetXY(<span class="number">100</span>, <span class="number">100</span>);</span><br></pre></td></tr></table></figure>
+<p>  窗口也可以通过ShowPopup弹出，这样弹出的窗口也具有了点击空白关闭的特性：</p>
+  <figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">Window aWindow;</span><br><span class="line">GRoot.inst.ShowPopup(aWindow);</span><br><span class="line"></span><br><span class="line"><span class="comment">//和使用aWindow.Show显示窗口的唯一区别就是多了点击空白关闭的功能，其它用法没有任何区别。</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>HidePopup</code> 默认情况下，用户点击空白地方就会自动关闭弹出的组件。也可以调用此API手工关闭。可以指定需要关闭的Popup，不指定参数时，所有当前的弹出都关闭。</p>
+</li>
 </ul>
 <p>点击空白处后弹出框会自动关闭，如果要获得这个关闭的通知，可以监听移出舞台的事件，例如：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//Unity/Cry</span></div><div class="line">aComponent.onRemoveFromStage.Add(onPopupClosed);</div><div class="line"></div><div class="line"><span class="comment">//AS3</span></div><div class="line">aComponent.addEventListener(Event.REMOVED_FROM_STAGE, onPopupClosed);</div><div class="line"></div><div class="line"><span class="comment">//Egret</span></div><div class="line">aComponent.addEventListener(egret.Event.REMOVED_FROM_STAGE, <span class="keyword">this</span>.onPopupClosed, <span class="keyword">this</span>);</div><div class="line"></div><div class="line"><span class="comment">//Laya</span></div><div class="line">aComponent.<span class="keyword">on</span>(laya.events.Event.UNDISPLAY, <span class="keyword">this</span>, <span class="keyword">this</span>.onPopupClosed);</div><div class="line"></div><div class="line"><span class="comment">//Cocos2dx</span></div><div class="line">aComponent-&gt;addEventListener(UIEventType::Exit, CC_CALLBACK_1(AClass::onPopupClosed, this));</div><div class="line"></div><div class="line"><span class="comment">//CocosCreator</span></div><div class="line">aComponent.<span class="keyword">on</span>(fgui.Event.UNDISPLAY, <span class="keyword">this</span>.onPopupClosed, <span class="keyword">this</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Unity/Cry</span></span><br><span class="line">aComponent.onRemoveFromStage.Add(onPopupClosed);</span><br><span class="line"></span><br><span class="line"><span class="comment">//AS3</span></span><br><span class="line">aComponent.addEventListener(Event.REMOVED_FROM_STAGE, onPopupClosed);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Egret</span></span><br><span class="line">aComponent.addEventListener(egret.Event.REMOVED_FROM_STAGE, <span class="keyword">this</span>.onPopupClosed, <span class="keyword">this</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Laya</span></span><br><span class="line">aComponent.<span class="keyword">on</span>(laya.events.Event.UNDISPLAY, <span class="keyword">this</span>, <span class="keyword">this</span>.onPopupClosed);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Cocos2dx</span></span><br><span class="line">aComponent-&gt;addEventListener(UIEventType::Exit, CC_CALLBACK_1(AClass::onPopupClosed, this));</span><br><span class="line"></span><br><span class="line"><span class="comment">//CocosCreator</span></span><br><span class="line">aComponent.<span class="keyword">on</span>(fgui.Event.UNDISPLAY, <span class="keyword">this</span>.onPopupClosed, <span class="keyword">this</span>);</span><br></pre></td></tr></table></figure>
 <h2 id="PopupMenu"><a href="#PopupMenu" class="headerlink" title="PopupMenu"></a>PopupMenu</h2><p>PopupMenu是FairyGUI提供的一个工具类，用于实现弹出菜单。首先需要在编辑器制作一个菜单组件，点击“资源-&gt;新建弹出菜单…”，然后根据向导完成。菜单组件里的关键元素是命名为<code>list</code>的列表组件，列表的溢出处理模式应该选择为可见，因为一般来说，菜单都是显示全部item的，不需要滚动。</p>
 <p>菜单组件制作完成后，可以在代码里生成和调用这个菜单。</p>
-<p>首先设置全局的菜单资源：<br><figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">UIConfig.popupMenu = <span class="string">"ui://包名/菜单组件名"</span>;</div><div class="line"></div><div class="line"><span class="comment">//如果有设计分隔条</span></div><div class="line">UIConfig.popupMenu_seperator = <span class="string">"ui://包名/菜单分隔条"</span>;</div></pre></td></tr></table></figure></p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//如果构造函数不带参数，则表示使用UIConfig.popupMenu里定义的资源。</span></div><div class="line"><span class="comment">//也可以带一个参数，指定这个菜单使用的菜单组件资源</span></div><div class="line">PopupMenu menu = <span class="keyword">new</span> PopupMenu();</div><div class="line"></div><div class="line"><span class="comment">//如果要修改菜单的宽度。</span></div><div class="line">menu.contentPane.width = <span class="number">300</span>;</div><div class="line"></div><div class="line"><span class="comment">//添加一个菜单item，并注册点击回调函数</span></div><div class="line">GButton item = menu.AddItem(<span class="string">"标题"</span>, MenuItemCallback);</div><div class="line">item.name = <span class="string">"item1"</span>;</div><div class="line"></div><div class="line"><span class="comment">//点击回调函数，context.data是当前被点击的item</span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">MenuItemCallback</span>(<span class="params">EventContext context</span>)</span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    GButton item = GButton(context.data);</div><div class="line">    Debug.Log(item.name);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//CocosCreator版本的回调函数，第一个参数就是被点击的item</span></div><div class="line">MenuItemCallback(item, evt) &#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//添加分隔条</span></div><div class="line">menu.AddSeperator();</div><div class="line"></div><div class="line"><span class="comment">//设置菜单项变灰</span></div><div class="line">menu.SetItemGrayed(<span class="string">"item1"</span>, <span class="literal">true</span>);</div></pre></td></tr></table></figure>
+<p>首先设置全局的菜单资源：<br><figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">UIConfig.popupMenu = <span class="string">"ui://包名/菜单组件名"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//如果有设计分隔条</span></span><br><span class="line">UIConfig.popupMenu_seperator = <span class="string">"ui://包名/菜单分隔条"</span>;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//如果构造函数不带参数，则表示使用UIConfig.popupMenu里定义的资源。</span></span><br><span class="line"><span class="comment">//也可以带一个参数，指定这个菜单使用的菜单组件资源</span></span><br><span class="line">PopupMenu menu = <span class="keyword">new</span> PopupMenu();</span><br><span class="line"></span><br><span class="line"><span class="comment">//如果要修改菜单的宽度。</span></span><br><span class="line">menu.contentPane.width = <span class="number">300</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//添加一个菜单item，并注册点击回调函数</span></span><br><span class="line">GButton item = menu.AddItem(<span class="string">"标题"</span>, MenuItemCallback);</span><br><span class="line">item.name = <span class="string">"item1"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//点击回调函数，context.data是当前被点击的item</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">MenuItemCallback</span>(<span class="params">EventContext context</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    GButton item = (GButton)context.data);</span><br><span class="line">    Debug.Log(item.name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//CocosCreator版本的回调函数，第一个参数就是被点击的item</span></span><br><span class="line">MenuItemCallback(item, evt) &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//添加分隔条</span></span><br><span class="line">menu.AddSeperator();</span><br><span class="line"></span><br><span class="line"><span class="comment">//设置菜单项变灰</span></span><br><span class="line">menu.SetItemGrayed(<span class="string">"item1"</span>, <span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
     
     <div class="footer">
       发现错误或想贡献文档?
@@ -381,5 +421,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>

@@ -1,7 +1,7 @@
 ---
 title: 窗口系统
 type: guide_editor
-order: 190
+order: 33
 ---
 
 窗口是组件的一种特殊扩展。编辑器内并没有窗口的概念，因为窗口可以设置任意组件作为它的显示内容。窗口=内容组件+窗口管理API。
@@ -10,7 +10,7 @@ order: 190
 
 窗口内容组件需要在编辑器编辑好。通常窗口会包括一个可用于拖动的标题栏，关闭按钮等。FairyGUI使用约定名称将一些常见的窗口功能和我们定义的组件关联起来。首先，窗口内容组件内需要放置一个名称为`frame`的组件，这个组件将作为窗口的背景，或者成为框架。这个组件的的扩展通常选择为“标签”。
 
-![](../../images/20170807161046.png)
+![](../../images/QQ20191211-221804.png)
 
 这个frame组件的制作方式为：
 
@@ -58,36 +58,28 @@ order: 190
 
 - `modal` 设置窗口是否模态窗口。模态窗口将阻止用户点击任何模态窗口后面的内容。当模态窗口显示时，模态窗口背后可以自动覆盖一层灰色的颜色，这个颜色可以自定义：
 
-```csharp
+  ```csharp
     //Unity
     UIConfig.modalLayerColor = new Color(0f, 0f, 0f, 0.4f);
     
     //AS3
     UIConfig.modalLayerColor = 0x333333;
     UIConfig.modalLayerAlpha = 0.2;
-```
+  ```
 
-如果你不需要这个灰色效果，那么把透明度设置为0即可。
+  如果你不需要这个灰色效果，那么把透明度设置为0即可。
 
 - `ShowModalWait` 锁定窗口，不允许任何操作。锁定时可以显示一个提示，这个提示的资源由下面的设置指定：
 
-```csharp
-    UIConfig.windowModalWaiting = "ui://包名/组件名";
-```
+  ```csharp
+      UIConfig.windowModalWaiting = "ui://包名/组件名";
+  ```
 
-这个组件会调整和contentArea相同的大小。
+  这个组件会调整和contentArea相同的大小。
 
 - `CloseModalWait` 取消窗口的锁定。
 
-**窗口自动排序**
-
-默认情况下，Window是具有点击自动排序功能的，也就是说，你点击一个窗口，系统会自动把窗口提到所有窗口的最前面，这也是所有窗口系统的规范。但你可以关闭这个功能：
-
-```csharp
-    UIConfig.bringWindowToFrontOnClick = false;
-```
-
-**窗口管理**
+## 窗口管理
 
 GRoot里提供了一些窗口管理的常用API。
 
@@ -98,7 +90,15 @@ GRoot里提供了一些窗口管理的常用API。
 - `hasModalWindow` 当前是否有模态窗口在显示。
 
 **直接加组件到GRoot，和使用Window有什么区别？**
+
 GRoot是2D UI的根容器。当我们通过UIPackage.CreateObject创建出顶级UI界面后，将它添加到GRoot下。例如游戏的登录界面、主界面等，这类界面的特点是在游戏的底层，且比较固定。
 
 Window的本质也是通过UIPackage.CreateObject动态创建的顶级UI界面，但它提供了常用的窗口特性，比如自动排序，显示/隐藏流程，模式窗口等。适用于游戏的对话框界面，例如人物状态、背包、商城之类。这类界面的特点是在游戏的上层，且切换频繁。
 
+**窗口自动排序**
+
+默认情况下，Window是具有点击自动排序功能的，也就是说，你点击一个窗口，系统会自动把窗口提到所有窗口的最前面，这也是所有窗口系统的规范。但你可以关闭这个功能：
+
+```csharp
+    UIConfig.bringWindowToFrontOnClick = false;
+```

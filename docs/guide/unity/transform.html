@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - 坐标系统</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide_unity"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -99,6 +99,26 @@
 	                
 	                <li>
 	                    <a href="/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/branch.html" class="sidebar-link">分支</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/publish.html" class="sidebar-link">发布</a>
 	                </li>
 	            
 	                
@@ -198,7 +218,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                    <a href="/guide/editor/tree.html" class="sidebar-link">树</a>
 	                </li>
 	            
 	                
@@ -213,17 +233,37 @@
 	            
 	                
 	                <li>
+	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/guide/editor/transition.html" class="sidebar-link">动效</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">自适应</a>
+	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">适配</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/upgrade_binary_format.html" class="sidebar-link">升级到二进制包格式</a>
+	                    <a href="/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/export.html" class="sidebar-link">导入和导出资源包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/plugin.html" class="sidebar-link">插件</a>
 	                </li>
 	            
 	
@@ -348,23 +388,23 @@
       <h1>坐标系统</h1>
     
     <h2 id="坐标原点"><a href="#坐标原点" class="headerlink" title="坐标原点"></a>坐标原点</h2><p>FairyGUI是以屏幕左上角为原点的，Unity的屏幕坐标是以左下角为原点的。一般这个转换都不需要开发者干预，如果确实需要进行这两者的转换，可以用：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//Unity的屏幕坐标系，以左下角为原点</span></div><div class="line">Vector2 pos = Input.mousePosition;</div><div class="line"></div><div class="line"><span class="comment">//转换为FairyGUI的屏幕坐标</span></div><div class="line">pos.y = Screen.height - pos.y;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Unity的屏幕坐标系，以左下角为原点</span></span><br><span class="line">Vector2 pos = Input.mousePosition;</span><br><span class="line"></span><br><span class="line"><span class="comment">//转换为FairyGUI的屏幕坐标</span></span><br><span class="line">pos.y = Screen.height - pos.y;</span><br></pre></td></tr></table></figure>
 <h2 id="坐标转换"><a href="#坐标转换" class="headerlink" title="坐标转换"></a>坐标转换</h2><p>GObject里的x/y/position值都是<strong>局部坐标</strong>，也就是相对于父元件的偏移。GObject没有提供直接的属性获得对象的全局坐标，但提供了方法进行转换。</p>
 <p><strong>请注意：一个对象，本地（Local）坐标的原点是(0,0)，不是(x,y)，(x,y)是在父元件的坐标，不是自己的本地坐标。</strong></p>
 <p>如果要获得任意一个UI元件在屏幕上的坐标，可以用：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">Vector2 screenPos = aObject.LocalToGlobal(Vector2.zero);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">Vector2 screenPos = aObject.LocalToGlobal(Vector2.zero);</span><br></pre></td></tr></table></figure>
 <p>（注意，这里说的屏幕，是指FairyGUI语义中的屏幕，是以屏幕左上角为原点的，不是指Unity语义中的屏幕）</p>
 <p>相反，如果要获取屏幕坐标在UI元件上的局部坐标，可以用：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">Vector2 localPos = aObject.GlobalToLocal(screenPos);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">Vector2 localPos = aObject.GlobalToLocal(screenPos);</span><br></pre></td></tr></table></figure>
 <p>如果有UI适配导致的全局缩放，那么逻辑屏幕大小和物理屏幕大小不一致，逻辑屏幕的坐标就是GRoot里的坐标。如果要进行局部坐标与逻辑屏幕坐标的转换，可以用：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//物理屏幕坐标转换为逻辑屏幕坐标</span></div><div class="line">Vector2 logicScreenPos = GRoot.inst.GlobalToLocal(screenPos);</div><div class="line"></div><div class="line"><span class="comment">//UI元件坐标与逻辑屏幕坐标之间的转换</span></div><div class="line">aObject.LocalToRoot(pos);</div><div class="line">aObject.RootToLocal(pos);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//物理屏幕坐标转换为逻辑屏幕坐标</span></span><br><span class="line">Vector2 logicScreenPos = GRoot.inst.GlobalToLocal(screenPos);</span><br><span class="line"></span><br><span class="line"><span class="comment">//UI元件坐标与逻辑屏幕坐标之间的转换</span></span><br><span class="line">aObject.LocalToRoot(pos);</span><br><span class="line">aObject.RootToLocal(pos);</span><br></pre></td></tr></table></figure>
 <p><strong>注意，我们在编辑器里定义的，代码里处理的，一般就是指这个逻辑屏幕坐标。</strong></p>
 <p>如果要转换任意两个UI对象间的坐标，例如需要知道A里面的坐标(10,10)在B里面的位置，可以用：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">Vector2 posInB = aObject.TransformPoint(<span class="keyword">new</span> Vector2(<span class="number">10</span>,<span class="number">10</span>), bObject);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">Vector2 posInB = aObject.TransformPoint(<span class="keyword">new</span> Vector2(<span class="number">10</span>,<span class="number">10</span>), bObject);</span><br></pre></td></tr></table></figure>
 <h2 id="与世界空间坐标转换"><a href="#与世界空间坐标转换" class="headerlink" title="与世界空间坐标转换"></a>与世界空间坐标转换</h2><p>如果要转换世界空间的坐标到UI里的坐标，需要先将世界空间的坐标转换为屏幕坐标，再继续转换，例如：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">Vector3 screenPos = Camera.main.WorldToScreenPoint(worldPos);</div><div class="line"><span class="comment">//原点位置转换</span></div><div class="line">screenPos.y = Screen.height - screenPos.y; </div><div class="line">Vector2 pt = GRoot.inst.GlobalToLocal(screenPos);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">Vector3 screenPos = Camera.main.WorldToScreenPoint(worldPos);</span><br><span class="line"><span class="comment">//原点位置转换</span></span><br><span class="line">screenPos.y = Screen.height - screenPos.y; </span><br><span class="line">Vector2 pt = GRoot.inst.GlobalToLocal(screenPos);</span><br></pre></td></tr></table></figure>
 <p>如果要转换UI里的坐标到世界空间的坐标，需要先将UI里的坐标转换为屏幕坐标，再继续转换，例如：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">Vector2 screenPos = GRoot.inst.LocalToGlobal(pos);</div><div class="line"><span class="comment">//原点位置转换</span></div><div class="line">screenPos.y = Screen.height - screenPos.y; </div><div class="line">一般情况下，还需要提供距离摄像机视野正前方distance长度的参数作为screenPos.z(如果需要，将screenPos改为Vector3类型）</div><div class="line">Vector3 worldPos = Camera.main.ScreenToWorldPoint(screenPos);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">Vector2 screenPos = GRoot.inst.LocalToGlobal(pos);</span><br><span class="line"><span class="comment">//原点位置转换</span></span><br><span class="line">screenPos.y = Screen.height - screenPos.y; </span><br><span class="line">一般情况下，还需要提供距离摄像机视野正前方distance长度的参数作为screenPos.z(如果需要，将screenPos改为Vector3类型）</span><br><span class="line">Vector3 worldPos = Camera.main.ScreenToWorldPoint(screenPos);</span><br></pre></td></tr></table></figure>
     
     <div class="footer">
       发现错误或想贡献文档?
@@ -382,5 +422,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>

@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - 纹理集的处理</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide_unity"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -99,6 +99,26 @@
 	                
 	                <li>
 	                    <a href="/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/branch.html" class="sidebar-link">分支</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/publish.html" class="sidebar-link">发布</a>
 	                </li>
 	            
 	                
@@ -198,7 +218,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                    <a href="/guide/editor/tree.html" class="sidebar-link">树</a>
 	                </li>
 	            
 	                
@@ -213,17 +233,37 @@
 	            
 	                
 	                <li>
+	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/guide/editor/transition.html" class="sidebar-link">动效</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">自适应</a>
+	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">适配</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/upgrade_binary_format.html" class="sidebar-link">升级到二进制包格式</a>
+	                    <a href="/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/export.html" class="sidebar-link">导入和导出资源包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/plugin.html" class="sidebar-link">插件</a>
 	                </li>
 	            
 	
@@ -347,8 +387,8 @@
     
       <h1>纹理集的处理</h1>
     
-    <p>FairyGUI编辑器发布到Unity的资源通常包含一个或多个纹理集，以demo工程为例，这里demo@atlas0.png就是一个纹理集。</p>
-<p><img src="../../images/2015-10-21_230257.png" alt=""></p>
+    <p>FairyGUI编辑器发布到Unity的资源通常包含一个或多个纹理集，以demo工程为例，这里<a href="mailto:demo@atlas0.png" target="_blank" rel="noopener">demo@atlas0.png</a>就是一个纹理集。</p>
+<p><img src="../../images/2015-10-21_230257.png" alt></p>
 <p>纹理集是由UI编辑器自动生成的，但在Unity里可以改变纹理集的属性，常用的设置有：</p>
 <ul>
 <li><p><code>Texture Type</code> 设置为Advanced(5.5前版本)或者Default(5.5后版本）。<strong>不需要设置为Sprite。</strong></p>
@@ -360,7 +400,7 @@
 <li><p><code>Filter Mode</code> 使用Bilinear，这样图像在缩放时能产生比较平滑的过渡效果，副作用是会产生一定的模糊。而且单色的图像缩放会产生不必要的渐变边缘。而使用Point，则图像在缩放时会块状化。</p>
 </li>
 </ul>
-<p><img src="../../images/2015-10-22_082659.png" alt=""></p>
+<p><img src="../../images/2015-10-22_082659.png" alt></p>
 <p>一般使用Bilinear即可，你也可以在UI编辑器里将图片安排到不同纹理集，然后每个纹理集设置不同的Filter Mode以满足特殊需求。</p>
 <p><strong>如果需要消除图像由于采样模式造成的边缘过渡，可以在图片属性对话框设置“重复边缘像素”解决。</strong></p>
 <ul>
@@ -370,9 +410,9 @@
 </li>
 </ul>
 <p>如果对内存使用比较敏感，也可以选用压缩格式，即AutoMatic Compressed。在桌面平台上即相同于DXT5，在Android平台上相当于ETC1，在IPhone平台则为PVRTC。这些格式能够大大降低内存占用，也因为它们是显卡直接支持的格式，所以Unity在载入时省去了解码位图的步骤，能够加快载入速度。但它们都是属于有损压缩，在显示质量上肯定不如TrueColor，特别是纹理集颜色十分丰富或者有颜色渐变时，失真会比较厉害。特别重要的是，ETC1是不支持透明通道的，PVRTC对透明通道的支持也比较弱，所以并不适合带透明通道的图集。为此，FairyGUI提供了ETC1/PVRTC+A的解决方案。首先，在发布时勾选“分离Alpha通道”，如下图：</p>
-<p><img src="../../images/20170808225148.png" alt=""></p>
+<p><img src="../../images/20170808225148.png" alt></p>
 <p>这样，就产生了两个不含透明通道的贴图，一张去除了原图透明通道的贴图，和一张将原贴图透明通道数值转换为等价灰度的贴图。这两张贴图都可以设置为Automatic Compressed。(一定要注意，不能再将主贴图设置为True Color)</p>
-<p><img src="../../images/2015-10-22_110549.png" alt=""></p>
+<p><img src="../../images/2015-10-22_110549.png" alt></p>
 <p>FairyGUI提供了特制的着色器处理两张贴图的合并。开发者并不需要编写额外的代码就可以使用这项技术。</p>
 <p>你可以将本身就不含透明通道的图片（例如一些大型的背景图）安排到一张纹理集上。如果一张纹理集内的所有图片都不包含透明通道，那么最终输出的图集也不包含透明通道。不含透明通道的图集可以选用Automatic 16bits格式。</p>
 
@@ -393,5 +433,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>

@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - 进度条</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide_editor"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -99,6 +99,26 @@
 	                
 	                <li>
 	                    <a href="/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/branch.html" class="sidebar-link">分支</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/publish.html" class="sidebar-link">发布</a>
 	                </li>
 	            
 	                
@@ -198,7 +218,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                    <a href="/guide/editor/tree.html" class="sidebar-link">树</a>
 	                </li>
 	            
 	                
@@ -213,17 +233,37 @@
 	            
 	                
 	                <li>
+	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/guide/editor/transition.html" class="sidebar-link">动效</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">自适应</a>
+	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">适配</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/upgrade_binary_format.html" class="sidebar-link">升级到二进制包格式</a>
+	                    <a href="/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/export.html" class="sidebar-link">导入和导出资源包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/plugin.html" class="sidebar-link">插件</a>
 	                </li>
 	            
 	
@@ -350,14 +390,14 @@
     <p>进度条的原理很简单，就是按进度改变一个元件的宽度、高度或填充比例。进度条分为两种，横向和纵向的。</p>
 <h2 id="创建进度条"><a href="#创建进度条" class="headerlink" title="创建进度条"></a>创建进度条</h2><p>可以通过两种方式创建进度条组件。</p>
 <ul>
-<li>点击主菜单“资源”-&gt;“新建进度条”，然后按照向导的提示一步步完成。</li>
-</ul>
-<p><img src="../../images/20170803191255.png" alt=""></p>
-<ul>
-<li>新建一个组件，然后在组件属性里选择扩展为“进度条”。</li>
+<li><p>点击主菜单“资源”-&gt;“新建进度条”，然后按照向导的提示一步步完成。</p>
+<p><img src="../../images/QQ20191211-181510.png" alt></p>
+</li>
+<li><p>新建一个组件，然后在组件属性里选择扩展为“进度条”。</p>
+</li>
 </ul>
 <h2 id="设计属性"><a href="#设计属性" class="headerlink" title="设计属性"></a>设计属性</h2><p>在组件编辑状态下，进度条组件的属性面板是：</p>
-<p><img src="../../images/20170803174720.png" alt=""></p>
+<p><img src="../../images/QQ20191211-181600.png" alt></p>
 <ul>
 <li><p><code>标题类型</code> 如果组件内有名称为“title”的元件，则进度条可以显示一个表达当前进度的文字。</p>
 <ul>
@@ -367,41 +407,38 @@
 <li><code>最大值</code> 例如“10000”。</li>
 </ul>
 </li>
-<li><p><code>反向</code><br>对于横向的进度条，一般来说，进度越大，伸缩条越向右延伸，如果是反向的，则伸缩条右边缘固定，进度越大，伸缩条越往左延伸。</p>
-</li>
-<li>对于纵向的进度条，一般来说，进度越大，伸缩条越向下延伸，如果是反向的，则伸缩条底边缘固定，进度越大，伸缩条越往上延伸。</li>
-</ul>
+<li><p><code>反向</code> 对于横向的进度条，一般来说，进度越大，伸缩条越向右延伸，如果是反向的，则伸缩条右边缘固定，进度越大，伸缩条越往左延伸；对于纵向的进度条，一般来说，进度越大，伸缩条越向下延伸，如果是反向的，则伸缩条底边缘固定，进度越大，伸缩条越往上延伸。</p>
 <p>比较以下两个进度条，第一个是正常的进度条，第二个是反向的。</p>
-<p><img src="../../images/gaollg7.gif" alt=""><br><img src="../../images/gaollg8.gif" alt=""></p>
-<p><strong>命名约定</strong></p>
-<ul>
-<li><code>bar</code> 当进度改变时，改变“bar”对象的宽度。一般用于横向的进度条。注意：一定要设置bar对象的宽度为进度条处于最大值时的宽度。</li>
+<p><img src="../../images/gaollg7.gif" alt><br><img src="../../images/gaollg8.gif" alt></p>
+</li>
 </ul>
+<h2 id="制作说明"><a href="#制作说明" class="headerlink" title="制作说明"></a>制作说明</h2><ul>
+<li><p><code>bar</code> 当进度改变时，改变“bar”对象的宽度。一般用于横向的进度条。注意：一定要设置bar对象的宽度为进度条处于最大值时的宽度。</p>
 <p>“bar”元件可以是任何类型，不限制于图片。</p>
 <p>特别的，如果“bar”对象是具有特殊填充模式的图片或者装载器，进度改变时，将改变它的填充比例，而不是宽度。</p>
-<ul>
-<li><code>bar_v</code> 当进度改变时，改变“bar_v”对象的高度。一般用于纵向的进度条。注意：一定要设置bar_v对象的高度为进度条处于最大值时的高度。</li>
-</ul>
+</li>
+<li><p><code>bar_v</code> 当进度改变时，改变“bar_v”对象的高度。一般用于纵向的进度条。注意：一定要设置bar_v对象的高度为进度条处于最大值时的高度。</p>
 <p>“bar_v”元件可以是任何类型，不限制于图片。</p>
 <p>特别的，如果“bar_v”对象是具有特殊填充模式的图片或者装载器，进度改变时，将改变它的填充比例，而不是宽度。</p>
-<ul>
+</li>
 <li><p><code>title</code> 可以是装载器，也可以是标签、按钮。用于显示进度的标题。显示的内容由“标题类型”决定。</p>
 </li>
 <li><p><code>ani</code> 是一个动画对象。当进度改变时，修改动画的帧索引等于进度值（0-100）。</p>
 </li>
 </ul>
 <p>可以利用关联做出效果更丰富的进度条组件，例如下面这个进度条，会动的小松鼠建立了一个和bar部件“右-&gt;右”的关联，这样当进度变化时，小松鼠也跟着动了。</p>
-<p><img src="../../images/20170803174819.png" alt=""></p>
-<p><img src="../../images/2016-01-11_225610.jpg" alt=""></p>
+<p><img src="../../images/2016-01-11_225610.jpg" alt></p>
 <h2 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h2><p>在舞台上选中一个进度条组件，右边的属性面板列表出现：</p>
-<p><img src="../../images/20170803223929.png" alt=""></p>
+<p><img src="../../images/QQ20191211-181531.png" alt></p>
 <ul>
-<li><p><code>当前值</code> 当前进度。</p>
+<li><p><code>最小值</code> 最小进度值。</p>
 </li>
 <li><p><code>最大值</code> 最大进度值。</p>
 </li>
+<li><p><code>当前值</code> 当前进度。</p>
+</li>
 </ul>
-<h2 id="GProgressBar"><a href="#GProgressBar" class="headerlink" title="GProgressBar"></a>GProgressBar</h2><figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">GProgressBar pb = gcom.GetChild(<span class="string">"n1"</span>).asProgress;</div><div class="line">pb.<span class="keyword">value</span> = <span class="number">50</span>;</div><div class="line"></div><div class="line"><span class="comment">//如果想改变进度值有一个动态的过程</span></div><div class="line">pb.TweenValue(<span class="number">50</span>, <span class="number">0.5</span>f);</div></pre></td></tr></table></figure>
+<h2 id="GProgressBar"><a href="#GProgressBar" class="headerlink" title="GProgressBar"></a>GProgressBar</h2><figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">GProgressBar pb = gcom.GetChild(<span class="string">"n1"</span>).asProgress;</span><br><span class="line">pb.<span class="keyword">value</span> = <span class="number">50</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//如果想改变进度值有一个动态的过程</span></span><br><span class="line">pb.TweenValue(<span class="number">50</span>, <span class="number">0.5f</span>);</span><br></pre></td></tr></table></figure>
 
     
     <div class="footer">
@@ -420,5 +457,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>

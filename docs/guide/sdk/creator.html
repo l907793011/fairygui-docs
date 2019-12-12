@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><meta name="generator" content="Hexo 3.9.0">
     
         <title>FairyGUI - Cocos Creator</title>
     
@@ -28,7 +28,7 @@
         <script src="/js/vue.min.js"></script>
         <script>window.PAGE_TYPE = "guide_sdk"</script>
     </head>
-    <body class="docs">        <div id="mobile-bar"  data-bg-text="FairyGUI" >
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
             <a class="logo" href="https://github.com/fairygui"></a>
         </div>
@@ -46,12 +46,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
   </ul>
 </div>
 
@@ -68,12 +68,12 @@
 <li><a href="/product/" class="nav-link">产品</a></li>
 <li><a href="/service/" class="nav-link">服务</a></li>
 <li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank"  class="nav-link">API</a></li>
+<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
 <li><a href="/examples/" class="nav-link">在线例子</a></li>
 <li><a href="/showcase/" class="nav-link">商业案例</a></li>
 <li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
 <li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self"  class="nav-link">English</a></li>
+<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
     </ul>
     <div class="list">
 		<!--<a class="become-backer" href="/about/donate.html">
@@ -99,6 +99,26 @@
 	                
 	                <li>
 	                    <a href="/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/branch.html" class="sidebar-link">分支</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/publish.html" class="sidebar-link">发布</a>
 	                </li>
 	            
 	                
@@ -198,7 +218,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                    <a href="/guide/editor/tree.html" class="sidebar-link">树</a>
 	                </li>
 	            
 	                
@@ -213,17 +233,37 @@
 	            
 	                
 	                <li>
+	                    <a href="/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/guide/editor/transition.html" class="sidebar-link">动效</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">自适应</a>
+	                    <a href="/guide/editor/adaptation.html" class="sidebar-link">适配</a>
 	                </li>
 	            
 	                
 	                <li>
-	                    <a href="/guide/editor/upgrade_binary_format.html" class="sidebar-link">升级到二进制包格式</a>
+	                    <a href="/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/export.html" class="sidebar-link">导入和导出资源包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/guide/editor/plugin.html" class="sidebar-link">插件</a>
 	                </li>
 	            
 	
@@ -358,34 +398,34 @@
 </ol>
 <h2 id="加载UI包"><a href="#加载UI包" class="headerlink" title="加载UI包"></a>加载UI包</h2><p>FairyGUI是以包为单位组织UI界面的。一个UI包可能包括一个或多个界面。每个UI包发布后将得到一个bin文件后缀的描述文件，和一个或多个图片作为纹理集。这些文件需要放到resources目录，以便动态加载。因为为了避免复杂的依赖的关系，以后由此带来管理的困难。我们的界面不会直接由场景里的东西引用。一个UI包可以随时加载和卸载。</p>
 <p>在FairyGUI编辑器直接发布包到Creator的assets/resources目录或者其子目录下。</p>
-<p><img src="../../images/20181214102714.png" alt=""></p>
+<p><img src="../../images/20181214102714.png" alt></p>
 <p>注意，图片设置为RAW格式即可，不需要设置为Sprite。因为FairyGUI会自己分析Sprite。</p>
 <p>代码里载入包有两种方式。一种是你负责把文件加载，第二种是让FairyGUI自己去加载。第一种方式是方便你做一个混杂了其它资源的总体的加载，或者显示进度的需求等。</p>
 <p>第一种方式：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//这里填写的是相对于resources里的路径</span></div><div class="line"><span class="keyword">let</span> res = [ </div><div class="line">    <span class="string">"UI/Bag"</span>,  <span class="comment">//描述文件</span></div><div class="line">    <span class="string">"UI/Bag_atlas0"</span> <span class="comment">//纹理集</span></div><div class="line">];</div><div class="line">cc.loader.loadResArray(res, function(err, assets) &#123;</div><div class="line">    <span class="comment">//都加载完毕后再调用addPackage</span></div><div class="line">    fgui.UIPackage.addPackage(<span class="string">"UI/Bag"</span>); </div><div class="line"></div><div class="line">    <span class="comment">//下面就可以开始创建包里的界面了。</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<p>第二种方式：<br><figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//这里填写的是相对于resources里的路径</span></div><div class="line">fgui.UIPackage.loadPackage(<span class="string">"UI/Bag"</span>, function(err) &#123;</div><div class="line">    <span class="comment">//这里不需要再调用addPackage了，直接可以开始创建界面了</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//这里填写的是相对于resources里的路径</span></span><br><span class="line"><span class="keyword">let</span> res = [ </span><br><span class="line">    <span class="string">"UI/Bag"</span>,  <span class="comment">//描述文件</span></span><br><span class="line">    <span class="string">"UI/Bag_atlas0"</span> <span class="comment">//纹理集</span></span><br><span class="line">];</span><br><span class="line">cc.loader.loadResArray(res, function(err, assets) &#123;</span><br><span class="line">    <span class="comment">//都加载完毕后再调用addPackage</span></span><br><span class="line">    fgui.UIPackage.addPackage(<span class="string">"UI/Bag"</span>); </span><br><span class="line"></span><br><span class="line">    <span class="comment">//下面就可以开始创建包里的界面了。</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>第二种方式：<br><figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//这里填写的是相对于resources里的路径</span></span><br><span class="line">fgui.UIPackage.loadPackage(<span class="string">"UI/Bag"</span>, function(err) &#123;</span><br><span class="line">    <span class="comment">//这里不需要再调用addPackage了，直接可以开始创建界面了</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 <h2 id="卸载UI包"><a href="#卸载UI包" class="headerlink" title="卸载UI包"></a>卸载UI包</h2><p>当一个包不再使用时，可以将其卸载。</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//这里可以使用包的id，包的名称，包的路径，均可以</span></div><div class="line">fgui.UIPackage.removePackage(<span class="string">"Bag"</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//这里可以使用包的id，包的名称，包的路径，均可以</span></span><br><span class="line">fgui.UIPackage.removePackage(<span class="string">"Bag"</span>);</span><br></pre></td></tr></table></figure>
 <p>包卸载后，所有包里包含的贴图等资源均会被卸载，由包里创建出来的组件也无法显示正常（虽然不会报错），所以这些组件应该（或已经）被销毁。<br>一般不建议包进行频繁装载卸载，因为每次装载卸载必然是要消耗CPU时间（意味着耗电）和产生大量GC的。UI系统占用的内存是可以精确估算的，你可以按照包的使用频率设定哪些包是常驻内存的（建议尽量多）。</p>
 <h2 id="创建GRoot"><a href="#创建GRoot" class="headerlink" title="创建GRoot"></a>创建GRoot</h2><p>每个场景都需要有一个GRoot，这是UI的根节点。场景载入后，需要手动创建GRoot。</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">fgui.GRoot.create();</div></pre></td></tr></table></figure>
-<h2 id="创建UI"><a href="#创建UI" class="headerlink" title="创建UI"></a>创建UI</h2><figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="keyword">let</span> view:fgui.GComponent = fgui.UIPackage.createObject(“包名”, “组件名”).asCom;</div><div class="line"></div><div class="line"><span class="comment">//以下几种方式都可以将view显示出来：</span></div><div class="line"></div><div class="line"><span class="comment">//1，直接加到GRoot显示出来</span></div><div class="line">fgui.GRoot.inst.addChild(view);</div><div class="line"></div><div class="line"><span class="comment">//2，使用窗口方式显示</span></div><div class="line">aWindow.contentPane = view;</div><div class="line">aWindow.show();</div><div class="line"></div><div class="line"><span class="comment">//3，加到其他组件里</span></div><div class="line">aComponnent.addChild(view);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">fgui.GRoot.create();</span><br></pre></td></tr></table></figure>
+<h2 id="创建UI"><a href="#创建UI" class="headerlink" title="创建UI"></a>创建UI</h2><figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> view:fgui.GComponent = fgui.UIPackage.createObject(“包名”, “组件名”).asCom;</span><br><span class="line"></span><br><span class="line"><span class="comment">//以下几种方式都可以将view显示出来：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//1，直接加到GRoot显示出来</span></span><br><span class="line">fgui.GRoot.inst.addChild(view);</span><br><span class="line"></span><br><span class="line"><span class="comment">//2，使用窗口方式显示</span></span><br><span class="line">aWindow.contentPane = view;</span><br><span class="line">aWindow.show();</span><br><span class="line"></span><br><span class="line"><span class="comment">//3，加到其他组件里</span></span><br><span class="line">aComponnent.addChild(view);</span><br></pre></td></tr></table></figure>
 <p>如果界面内容过多，创建时可能引起卡顿，FairyGUI提供了异步创建UI的方式，异步创建方式下，每帧消耗的CPU资源将受到控制，但创建时间也会比同步创建稍久一点。例如：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="keyword">let</span> handler = <span class="keyword">new</span> AsyncOperation();</div><div class="line"></div><div class="line">fgui.UIPackage.createObjectAsync(<span class="string">"包名"</span>,<span class="string">"组件名"</span>, myCreateObjectCallback);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">myCreateObjectCallback</span>(<span class="params">obj:fgui.Gobject</span>)</span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> handler = <span class="keyword">new</span> AsyncOperation();</span><br><span class="line"></span><br><span class="line">fgui.UIPackage.createObjectAsync(<span class="string">"包名"</span>,<span class="string">"组件名"</span>, myCreateObjectCallback);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">myCreateObjectCallback</span>(<span class="params">obj:fgui.Gobject</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>关闭界面一般用隐藏即可，即：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//如果是加在GRoot或者其他父节点的</span></div><div class="line">view.removeFromParent();</div><div class="line"></div><div class="line"><span class="comment">//如果是窗口</span></div><div class="line">view.hide();</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//如果是加在GRoot或者其他父节点的</span></span><br><span class="line">view.removeFromParent();</span><br><span class="line"></span><br><span class="line"><span class="comment">//如果是窗口</span></span><br><span class="line">view.hide();</span><br></pre></td></tr></table></figure>
 <p>如果界面不再使用了，可以销毁它：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">view.Dispose();</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">view.Dispose();</span><br></pre></td></tr></table></figure>
 <p>场景切换时，所有界面都会被销毁。如果不想被销毁，需要创建出界面后，把根节点设置为常驻，并且切换场景前，确保关闭界面。</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">cc.game.addPersistNode(view.node);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">cc.game.addPersistNode(view.node);</span><br></pre></td></tr></table></figure>
 <h2 id="坐标系统"><a href="#坐标系统" class="headerlink" title="坐标系统"></a>坐标系统</h2><p>GObject里的x/y/position值都是<strong>局部坐标</strong>，也就是相对于父元件的偏移。GObject没有提供直接的属性获得对象的全局坐标，但提供了方法进行转换。</p>
 <p>如果要获得任意一个UI元件在屏幕上的坐标，可以用：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="keyword">let</span> screenPos:cc.Vec2 = aObject.localToGlobal(cc.Vec2.ZERO);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> screenPos:cc.Vec2 = aObject.localToGlobal(cc.Vec2.ZERO);</span><br></pre></td></tr></table></figure>
 <p>（注意，这里说的屏幕，是指FairyGUI语义中的屏幕，是以屏幕左上角为原点的，不是指Creator语义中的屏幕）</p>
 <p>相反，如果要获取屏幕坐标在UI元件上的局部坐标，可以用：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="keyword">let</span> localPos:cc.Vec2 = aObject.globalToLocal(screenPos);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> localPos:cc.Vec2 = aObject.globalToLocal(screenPos);</span><br></pre></td></tr></table></figure>
 <h2 id="事件系统"><a href="#事件系统" class="headerlink" title="事件系统"></a>事件系统</h2><p>FairyGUI直接使用了Creator的事件系统，所以GObject.on/off其实是通过GObject.node.on/off实现的，也就是可以通过GObject.node进行任何事件的操作，包括自定义的事件。在事件回调中，cc.Event中的currentTarget反映的是这个事件是由哪个node派发的，如果要获得这个node对应哪个GObject，可以用这样的方法：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">aObject.on(someEventName, this.onHandle, this);</div><div class="line"></div><div class="line">onHandle(evt:cc.Event) &#123;</div><div class="line">    cc.log(evt.currentTarget); //node对象</div><div class="line">    cc.log(fgui.GObject.cast(evt.currentTarget)); //gobject对象</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">aObject.on(someEventName, this.onHandle, this);</span><br><span class="line"></span><br><span class="line">onHandle(evt:cc.Event) &#123;</span><br><span class="line">    cc.log(evt.currentTarget); //node对象</span><br><span class="line">    cc.log(fgui.GObject.cast(evt.currentTarget)); //gobject对象</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="鼠标-触摸类事件"><a href="#鼠标-触摸类事件" class="headerlink" title="鼠标/触摸类事件"></a>鼠标/触摸类事件</h2><p>对于鼠标事件和触摸事件，FairyGUI里都使用自定义的事件，常量定义在fgui.Event里，这和Creator自身的cc.Node.EventType.TOUCH_BEGIN是不一样的，要注意区别。因为Creator自己的触摸逻辑很难处理穿透/不穿透，以及自定义区域点击这些情况。</p>
 <p>鼠标/触摸事件回调函数有一个参数：evt:fgui.Event，fgui.Event继承于cc.Event。</p>
 <ul>
@@ -405,19 +445,19 @@
 </li>
 </ul>
 <p>如果不在事件回调流程中，需要获得当前鼠标或者手指的位置，可以用：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="comment">//touchId是手指id，如果你不关心这个，不传入即可</span></div><div class="line"><span class="keyword">let</span> pos1:cc.Vec2 = fgui.GRoot.inst.getTouchPosition(touchId);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//touchId是手指id，如果你不关心这个，不传入即可</span></span><br><span class="line"><span class="keyword">let</span> pos1:cc.Vec2 = fgui.GRoot.inst.getTouchPosition(touchId);</span><br></pre></td></tr></table></figure>
 <p>在任何时候，如果需要获得当前点击的对象，或者鼠标下的对象，都可以通过以下的方式获得：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line"><span class="keyword">let</span> obj:fgui.GObject = fgui.GRoot.inst.touchTarget;</div><div class="line"></div><div class="line"><span class="comment">//判断是不是在某个组件内</span></div><div class="line">cc.Log(testComponent.isAncestorOf(obj));</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> obj:fgui.GObject = fgui.GRoot.inst.touchTarget;</span><br><span class="line"></span><br><span class="line"><span class="comment">//判断是不是在某个组件内</span></span><br><span class="line">cc.Log(testComponent.isAncestorOf(obj));</span><br></pre></td></tr></table></figure>
 <h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>如果要使用ttf字体，需要这些步骤：</p>
 <p>1、首先需要得到cc.Font对象，这个对象你是从loadRes获得，还是直接在场景中通过脚本的变量获得，可按照项目需求。</p>
 <p>2、使用fgui.UIConfig.registerFont给这个cc.Font注册一个FairyGUI里使用的字体名称，假定aFont就是cc.Font对象：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">fgui.UIConfig.registerFont(<span class="string">'myfont'</span>, aFont);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">fgui.UIConfig.registerFont(<span class="string">'myfont'</span>, aFont);</span><br></pre></td></tr></table></figure>
 <p>3、如果这个是全局字体：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">fgui.UIConfig.defaultFont = <span class="string">'myFont'</span>;</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">fgui.UIConfig.defaultFont = <span class="string">'myFont'</span>;</span><br></pre></td></tr></table></figure>
 <p>4、如果这个是某个文字单独指定的字体，例如：</p>
-<p><img src="../../images/2016-07-06_143622.png" alt=""></p>
+<p><img src="../../images/2016-07-06_143622.png" alt></p>
 <p>这里用到了”黑体”这个名字的字体，这是与UIConfig.defaultFont不同的字体，那么我们需要注册这种字体。即：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><div class="line">fgui.UIConfig.registerFont(<span class="string">'黑体'</span>, aFont);</div></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">fgui.UIConfig.registerFont(<span class="string">'黑体'</span>, aFont);</span><br></pre></td></tr></table></figure>
     
     <div class="footer">
       发现错误或想贡献文档?
@@ -435,5 +475,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </body>
+    </div></body>
 </html>
