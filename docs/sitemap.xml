@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.fairygui.com/product/release_notes.html</loc>
+    
+    <lastmod>2019-12-13T06:37:36.849Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/product/index.html</loc>
+    
+    <lastmod>2019-12-13T06:31:03.583Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/examples/index.html</loc>
+    
+    <lastmod>2019-12-12T15:34:29.454Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.fairygui.com/guide/sdk/cocos2dx.html</loc>
     
     <lastmod>2019-12-12T13:40:11.468Z</lastmod>
@@ -268,20 +289,6 @@
   </url>
   
   <url>
-    <loc>http://www.fairygui.com/product/release_notes.html</loc>
-    
-    <lastmod>2019-11-27T08:35:32.100Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/product/index.html</loc>
-    
-    <lastmod>2019-11-27T08:13:05.137Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.fairygui.com/product/unity_release_notes.html</loc>
     
     <lastmod>2019-11-12T01:01:23.592Z</lastmod>
@@ -355,13 +362,6 @@
     <loc>http://www.fairygui.com/guide/unity/lua.html</loc>
     
     <lastmod>2019-01-10T06:51:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/examples/index.html</loc>
-    
-    <lastmod>2018-12-14T05:47:51.000Z</lastmod>
     
   </url>
   

@@ -6,22 +6,23 @@ order: 0
 
 ## FairyGUI 编辑器 
 
->当前版本5.0.6
+>当前版本5.0.7
 
 <div id="downloads">
-<a class="button" href="http://res.fairygui.com/FairyGUI-Editor_5_0_6_win64.zip" target="_self">Windows (64位）</a><span class="light info">支持中文和英文</span>
+<a class="button" href="http://res.fairygui.com/FairyGUI-Editor_5_0_7_win64.zip" target="_self">Windows (64位）</a><span class="light info">支持中文和英文</span>
 
-<a class="button" href="http://res.fairygui.com/FairyGUI-Editor_5_0_6.zip" target="_self">Windows (32位)</a><span class="light info">支持中文和英文</span>
+<a class="button" href="http://res.fairygui.com/FairyGUI-Editor_5_0_7.zip" target="_self">Windows (32位)</a><span class="light info">支持中文和英文</span>
 
-<a class="button" href="http://res.fairygui.com/FairyGUI-Editor_Mac_5_0_6.zip" target="_self">Mac</a><span class="light info">支持中文和英文</span>
+<a class="button" href="http://res.fairygui.com/FairyGUI-Editor_Mac_5_0_7.zip" target="_self">Mac</a><span class="light info">支持中文和英文</span>
 </div>
 
 FairyGUI编辑器是绿色软件，解压后可直接使用，无需安装。建议解压到非中文目录下。
 
 旧版本下载通道：
 
-- Windows res.fairygui.com/FairyGUI-Editor_X_X_X.zip
-- OSX res.fairygui.com/FairyGUI-Editor_Mac_X_X_X.zip
+- Windows32位 res.fairygui.com/FairyGUI-Editor_X_X_X.zip
+- Windows64位 res.fairygui.com/FairyGUI-Editor_X_X_X_win64.zip
+- Mac res.fairygui.com/FairyGUI-Editor_Mac_X_X_X.zip
 
 将XXX换成版本号的三个数字就可以了。
 
