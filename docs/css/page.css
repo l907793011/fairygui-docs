@@ -556,26 +556,6 @@ ul.demo li {
     margin-left: 0;
   }
 }
-.benchmark-table {
-  margin: 0 auto;
-  text-align: center;
-}
-.benchmark-table tbody > tr > th {
-  text-align: right;
-}
-.benchmark-table th,
-.benchmark-table td {
-  padding: 3px 7px;
-}
-.sponsors-page a,
-.sponsors-page img {
-  width: 120px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.sponsors-page a {
-  margin: 10px 20px;
-}
 .content.guide[class*="migration"] h2 > sup,
 .content.guide[class*="migration"] h3 > sup {
   margin-left: 0.3em;
@@ -668,22 +648,6 @@ ul.demo li {
   display: none;
   padding-left: 0;
 }
-.sidebar .main-sponsor {
-  color: #7f8c8d;
-  font-size: 0.85em;
-}
-.sidebar .main-sponsor .logo {
-  color: #7f8c8d;
-  margin: 10px 0;
-  padding: 10px 0;
-  text-align: center;
-  font-weight: bold;
-}
-.sidebar .main-sponsor img,
-.sidebar .main-sponsor a {
-  width: 125px;
-  display: inline-block;
-}
 .sidebar .become-backer {
   border: 1px solid #32a39f;
   border-radius: 2em;
@@ -735,6 +699,7 @@ ul.demo li {
   padding: 2.2em 0;
   max-width: 800px;
   margin: 0 auto;
+  margin-left: 300px;
 }
 .content.api > a:first-of-type > h2 {
   margin-top: 0;

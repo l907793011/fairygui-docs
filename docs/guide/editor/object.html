@@ -6,18 +6,18 @@
         <title>FairyGUI - 元件</title>
     
         <meta charset="utf-8">
-        <meta name="description" content="FairyGUI是一款超强的UI编辑器，及跨平台开源UI解决方案，制作效率直接提升 50%！，支持UUnity, Cocos2dx, CryEngine, MonoGame, Havok Vision, Starling, Egret, LayaAir, CocosCreator, Haxe, PIXI, LibGDX, Corona等引擎">
-        <meta name="keywords" content="FairyGUI,FGUI,UI编辑器,H5编辑器,GUI,Unity GUI,LayaAir GUI,Flash GUI,Egret GUI,Pixi GUI,LibGDX GUI,Cocos2dx GUI,CryEngine UI,Havok Vision,Project Anarchy,C++ UI,MonoGame GUI,CocosCreator,Corona">
+        <meta name="description" content="FairyGUI教程">
+        <meta name="keywords" content="FairyGUI,FGUI,FairyGUI教程">
         
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
         <meta property="og:type" content="article">
         <meta property="og:title" content="-元件FairyGUI">
-        <meta property="og:description" content="FairyGUI是一款超强的UI编辑器，及跨平台开源UI解决方案，制作效率直接提升 50%！，支持UUnity, Cocos2dx, CryEngine, MonoGame, Havok Vision, Starling, Egret, LayaAir, CocosCreator, Haxe, PIXI, LibGDX, Corona等引擎">
+        <meta property="og:description" content="FairyGUI教程">
 
         <meta name="twitter:card" content="summary">
         <meta name="twitter:title" content="元件 — FairyGUI">
-        <meta name="twitter:description" content="FairyGUI是一款超强的UI编辑器，及跨平台开源UI解决方案，制作效率直接提升 50%！，支持UUnity, Cocos2dx, CryEngine, MonoGame, Havok Vision, Starling, Egret, LayaAir, CocosCreator, Haxe, PIXI, LibGDX, Corona等引擎">
+        <meta name="twitter:description" content="FairyGUI教程">
 
       <!--  <link href='//fonts.proxy.ustclug.org/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
 
@@ -30,28 +30,12 @@
     </head>
     <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
             <a class="menu-button"></a>
-            <a class="logo" href="https://github.com/fairygui"></a>
         </div>
-        <div id="bg"> <!--end tag in the `index.ejs`-->
-
-<div id="header">
-  <a id="logo" href="https://github.com/fairygui/">
-    <img src="/images/github-white.png">
-  </a>
+        <div id="header">
   <ul id="nav">
-    
-
-	<li><a href="/" class="nav-link">首页</a></li>
-
-<li><a href="/product/" class="nav-link">产品</a></li>
-<li><a href="/service/" class="nav-link">服务</a></li>
-<li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
-<li><a href="/examples/" class="nav-link">在线例子</a></li>
-<li><a href="/showcase/" class="nav-link">商业案例</a></li>
-<li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
-<li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
+    <li><a href="/guide/" class="nav-link current">FairyGUI 教程</a></li>
+<li><a href="/examples/" class="nav-link">在线示例</a></li>
+<li><a href="/release_notes/" class="nav-link">发行日志</a></li>
   </ul>
 </div>
 
@@ -61,30 +45,11 @@
                     
     <div class="sidebar">
     <ul class="main-menu">
-        
-
-	<li><a href="/" class="nav-link">首页</a></li>
-
-<li><a href="/product/" class="nav-link">产品</a></li>
-<li><a href="/service/" class="nav-link">服务</a></li>
-<li><a href="/guide/" class="nav-link current">教程</a></li>
-<li><a href="http://www.fairygui.com/api/" target="_blank" class="nav-link">API</a></li>
-<li><a href="/examples/" class="nav-link">在线例子</a></li>
-<li><a href="/showcase/" class="nav-link">商业案例</a></li>
-<li><a href="http://ask.fairygui.com/" target="_blank" class="nav-link">问答</a></li>
-<li><a href="/about/" class="nav-link">关于</a></li>
-<li><a class="nav-link">中文</a> / <a href="http://en.fairygui.com/" target="_self" class="nav-link">English</a></li>
+        <li><a href="/guide/" class="nav-link current">FairyGUI 教程</a></li>
+<li><a href="/examples/" class="nav-link">在线示例</a></li>
+<li><a href="/release_notes/" class="nav-link">发行日志</a></li>
     </ul>
     <div class="list">
-		<!--<a class="become-backer" href="/about/donate.html">
-            打赏
-        </a>-->
-        <h2>
-            Guide
-            <!--<select class="version-select">
-                <option value="SELF" selected>editor</option>
-            </select>-->
-        </h2>
         <ul class="menu-root">
             
 
@@ -405,6 +370,8 @@
 </li>
 <li><p><code>原大小</code> 勾选原大小可以使元件大小恢复到素材的原始大小。当素材被外部修改后，例如一张图片素材，被设计师从50x50变成100x100，如果这里勾选着原大小，则元件的宽高也自动变成100x100；如果这里没有勾选，则元件的宽高将保持50x50，图片发生缩放。</p>
 </li>
+<li><p><code>保持比例</code> 在设计时，保持元件的长宽比例不变，也即是修改宽或高时，高或宽将同时变化。这是辅助设计功能，运行时没有效果。如果你希望一个图片在运行时能保持比例，那可以把图片放入装载器，把装载器的填充处理设置为“适应高度”或者“适应宽度”。</p>
+</li>
 <li><p><code>尺寸</code> 勾选尺寸右侧的箭头，显示尺寸限制的输入界面。0表示不限制。注意：修改尺寸限制不会修改当前的宽高，即使当前的宽高值超出限制值。</p>
 </li>
 <li><p><code>缩放</code> Scale与宽高都同样可以改变元件的显示大小，他们的不同之处在于：</p>
@@ -518,5 +485,5 @@
         <!-- main custom script for sidebars, version selects etc. -->        
         <script src="/js/css.escape.js"></script>
         <script src="/js/common.js"></script>
-    </div></body>
+    </body>
 </html>

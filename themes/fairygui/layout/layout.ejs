@@ -27,13 +27,12 @@
         <%- css(isIndex ? 'css/index' : 'css/page') %>
 
         <!-- this needs to be loaded before guide's inline scripts -->
-        <script src="<%- url_for("/js/vue.min.js") %>"></script>
+        <script src="<%- url_for('/js/vue.min.js') %>"></script>
         <script>window.PAGE_TYPE = "<%- page.type %>"</script>
     </head>
     <body class="<%- isIndex ? '' : 'docs' -%>">
         <div id="mobile-bar"  data-bg-text="FairyGUI" <%- isIndex ? 'class="top"' : '' %>>
             <a class="menu-button"></a>
-            <a class="logo" href="https://github.com/fairygui"></a>
         </div>
         <%- partial('partials/header') %>
         <% if (!isIndex) { %>
@@ -44,13 +43,13 @@
                     <%- body %>
                 <% } %>
             </div>
-            <script src="<%- url_for("/js/smooth-scroll.min.js") %>"></script>
+            <script src="<%- url_for('/js/smooth-scroll.min.js') %>"></script>
         <% } else { %>
             <%- body %>
         <% } %>
 
         <!-- main custom script for sidebars, version selects etc. -->        
-        <script src="<%- url_for("/js/css.escape.js") %>"></script>
-        <script src="<%- url_for("/js/common.js") %>"></script>
+        <script src="<%- url_for('/js/css.escape.js') %>"></script>
+        <script src="<%- url_for('/js/common.js') %>"></script>
     </body>
 </html>

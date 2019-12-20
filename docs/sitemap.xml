@@ -2,23 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.fairygui.com/product/release_notes.html</loc>
+    <loc>http://www.fairygui.com/release_notes/unity_release_notes.html</loc>
     
-    <lastmod>2019-12-13T06:37:36.849Z</lastmod>
+    <lastmod>2019-12-19T15:17:18.047Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.fairygui.com/product/index.html</loc>
+    <loc>http://www.fairygui.com/release_notes/sdk_release_notes.html</loc>
     
-    <lastmod>2019-12-13T06:31:03.583Z</lastmod>
+    <lastmod>2019-12-19T15:17:14.511Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/release_notes/index.html</loc>
+    
+    <lastmod>2019-12-19T15:17:07.630Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.fairygui.com/examples/index.html</loc>
     
-    <lastmod>2019-12-12T15:34:29.454Z</lastmod>
+    <lastmod>2019-12-17T06:54:59.206Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/unity/font.html</loc>
+    
+    <lastmod>2019-12-17T04:33:58.457Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/unity/faq.html</loc>
+    
+    <lastmod>2019-12-17T04:29:11.106Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/unity/atlas.html</loc>
+    
+    <lastmod>2019-12-17T04:16:59.339Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/object.html</loc>
+    
+    <lastmod>2019-12-17T03:53:09.152Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/relation.html</loc>
+    
+    <lastmod>2019-12-17T03:49:57.418Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.fairygui.com/guide/editor/adaptation.html</loc>
+    
+    <lastmod>2019-12-17T03:49:23.387Z</lastmod>
     
   </url>
   
@@ -82,13 +131,6 @@
     <loc>http://www.fairygui.com/guide/editor/i18n.html</loc>
     
     <lastmod>2019-12-12T13:18:29.640Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/editor/adaptation.html</loc>
-    
-    <lastmod>2019-12-12T13:18:23.901Z</lastmod>
     
   </url>
   
@@ -163,13 +205,6 @@
   </url>
   
   <url>
-    <loc>http://www.fairygui.com/guide/editor/relation.html</loc>
-    
-    <lastmod>2019-12-12T12:52:43.863Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.fairygui.com/guide/editor/controller.html</loc>
     
     <lastmod>2019-12-12T12:43:45.869Z</lastmod>
@@ -240,13 +275,6 @@
   </url>
   
   <url>
-    <loc>http://www.fairygui.com/guide/editor/object.html</loc>
-    
-    <lastmod>2019-12-12T11:05:37.160Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.fairygui.com/guide/editor/project_settings.html</loc>
     
     <lastmod>2019-12-12T10:20:42.211Z</lastmod>
@@ -289,27 +317,6 @@
   </url>
   
   <url>
-    <loc>http://www.fairygui.com/product/unity_release_notes.html</loc>
-    
-    <lastmod>2019-11-12T01:01:23.592Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/service/index.html</loc>
-    
-    <lastmod>2019-10-24T08:35:04.393Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/showcase/index.html</loc>
-    
-    <lastmod>2019-09-23T09:18:03.257Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.fairygui.com/guide/unity/input.html</loc>
     
     <lastmod>2019-06-18T11:55:55.000Z</lastmod>
@@ -324,37 +331,9 @@
   </url>
   
   <url>
-    <loc>http://www.fairygui.com/guide/unity/atlas.html</loc>
-    
-    <lastmod>2019-05-07T02:53:17.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/unity/faq.html</loc>
-    
-    <lastmod>2019-03-15T10:09:31.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/guide/unity/font.html</loc>
-    
-    <lastmod>2019-03-14T03:49:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.fairygui.com/guide/unity/insert3d.html</loc>
     
     <lastmod>2019-01-21T14:31:21.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/product/sdk_release_notes.html</loc>
-    
-    <lastmod>2019-01-21T04:30:49.000Z</lastmod>
     
   </url>
   
@@ -401,13 +380,6 @@
   </url>
   
   <url>
-    <loc>http://www.fairygui.com/about/index.html</loc>
-    
-    <lastmod>2018-06-05T06:24:24.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.fairygui.com/guide/unity/event.html</loc>
     
     <lastmod>2018-04-03T09:55:57.000Z</lastmod>
@@ -425,20 +397,6 @@
     <loc>http://www.fairygui.com/guide/sdk/index.html</loc>
     
     <lastmod>2017-09-24T13:34:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/index.html</loc>
-    
-    <lastmod>2017-09-08T22:58:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.fairygui.com/2019/06/22/index/</loc>
-    
-    <lastmod>2017-09-08T22:58:27.000Z</lastmod>
     
   </url>
   

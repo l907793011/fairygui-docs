@@ -1,7 +1,7 @@
 ---
 title: Unity SDK更新日志
-type: product
-order: 2
+type: release_notes
+order: 1
 ---
 
 ## 3.5.0

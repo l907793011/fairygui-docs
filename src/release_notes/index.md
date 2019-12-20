@@ -1,7 +1,7 @@
 ---
 title: 发行日志
-type: product
-order: 1
+type: release_notes
+order: 0
 ---
 
 ## 5.0.7
