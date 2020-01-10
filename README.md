@@ -1,4 +1,4 @@
-# FairyGUI.io 教程文档
+# FairyGUI 教程文档
 
 这是FairyGUI的教程文档网站，文档是使用[hexo](http://hexo.io/)构建的。 文档内容在“src”文件夹中，使用Markdown格式编写。
 
