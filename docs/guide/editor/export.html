@@ -3,7 +3,7 @@
 <html lang="en">
     <head><meta name="generator" content="Hexo 3.9.0">
     
-        <title>FairyGUI - 导入和导出资源包</title>
+        <title>FairyGUI - 导入和导出</title>
     
         <meta charset="utf-8">
         <meta name="description" content="FairyGUI教程">
@@ -12,11 +12,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
         <meta property="og:type" content="article">
-        <meta property="og:title" content="-导入和导出资源包FairyGUI">
+        <meta property="og:title" content="-导入和导出FairyGUI">
         <meta property="og:description" content="FairyGUI教程">
 
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="导入和导出资源包 — FairyGUI">
+        <meta name="twitter:title" content="导入和导出 — FairyGUI">
         <meta name="twitter:description" content="FairyGUI教程">
 
       <!--  <link href='//fonts.proxy.ustclug.org/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
@@ -58,7 +58,7 @@
 	 			
 	                
 	                <li>
-	                    <a href="/docs/guide/index.html" class="sidebar-link">介绍</a>
+	                    <a href="/docs/guide/index.html" class="sidebar-link">导读</a>
 	                </li>
 	            
 	
@@ -220,7 +220,7 @@
 	            
 	                
 	                <li>
-	                    <a href="/docs/guide/editor/export.html" class="sidebar-link current">导入和导出资源包</a>
+	                    <a href="/docs/guide/editor/export.html" class="sidebar-link current">导入和导出</a>
 	                </li>
 	            
 	                
@@ -352,7 +352,7 @@
 
 <div class="content guide_editor with-sidebar ">
     
-      <h1>导入和导出资源包</h1>
+      <h1>导入和导出</h1>
     
     <p>可以将部分资源导出为一个资源包，也可以导入资源包。资源包可用于分享用途。</p>
 <h2 id="导出资源包"><a href="#导出资源包" class="headerlink" title="导出资源包"></a>导出资源包</h2><p>在资源库里选定一个或者多个资源，也可以选定文件夹或包，然后点击主菜单“资源-&gt;导出资源包”：</p>
@@ -362,6 +362,40 @@
 <p><img src="../../images/QQ20191210-141156.png" alt></p>
 <p>选择导入的位置，然后点击导入，fairypackage里的资源导入得到指定的位置。</p>
 <h2 id="导入内置的资源包"><a href="#导入内置的资源包" class="headerlink" title="导入内置的资源包"></a>导入内置的资源包</h2><p>FairyGUI自带了几套皮肤，点击主菜单“资源-&gt;导入内置的资源包”，然后选择其中一个包导入即可。</p>
+<h2 id="从PSD中生成UI"><a href="#从PSD中生成UI" class="headerlink" title="从PSD中生成UI"></a>从PSD中生成UI</h2><p>你可以将美术制作的PSD文件导入到编辑器，直接生成UI。这个工具的名称叫psd2fgui，它是一个nodejs的应用。所以安装方式很简单，在命令行模式下运行：</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">npm install -g psd2fgui</span><br></pre></td></tr></table></figure>
+<p>等待安装完成即可。如果你的系统里还没有node的环境，那需要先从Node.js官网下载安装。</p>
+<p>安装完成后，我们就可以直接使用psd2fgui命令了。</p>
+<p>首先准备PSD文件：</p>
+<p><img src="../../images/5b21addc0e1c6.png" alt></p>
+<p>如上图所示，使用图层名称或组名称来表达它的类型和用途。以下是约定的细节：</p>
+<ul>
+<li><p>按钮 组的名称以Button开始表示这个组是一个按钮。组内的层如果名称中含有下面定义的特殊字符串（注意是包含即可，不是相同。推荐作为后缀），表示这个图层的特别含义：</p>
+<ul>
+<li>@up 这个图层只在按钮的up状态显示</li>
+<li>@over 这个图层只在按钮的over状态显示</li>
+<li>@down 这个图层只在按钮的down状态显示</li>
+<li>@selectedOver 这个图层只在按钮的selectedOver状态显示</li>
+<li>@title 文字用作按钮的标题</li>
+<li>@icon 图片用作按钮的图标</li>
+</ul>
+</li>
+<li><p>组件 组的名称以Com开始表示这个组是一个组件。组件可以嵌套。</p>
+</li>
+</ul>
+<p>然后执行转换:</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">psd2fgui test.psd</span><br></pre></td></tr></table></figure>
+<p>如果成功转换，输出为：</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">test.psd-&gt;test.fairypackage</span><br><span class="line">buildId: mlmjpf0dc7zp</span><br></pre></td></tr></table></figure>
+<p>最后使用FairyGUI编辑器，主菜单-&gt;资源-&gt;导入资源包，然后选择刚生成的test.fairypackage即可。</p>
+<p>psd2fgui还提供了一些开关调整转换的细节。</p>
+<ul>
+<li>–nopack 不生成fairypackage。所有文件直接输出到一个文件夹中。</li>
+<li>–ignore-font 不使用PSD源文件中文本指定的字体名称。文本的字体均保持空白，这样在编辑器中可以应用默认字体。</li>
+<li>#buildId buildId是一个不少于12位的仅包含数字和小写字母的字符串。用于标识每次转换过程。使用相同的buildId，则多次转换后相同名称的资源的id不变。<br>例如，使用上次转换结果的buildId重新转换：<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">psd2fgui test.psd --ignore-font <span class="meta">#mlmjpf0dc7zp</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>定制</strong><br>目前对于PSD里结构的约定，未必能符合每个人项目的需求。遇到这种情况，可以自行修改psd2fgui的源码进行定制。源码托管在<a href="https://github.com/fairygui/psd2fgui" target="_blank" rel="noopener">https://github.com/fairygui/psd2fgui</a>，记得打星支持喔。</p>
 
     
     <div class="footer">
