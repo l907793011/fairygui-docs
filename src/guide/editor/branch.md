@@ -60,7 +60,7 @@ FairyGUI解决这类问题的方案是分支，在设计期完全所见即所得
 
 我们切换分支到en，**如果直接打开主干/Component1，你会发现舞台的内容是不会直接显示成en/Component1的，这是因为你是直接打开主干/Component1进行编辑。**
 
-现在我们在主干上新建一个Component2，然后拖入主干的Component1，我们再切换分支到en，这时就可以发现Component2内的Component1已经显示为en/Component2的内容了。
+现在我们在主干上新建一个Component2，然后拖入主干的Component1，我们再切换分支到en，这时就可以发现Component2内的Component1已经显示为en/Component1的内容了。
 
 **演示三**
 
