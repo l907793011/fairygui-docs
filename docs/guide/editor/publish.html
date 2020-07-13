@@ -373,6 +373,7 @@
 <p>发布路径支持使用变量，变量用中括号包围，例如：/home/zhansan/{publish_file_name}。支持的变量名：</p>
 <ul>
 <li><code>publish_file_name</code> 表示发布的文件名。</li>
+<li><code>branch_name</code> 表示发布的分支名。</li>
 <li>“<a href="project_settings.html#自定义属性">项目设置-自定义属性</a>”里定义的属性。假设自定义属性里有var1，那么路径里可以使用{var1}。</li>
 </ul>
 </li>
@@ -439,14 +440,6 @@
 </li>
 <li><p><code>包名称</code> 对于AS3代码，是指发布的代码的package；对于C#代码，是指发布的代码的namespace；对于Typscript代码，是指发布的代码的module；对于C++代码，是指发布的代码的namespace。</p>
 </li>
-<li><p><code>代码类型</code> 对于Laya引擎，你可以选择代码类型。</p>
-<ul>
-<li><code>AS3</code> 发布AS3代码。</li>
-<li><code>TypeScript（LayaAir1.x）</code> 发布适用LayaAir1.x版本的代码。</li>
-<li><code>TypeScript（LayaAir2.0）</code> 发布适用LayaAir2版本的代码，代码的命名空间是fairygui。</li>
-<li><code>TypeScript</code> 发布适用LayaAir2版本的代码，代码的命名空间是fgui。如果你用的是最新版本的SDK，那么请选择这个。</li>
-</ul>
-</li>
 </ul>
 <p>发布出来的代码包含一个XXXBinder文件和多个类文件。注意：</p>
 <ol>
@@ -454,8 +447,6 @@
 <li><strong>使用绑定类创建UI的API是<code>CreateInstance</code>，不能直接new。</strong></li>
 </ol>
 <p>举例：<br><figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//首先要调用BindAll。发布出来的代码有个名字为XXXBinder的文件</span></span><br><span class="line"><span class="comment">//注意：一定要在启动时调用。</span></span><br><span class="line">XXXBinder.BindAll();</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建UI界面。注意：不是直接new XXX。</span></span><br><span class="line">XXX view = XXX.CreateInstance();</span><br><span class="line">view.m_n10.text = ...;</span><br></pre></td></tr></table></figure></p>
-<p>发布代码时会用到代码模板。代码模板在编辑器安装目录下的template目录下。如果你需要自定义模板，<strong>需要将template目录拷贝到UI项目的根目录下，再做修改</strong>。模板里支持的参数有：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">Component.template</span><br><span class="line">-------------</span><br><span class="line">&#123;packageName&#125; UI模块名</span><br><span class="line">&#123;componentName&#125; UI组件父类名</span><br><span class="line">&#123;className&#125; UI组件类名</span><br><span class="line">&#123;uiPkgName&#125; UI资源包名</span><br><span class="line">&#123;uiResName&#125;UI资源名</span><br><span class="line">&#123;uiPath&#125; UI资源路径</span><br><span class="line"></span><br><span class="line">Binder.template</span><br><span class="line">-------------</span><br><span class="line">&#123;className&#125;  UI模块名+<span class="string">"Binder"</span></span><br><span class="line">&#123;packageName&#125; UI模块名</span><br></pre></td></tr></table></figure>
 <h2 id="包设置"><a href="#包设置" class="headerlink" title="包设置"></a>包设置</h2><h3 id="打包-1"><a href="#打包-1" class="headerlink" title="打包"></a>打包</h3><p><img src="../../images/QQ20191210-004107.png" alt></p>
 <ul>
 <li><code>文件名</code> 包的发布文件名。这个文件名与包名称可以不同，如果这里留空，那么使用包的名称。<strong>当我们载入包时，需要使用这里设定的文件名，而当创建对象时，需要使用包名称</strong>。例如</li>
@@ -505,14 +496,15 @@
 </ul>
 <h3 id="资源排除设置"><a href="#资源排除设置" class="headerlink" title="资源排除设置"></a>资源排除设置</h3><p><img src="../../images/QQ20191210-134653.png" alt></p>
 <p>如果一些素材，只用于测试用途，例如一个装载器，放一个图片进去只用于看效果，但这个图片是不随包发布的（后续可能通过外部加载），那么可以在这个界面里将这个图片拖入，那么发布时就不会包含这个图片了。</p>
-<h2 id="命令行发布"><a href="#命令行发布" class="headerlink" title="命令行发布"></a>命令行发布</h2><p>除了在编辑器内点击发布按钮发布外，还支持通过命令行发布。但目前命令行发布还存在一个缺陷，就是运行成功和失败都没有反馈，所以请谨慎使用。</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">FairyGUI-Editor -p project_desc_file [-b package_names] [-t branch_name] [-x callback] [-o output_path]</span><br></pre></td></tr></table></figure>
+<h2 id="命令行发布"><a href="#命令行发布" class="headerlink" title="命令行发布"></a>命令行发布</h2><p>除了在编辑器内点击发布按钮发布外，还支持通过命令行发布。(仅适用于2020版本的专业版编辑器）</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">FairyGUI-Editor -batchmode -p project_desc_file [-b package_names] [-t branch_name] [-o output_path] [-logFile log_file_path]</span><br></pre></td></tr></table></figure>
 <ul>
-<li><code>project_desc_file</code> 项目描述文件路径，例如d:\a\1.fairy。</li>
-<li><code>package_names</code> 可选。不提供则为所有包，多个包用逗号隔开。</li>
+<li><code>batchmode</code> 必选。指示编辑器在后台执行命令。</li>
+<li><code>project_desc_file</code> 必选。项目描述文件路径，例如d:\a\1.fairy。</li>
+<li><code>package_names</code> 可选。不提供则为所有包，多个包用逗号隔开。如果你是通过插件自定义发布的，那么这里传一个”-“，就能避免默认的发布。</li>
 <li><code>branch_name</code> 可选。分支名称。不提供则发布主干。</li>
-<li><code>callback</code> 可选。发布完毕后调用这个程序。</li>
 <li><code>output_path</code> 可选。如果指定，则覆盖项目里的设置，直接使用这里指定的位置。</li>
+<li><code>logFile</code> 可选。指定一个日志文件。</li>
 </ul>
 
     

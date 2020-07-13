@@ -2,16 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.fairygui.com/docs/release_notes/index.html</loc>
+    <loc>https://www.fairygui.com/docs/guide/index.html</loc>
     
-    <lastmod>2020-01-14T06:51:22.259Z</lastmod>
+    <lastmod>2020-06-12T08:35:53.244Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.fairygui.com/docs/guide/index.html</loc>
+    <loc>https://www.fairygui.com/docs/release_notes/index.html</loc>
     
-    <lastmod>2019-12-31T02:45:09.882Z</lastmod>
+    <lastmod>2020-06-12T08:33:23.973Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/publish.html</loc>
+    
+    <lastmod>2020-05-27T14:51:41.581Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/text.html</loc>
+    
+    <lastmod>2020-05-06T06:52:36.410Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/plugin.html</loc>
+    
+    <lastmod>2020-05-05T16:42:13.844Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/branch.html</loc>
+    
+    <lastmod>2020-05-05T15:31:19.555Z</lastmod>
     
   </url>
   
@@ -121,13 +149,6 @@
   </url>
   
   <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/plugin.html</loc>
-    
-    <lastmod>2019-12-12T13:18:57.693Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.fairygui.com/docs/guide/editor/preference.html</loc>
     
     <lastmod>2019-12-12T13:18:51.828Z</lastmod>
@@ -191,20 +212,6 @@
   </url>
   
   <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/publish.html</loc>
-    
-    <lastmod>2019-12-12T12:54:34.038Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/branch.html</loc>
-    
-    <lastmod>2019-12-12T12:54:32.146Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.fairygui.com/docs/guide/editor/label.html</loc>
     
     <lastmod>2019-12-12T12:53:17.870Z</lastmod>
@@ -243,13 +250,6 @@
     <loc>https://www.fairygui.com/docs/guide/editor/richtext.html</loc>
     
     <lastmod>2019-12-12T12:17:25.069Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/text.html</loc>
-    
-    <lastmod>2019-12-12T12:16:14.645Z</lastmod>
     
   </url>
   

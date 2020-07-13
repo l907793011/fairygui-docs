@@ -4,7 +4,9 @@ type: guide
 order: 0
 ---
 
-# [告别2019, FAIRYGUI 2020 路线图公布](https://mp.weixin.qq.com/s/GruCJFyoLVcvnLwrsIGReA)
+# [Three.js! FairyGUI新增一个3d引擎适配](https://mp.weixin.qq.com/s/K8xBKUOv4vlTUdDNa7o11w)
+
+# [FAIRYGUI 2020 正式发布](https://mp.weixin.qq.com/s/8MKyJu-eoUCm7sOh7QredQ)
 
 ---
 

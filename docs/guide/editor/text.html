@@ -360,7 +360,7 @@
 <p>设置编辑器使用的字体可以在项目属性里设置。运行时的字体则需要由代码设置：</p>
 <figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Droid Sans Fallback是安卓上支持中文的默认字体</span></span><br><span class="line">UIConfig.defaultFont = <span class="string">'Droid Sans Fallback'</span>;</span><br></pre></td></tr></table></figure>
 <p>设置运行时使用的字体需保证该字体在目标平台上也存在，否则达不到想要的效果。如果你想打包字体到目标平台，那么需要查询引擎提供的支持，比如Unity，可以这样做：<a href="../unity/font.html">使用字体</a></p>
-<p>如果你需要使用ttf文件，请先在操作系统中安装该文件（一般双击ttf文件即可），这样重启编辑器后就可以在字体列表里看到这种字体了。</p>
+<p>如果你需要使用ttf文件，可以将ttf文件直接拖入编辑器（2020版本）。</p>
 <h2 id="位图字体"><a href="#位图字体" class="headerlink" title="位图字体"></a>位图字体</h2><p>在游戏中经常有这样的设计：一些表达特别元素的字符，使用了图片来制作，例如：</p>
 <p><img src="../../images/20170801102632.png" alt></p>
 <p>FairyGUI编辑器支持位图字体。首先，我们创建一种字体。点击主工具栏<img src="../../images/maintb_08.png" alt>，然后，弹出了字体编辑窗口，我们从资源库里把制作好的数字图片拖入到窗口，并设置每个图片对应的字符，点击保存，这样我们的字体就设置好了。如果要修改每个字符对应的图片，将图片重新拖入即可。</p>
@@ -485,18 +485,18 @@
 </li>
 <li><p><code>[u]text[/u]</code> 设置文本为下划线。</p>
 </li>
-<li><p><code>[sup]text[/sup]</code> 设置文本为上标。<em>（仅Unity平台支持，且在编辑器暂时无法预览）</em></p>
+<li><p><code>[sup]text[/sup]</code> 设置文本为上标。<em>（部分引擎支持）</em></p>
 </li>
-<li><p><code>[sub]text[/sub]</code> 设置文本为下标。<em>（仅Unity平台支持，且在编辑器暂时无法预览）</em></p>
+<li><p><code>[sub]text[/sub]</code> 设置文本为下标。<em>（部分引擎支持）</em></p>
 </li>
-<li><p><code>[color=#FFFFFF]text[/color]</code> 设置文本颜色。注意一定要用十六进制颜色代码，像red、blue这种颜色名称是不支持的。使用color语法还可以设置文本颜色为渐变色<em>（仅Unity平台支持，且在编辑器暂时无法预览）</em>，例如：</p>
+<li><p><code>[color=#FFFFFF]text[/color]</code> 设置文本颜色。注意一定要用十六进制颜色代码，像red、blue这种颜色名称是不支持的。使用color语法还可以设置文本颜色为渐变色<em>（部分引擎支持）</em>，例如：</p>
   <figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//指定两个颜色表示上下过渡</span></span><br><span class="line">[<span class="meta">color=#FFFFFF,#000000</span>]文字[/color]</span><br><span class="line"></span><br><span class="line"><span class="comment">//指定四个颜色可以做左右过渡或者双方向过渡</span></span><br><span class="line">[<span class="meta">color=#FFFFFF,#CCCCCC,#000000,#FFFF00</span>]文字[/color]</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><code>[font=font_face]text[/font]</code> 设置文本的字体。</p>
 </li>
 <li><p><code>[size=10]text[/size]</code> 设置文本的字体大小。</p>
 </li>
-<li><p><code>[align=left/center/right]text[/align]</code> 设置文本的水平对齐。<em>（仅Unity平台支持，且在编辑器暂时无法预览）</em></p>
+<li><p><code>[align=left/center/right]text[/align]</code> 设置文本的水平对齐。<em>（部分引擎支持）</em></p>
 </li>
 </ul>
 <p>标签之间支持嵌套，但不支持交叉嵌套。例如：</p>

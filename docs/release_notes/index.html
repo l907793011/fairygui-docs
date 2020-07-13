@@ -82,7 +82,50 @@
     
       <h1>发行日志</h1>
     
-    <h2 id="5-0-10"><a href="#5-0-10" class="headerlink" title="5.0.10"></a>5.0.10</h2><ol>
+    <h2 id="2020-1-1p1"><a href="#2020-1-1p1" class="headerlink" title="2020.1.1p1"></a>2020.1.1p1</h2><ol>
+<li>修正了切换UI语言文件有时报错的bug。</li>
+<li>修正了windows下某些情况无法新建编辑器窗口的bug。</li>
+</ol>
+<h2 id="2020-1-1"><a href="#2020-1-1" class="headerlink" title="2020.1.1"></a>2020.1.1</h2><ol>
+<li>增加了ThreeJS项目类型。<a href="https://github.com/fairygui/FairyGUI-threejs" target="_blank" rel="noopener">源码</a> <a href="https://github.com/fairygui/FairyGUI-threejs-example" target="_blank" rel="noopener">快速上手</a></li>
+<li>修正图形圆角设置为小数导致发布失败的bug。</li>
+<li>修正了按钮音量设置为0不生效的bug。</li>
+<li>修正了自定义属性是图标类型时，导出字符串时被包含进去的bug。</li>
+<li>SetupCodeFolder增加了传入自定义文件头的参数。</li>
+</ol>
+<h2 id="2020-1-0p12"><a href="#2020-1-0p12" class="headerlink" title="2020.1.0p12"></a>2020.1.0p12</h2><ol>
+<li>解决“分离Alpha通道”后，发布的纹理集不正确的问题。</li>
+</ol>
+<h2 id="2020-1-0p11"><a href="#2020-1-0p11" class="headerlink" title="2020.1.0p11"></a>2020.1.0p11</h2><ol>
+<li>再次修正位图字体设置“允许改变颜色”无效的bug。</li>
+<li>再次尝试修正大量文字显示时出错的问题。</li>
+</ol>
+<h2 id="2020-1-0p10"><a href="#2020-1-0p10" class="headerlink" title="2020.1.0p10"></a>2020.1.0p10</h2><ol>
+<li>修正位图字体设置“允许改变颜色”无效的bug。</li>
+<li>兼容支持了扩展名为skel.bytes的Spine资源。</li>
+<li>支持了Spine和龙骨设置颜色和透明度。</li>
+<li>尝试修正了大量文字显示时出错的问题。</li>
+</ol>
+<h2 id="2020-1-0p9"><a href="#2020-1-0p9" class="headerlink" title="2020.1.0p9"></a>2020.1.0p9</h2><ol>
+<li>修正了对系统字体的识别问题。</li>
+<li>修正了发布非二进制格式时报异常的问题。</li>
+<li>修正了时间轴界面里，右键菜单只能单帧编辑，不能多帧编辑器的问题。</li>
+<li>增加了一个发布设置，当选择“主干包含所有分支”的发布方式时，可以选择是否将分支的图片发布到单独的纹理集。</li>
+</ol>
+<h2 id="2020-1-0"><a href="#2020-1-0" class="headerlink" title="2020.1.0"></a>2020.1.0</h2><ol>
+<li>这个版本我们对编辑器进行了全面的重构，替换了原来编辑器的底层Adobe AIR runtime为生态更成熟的Unity。</li>
+<li>增加了新的元件类型：3D内容装载器。区别于只能装载图片和序列帧动画的普通装载器，它用于装载3D引擎中较复杂的内容，例如骨骼动画、模型、粒子等。目前已完成骨骼动画的支持，往编辑器里直接拖入骨骼动画即可。</li>
+<li>编辑器现在支持导入字体文件，可以直接将后缀名为TTF/TTC/OTF的字体文件导入编辑器。</li>
+<li>支持使用SDF技术渲染字体（即Unity里的TextMeshPro）。</li>
+<li>插件机制全新升级。从2020版本开始，我们使用Lua作为插件的开发语言。同时不再支持使用AS3开发插件。</li>
+<li>增加了颜色空间的切换，即Gamma颜色空间和Linear颜色空间。</li>
+<li>现在资源库可以显示图片的缩略图。</li>
+<li>增加了两个工具：“查找未使用的资源”和“查找重复的资源”。</li>
+<li>优化了命令行发布执行的方式。</li>
+<li>增加了一个滚动容器的设置，可以设置“边缘”不裁剪。</li>
+</ol>
+<p><a href="https://mp.weixin.qq.com/s/8MKyJu-eoUCm7sOh7QredQ" target="_blank" rel="noopener">详情</a></p>
+<h2 id="5-0-10"><a href="#5-0-10" class="headerlink" title="5.0.10"></a>5.0.10</h2><ol>
 <li>发布设置勾选了剪裁图片边缘空白后，对于缩放模式设置是九宫格或者平铺的图片，修改为不进行剪裁。因为剪裁后再应用九宫格显示有问题。</li>
 <li>修正了插件里的自定义扩展只能添加一个的bug。</li>
 <li>批量设置图片属性对话框增加了“重复边缘像素”的选项。</li>

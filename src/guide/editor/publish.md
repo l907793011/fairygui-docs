@@ -26,6 +26,7 @@ order: 4
   
   发布路径支持使用变量，变量用中括号包围，例如：/home/zhansan/{publish_file_name}。支持的变量名：
   - `publish_file_name` 表示发布的文件名。
+  - `branch_name` 表示发布的分支名。
   - “[项目设置-自定义属性](project_settings.html#自定义属性)”里定义的属性。假设自定义属性里有var1，那么路径里可以使用{var1}。
 
 - `分支发布路径` 分支发布结果放置的目录。分支发布路径同样支持相对路径，也支持变量。
@@ -95,12 +96,6 @@ order: 4
 
 - `包名称` 对于AS3代码，是指发布的代码的package；对于C#代码，是指发布的代码的namespace；对于Typscript代码，是指发布的代码的module；对于C++代码，是指发布的代码的namespace。
 
-- `代码类型` 对于Laya引擎，你可以选择代码类型。
-  - `AS3` 发布AS3代码。
-  - `TypeScript（LayaAir1.x）` 发布适用LayaAir1.x版本的代码。
-  - `TypeScript（LayaAir2.0）` 发布适用LayaAir2版本的代码，代码的命名空间是fairygui。
-  - `TypeScript` 发布适用LayaAir2版本的代码，代码的命名空间是fgui。如果你用的是最新版本的SDK，那么请选择这个。
-
 发布出来的代码包含一个XXXBinder文件和多个类文件。注意：
 1. **在使用绑定类之前，一定要调用`XXXBinder.BindAll`，并且在创建任何UI之前调用。**
 2. **使用绑定类创建UI的API是`CreateInstance`，不能直接new。**
@@ -114,24 +109,6 @@ order: 4
     //创建UI界面。注意：不是直接new XXX。
     XXX view = XXX.CreateInstance();
     view.m_n10.text = ...;
-```
-
-发布代码时会用到代码模板。代码模板在编辑器安装目录下的template目录下。如果你需要自定义模板，**需要将template目录拷贝到UI项目的根目录下，再做修改**。模板里支持的参数有：
-
-```csharp
-    Component.template
-    -------------
-    {packageName} UI模块名
-    {componentName} UI组件父类名
-    {className} UI组件类名
-    {uiPkgName} UI资源包名
-    {uiResName}UI资源名
-    {uiPath} UI资源路径
-    
-    Binder.template
-    -------------
-    {className}  UI模块名+"Binder"
-    {packageName} UI模块名
 ```
 
 ## 包设置
@@ -201,14 +178,14 @@ order: 4
 
 ## 命令行发布
 
-除了在编辑器内点击发布按钮发布外，还支持通过命令行发布。但目前命令行发布还存在一个缺陷，就是运行成功和失败都没有反馈，所以请谨慎使用。
+除了在编辑器内点击发布按钮发布外，还支持通过命令行发布。(仅适用于2020版本的专业版编辑器）
 
 ```csharp
-FairyGUI-Editor -p project_desc_file [-b package_names] [-t branch_name] [-x callback] [-o output_path]
+FairyGUI-Editor -batchmode -p project_desc_file [-b package_names] [-t branch_name] [-o output_path] [-logFile log_file_path]
 ```
-
-- `project_desc_file` 项目描述文件路径，例如d:\a\1.fairy。
-- `package_names` 可选。不提供则为所有包，多个包用逗号隔开。
+- `batchmode` 必选。指示编辑器在后台执行命令。
+- `project_desc_file` 必选。项目描述文件路径，例如d:\a\1.fairy。
+- `package_names` 可选。不提供则为所有包，多个包用逗号隔开。如果你是通过插件自定义发布的，那么这里传一个"-"，就能避免默认的发布。
 - `branch_name` 可选。分支名称。不提供则发布主干。
-- `callback` 可选。发布完毕后调用这个程序。
 - `output_path` 可选。如果指定，则覆盖项目里的设置，直接使用这里指定的位置。
+- `logFile` 可选。指定一个日志文件。
