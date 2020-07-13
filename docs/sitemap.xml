@@ -44,359 +44,359 @@
   </url>
   
   <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/export.html</loc>
+    <loc>https://www.fairygui.com/docs/release_notes/index.html</loc>
     
-    <lastmod>2019-12-27T14:40:38.050Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/unity/insert3d.html</loc>
-    
-    <lastmod>2019-12-26T07:07:57.112Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/release_notes/unity_release_notes.html</loc>
-    
-    <lastmod>2019-12-19T15:17:18.047Z</lastmod>
+    <lastmod>2020-06-28T06:31:07.534Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.fairygui.com/docs/release_notes/sdk_release_notes.html</loc>
     
-    <lastmod>2019-12-19T15:17:14.511Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/examples/index.html</loc>
-    
-    <lastmod>2019-12-17T06:54:59.206Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/unity/font.html</loc>
-    
-    <lastmod>2019-12-17T04:33:58.457Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/unity/faq.html</loc>
-    
-    <lastmod>2019-12-17T04:29:11.106Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/unity/atlas.html</loc>
-    
-    <lastmod>2019-12-17T04:16:59.339Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/object.html</loc>
-    
-    <lastmod>2019-12-17T03:53:09.152Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/relation.html</loc>
-    
-    <lastmod>2019-12-17T03:49:57.418Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/adaptation.html</loc>
-    
-    <lastmod>2019-12-17T03:49:23.387Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/sdk/cocos2dx.html</loc>
-    
-    <lastmod>2019-12-12T13:40:11.468Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/transition.html</loc>
-    
-    <lastmod>2019-12-12T13:27:13.838Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/sdk/laya.html</loc>
-    
-    <lastmod>2019-12-12T13:25:26.465Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/unity/index.html</loc>
-    
-    <lastmod>2019-12-12T13:20:13.984Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/preference.html</loc>
-    
-    <lastmod>2019-12-12T13:18:51.828Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/i18n.html</loc>
-    
-    <lastmod>2019-12-12T13:18:29.640Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/window.html</loc>
-    
-    <lastmod>2019-12-12T13:18:06.732Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/popup.html</loc>
-    
-    <lastmod>2019-12-12T13:06:44.398Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/tree.html</loc>
-    
-    <lastmod>2019-12-12T13:05:47.056Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/list.html</loc>
-    
-    <lastmod>2019-12-12T13:02:23.920Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/slider.html</loc>
-    
-    <lastmod>2019-12-12T12:58:19.778Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/progressbar.html</loc>
-    
-    <lastmod>2019-12-12T12:57:33.641Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/button.html</loc>
-    
-    <lastmod>2019-12-12T12:55:25.030Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/label.html</loc>
-    
-    <lastmod>2019-12-12T12:53:17.870Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/controller.html</loc>
-    
-    <lastmod>2019-12-12T12:43:45.869Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/scrollpane.html</loc>
-    
-    <lastmod>2019-12-12T12:33:29.335Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/component.html</loc>
-    
-    <lastmod>2019-12-12T12:30:15.597Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/group.html</loc>
-    
-    <lastmod>2019-12-12T12:20:12.036Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/richtext.html</loc>
-    
-    <lastmod>2019-12-12T12:17:25.069Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/loader.html</loc>
-    
-    <lastmod>2019-12-12T12:07:32.015Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/graph.html</loc>
-    
-    <lastmod>2019-12-12T11:20:53.926Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/movieclip.html</loc>
-    
-    <lastmod>2019-12-12T11:13:52.889Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/image.html</loc>
-    
-    <lastmod>2019-12-12T11:11:54.215Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/project_settings.html</loc>
-    
-    <lastmod>2019-12-12T10:20:42.211Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/index.html</loc>
-    
-    <lastmod>2019-12-12T09:50:26.690Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/package.html</loc>
-    
-    <lastmod>2019-12-12T09:42:04.341Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/dragdrop.html</loc>
-    
-    <lastmod>2019-12-12T06:47:29.094Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/scrollbar.html</loc>
-    
-    <lastmod>2019-12-12T06:46:54.713Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/combobox.html</loc>
-    
-    <lastmod>2019-12-12T06:46:34.118Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/unity/input.html</loc>
-    
-    <lastmod>2019-06-18T11:55:55.000Z</lastmod>
+    <lastmod>2020-06-28T06:31:07.534Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.fairygui.com/docs/guide/unity/transform.html</loc>
     
-    <lastmod>2019-05-08T10:08:48.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/unity/lua.html</loc>
-    
-    <lastmod>2019-01-10T06:51:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/sdk/creator.html</loc>
-    
-    <lastmod>2018-12-14T05:45:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/sdk/egret.html</loc>
-    
-    <lastmod>2018-12-14T05:36:35.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/sdk/cryengine.html</loc>
-    
-    <lastmod>2018-12-14T05:13:17.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/unity/special.html</loc>
-    
-    <lastmod>2018-11-23T13:41:01.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/unity/drawcall.html</loc>
-    
-    <lastmod>2018-07-05T02:59:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/unity/event.html</loc>
-    
-    <lastmod>2018-04-03T09:55:57.000Z</lastmod>
+    <lastmod>2020-06-28T06:31:07.168Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.fairygui.com/docs/guide/unity/uipainter.html</loc>
     
-    <lastmod>2017-09-28T04:32:17.000Z</lastmod>
+    <lastmod>2020-06-28T06:31:07.168Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.fairygui.com/docs/guide/sdk/index.html</loc>
+    <loc>https://www.fairygui.com/docs/guide/unity/lua.html</loc>
     
-    <lastmod>2017-09-24T13:34:26.000Z</lastmod>
+    <lastmod>2020-06-28T06:31:07.167Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/unity/special.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.167Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/unity/input.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.166Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/unity/insert3d.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.166Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/unity/faq.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.165Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/unity/font.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.165Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/unity/index.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.165Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/unity/drawcall.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.164Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/unity/event.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.164Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/unity/atlas.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.163Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/sdk/egret.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.162Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/preference.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.161Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/sdk/cryengine.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.161Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/index.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.160Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/sdk/cocos2dx.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.160Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/tree.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.159Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/window.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.159Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/text.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.158Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/transition.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.158Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/slider.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.157Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/label.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.155Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/relation.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.155Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/richtext.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.155Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/progressbar.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.154Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/project_settings.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.154Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/popup.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.153Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/loader.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.152Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/plugin.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.152Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/movieclip.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.151Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/object.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.151Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/label.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.150Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/list.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.150Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/loader.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.150Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/image.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.149Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/index.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.149Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/group.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.148Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/i18n.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.148Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/export.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.147Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/dragdrop.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.147Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/graph.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.147Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/component.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.146Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/controller.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.146Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/button.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.145Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/combobox.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.145Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/adaptation.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.144Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/branch.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.144Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/examples/index.html</loc>
+    
+    <lastmod>2020-06-28T06:31:07.143Z</lastmod>
     
   </url>
   
