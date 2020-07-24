@@ -1,7 +1,7 @@
 ---
 title: 偏好设置
 type: guide_editor
-order: 38
+order: 37
 ---
 
 Windows用户通过主菜单“编辑->首选项”打开偏好设置对话框；

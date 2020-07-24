@@ -105,6 +105,11 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/skeleton.html" class="sidebar-link">骨骼动画</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/graph.html" class="sidebar-link">图形</a>
 	                </li>
 	            
@@ -115,12 +120,27 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/loader3d.html" class="sidebar-link">3D内容装载器</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/text.html" class="sidebar-link current">文本</a>
 	                </li>
 	            
 	                
 	                <li>
 	                    <a href="/docs/guide/editor/richtext.html" class="sidebar-link">富文本</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/inputtext.html" class="sidebar-link">输入文本</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/font.html" class="sidebar-link">字体</a>
 	                </li>
 	            
 	                
@@ -230,7 +250,17 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/colorspace.html" class="sidebar-link">颜色空间</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/plugin.html" class="sidebar-link">插件</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/tools.html" class="sidebar-link">辅助工具</a>
 	                </li>
 	            
 	
@@ -265,6 +295,12 @@
 	                
 	                <li>
 	                    <a href="/docs/guide/sdk/cryengine.html" class="sidebar-link">Cry Engine</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/sdk/threejs.html" class="sidebar-link">ThreeJS</a>
 	                </li>
 	            
 
@@ -355,44 +391,8 @@
       <h1>文本</h1>
     
     <p>文本是FairyGUI的基础控件之一。文本不支持交互，鼠标/触摸感应是关闭的。</p>
-<h2 id="动态字体"><a href="#动态字体" class="headerlink" title="动态字体"></a>动态字体</h2><p>动态字体(Dynamic Font)是指直接使用ttf字体渲染文字。ttf字体文件可能存在于操作系统中，也可能打包在游戏中。</p>
-<p>FairyGUI编辑器运行的环境，与应用实际运行的环境是不相同的。比如你在PC上制作界面，最终界面可能运行在手机上。在编辑界面时，动态字体是使用FairyGUI使用编辑器所在的系统环境的字体，在运行时，则是由实际的运行环境，例如Android系统等提供的字体。设计时的字体可以与运行时的字体不同，但建议选取效果较为相近的。</p>
-<p>设置编辑器使用的字体可以在项目属性里设置。运行时的字体则需要由代码设置：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Droid Sans Fallback是安卓上支持中文的默认字体</span></span><br><span class="line">UIConfig.defaultFont = <span class="string">'Droid Sans Fallback'</span>;</span><br></pre></td></tr></table></figure>
-<p>设置运行时使用的字体需保证该字体在目标平台上也存在，否则达不到想要的效果。如果你想打包字体到目标平台，那么需要查询引擎提供的支持，比如Unity，可以这样做：<a href="../unity/font.html">使用字体</a></p>
-<p>如果你需要使用ttf文件，可以将ttf文件直接拖入编辑器（2020版本）。</p>
-<h2 id="位图字体"><a href="#位图字体" class="headerlink" title="位图字体"></a>位图字体</h2><p>在游戏中经常有这样的设计：一些表达特别元素的字符，使用了图片来制作，例如：</p>
-<p><img src="../../images/20170801102632.png" alt></p>
-<p>FairyGUI编辑器支持位图字体。首先，我们创建一种字体。点击主工具栏<img src="../../images/maintb_08.png" alt>，然后，弹出了字体编辑窗口，我们从资源库里把制作好的数字图片拖入到窗口，并设置每个图片对应的字符，点击保存，这样我们的字体就设置好了。如果要修改每个字符对应的图片，将图片重新拖入即可。</p>
-<p>使用图片代替字符的办法，对于少量文本，这是非常方便的，但如果需要嵌入成百上千字，为每个字制作为图片，然后再每个设置对应字符，这工作量就有点大了。FairyGUI编辑器支持外部的位图字体制作工具BMFont、ShoeBox等，这些工具的使用方法请自行参考网络资料。使用外部工具最后会导出一个fnt文件<strong>（注意1：文件格式应该选择fnt格式，不支持xml或者json）</strong>，在编辑器点击导入素材，然后选择这个fnt文件，就可以把字体导入到编辑器里了。</p>
-<p>以下是推荐的BMFont导出设置：</p>
-<p><img src="../../images/20170801103821.png" alt></p>
-<p>以下介绍位图字体设置界面的功能：</p>
-<p><img src="../../images/QQ20191211-173400.png" alt></p>
-<ul>
-<li><p><code>图片</code> 资源库里一张图片的名字。如果是由BMFont导入的字体，则此栏为空。</p>
-</li>
-<li><p><code>字符</code> 该图片对应的字符。只支持单字符。</p>
-</li>
-<li><p><code>偏移X</code> 在水平方向上该字符的偏移。</p>
-</li>
-<li><p><code>偏移Y</code> 在垂直方向上该字符的偏移。负数表示字符上移，整数表示字符下移，但因为文字排版都是基线对齐，下移的结果可能是整行都发生下移。</p>
-</li>
-<li><p><code>占位</code> 一般来说，一个字符的水平占位宽度是由字符图片的宽度决定的。如果这里的数值不为0，则使用该值作为字符的水平占位宽度。</p>
-</li>
-<li><p><code>字体大小</code> 位图字体的字号。在勾选“允许动态改变字号”后有效。</p>
-</li>
-<li><p><code>默认占位</code> 统一设置所有字符的默认水平占位宽度。</p>
-</li>
-<li><p><code>允许动态改变字号</code> 勾选后，使用这个字体的文本可以设置字体大小使字符图片缩放。例如，先设置位图字体的“字体大小”为12，然后文本设置里设置字号为24，那么最终位图字体将放大一倍显示。如果这里不勾选，那么无论文本设置里字号为多少，位图字体都保持原样，不进行缩放。</p>
-</li>
-<li><p><code>允许动态改变颜色</code> 勾选后，使用这个字体的文本可以设置字符图片的颜色。这个改变颜色类似于改变图片元件颜色的功能。如果不勾选，那么无论文本设置里文本的颜色是什么，位图字体都保持原来的颜色。</p>
-</li>
-<li><p><code>纹理集</code> 如果字体是从BMFont导入的，那么字符图片都在一张贴图上，这里对应的是贴图资源。仅作展示，不可修改。如果你要设置该字体最终发布到哪张纹理集上，那么应该进入这个贴图图片的设置窗口设置。</p>
-</li>
-</ul>
 <h2 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h2><p>点击主工具栏中的<img src="../../images/sidetb_03.png" alt>按钮，生成一个文本元件。</p>
-<p><img src="../../images/QQ20191211-173325.png" alt></p>
+<p><img src="../../images/QQ20200722-142338.png" alt></p>
 <ul>
 <li><p><img src="../../images/texttb_01.png" alt> 设置文本支持UBB语法。使用UBB语法可以使单个文本包含多种样式，例如字体大小，颜色等。请参考<a href="text.html#UBB语法">UBB语法</a>。<em>（Laya/Cocos2dx版本不支持普通文本里包含多种样式，如果有这个需求，请改用富文本）</em></p>
 </li>
@@ -406,36 +406,17 @@
 </li>
 <li><p><img src="../../images/texttb_06.png" alt> 设置文本为下划线。</p>
 </li>
+<li><p><img src="../../images/texttb_09.png" alt> 设置文本为删除线。注意，只有部分引擎支持。</p>
+</li>
 <li><p><img src="../../images/texttb_07.png" alt> 表示文本只用作编辑器预览用途，发布时将会自动清除。</p>
-</li>
-<li><p><img src="../../images/texttb_08.png" alt> 设置文本用于输入。勾选后，点击选项旁边的<img src="../../images/QQ20191211-161858.png" alt>按钮弹出输入类型文本的详细设置：</p>
-<p><img src="../../images/QQ20191211-173557.png" alt></p>
-<ul>
-<li><p><code>最大长度</code> 允许输入的最大字符数量。0表示不限制。</p>
-</li>
-<li><p><code>密码</code> 勾选后，输入的字符将显示成“*”号。</p>
-</li>
-<li><p><code>输入限制</code> 限制用户输入的字符。一般只用在PC上。这里，不同平台的语法不一致。</p>
-<ul>
-<li><code>AS3/Starling</code> 参考资料 <a href="http://help.adobe.com/zh_CN/FlashPlatform/reference/actionscript/3/flash/text/TextField.html#restrict" target="_blank" rel="noopener">TextField.restrict</a>。</li>
-<li><code>Egret</code> 参考资料 <a href="http://developer.egret.com/cn/apidoc/index/name/egret.TextField#restrict" target="_blank" rel="noopener">TextField.restrict</a>。</li>
-<li><code>Laya</code> 参考资料 <a href="https://layaair.ldc.layabox.com/api/?category=Core&amp;class=laya.display.Input#restrict" target="_blank" rel="noopener">Input.restrict</a>。</li>
-<li><code>Unity</code> 参考资料 <a href="https://msdn.microsoft.com/zh-cn/library/az24scfc.aspx" target="_blank" rel="noopener">正则表达式语法</a>。例如限制只能输入数字的表达式是：“[0-9]”。</li>
-</ul>
-</li>
-<li><p><code>键盘类型</code> 设置在手机上输入时，弹出的手机键盘的类型。这个具体是否有效要看引擎的支持程度。</p>
-</li>
-<li><p><code>提示文字</code> 设置输入文本内容为空时的显示内容，一般用来提示用户这里应该输入什么。这个提示文字可以使用UBB语法设置单独的颜色（不需要文本勾选UBB），例如<code>[color=#CCCCCC]提示文字[/color]</code>。</p>
-</li>
-</ul>
 </li>
 <li><p><code>文本</code> 设置文本内容。当需要换行时，在编辑器里可以<strong>直接按回车</strong>。用代码赋值时需要换行可以用“\n”。</p>
 </li>
-<li><p><code>字体</code> 设置文字使用的字体。<strong>你不需要每个文本设置一次字体。</strong>在项目属性里可以设置项目中所有文本默认使用的字体。运行时则通过<code>UIConfig.defaultFont</code>统一设置。如果需要使用位图字体，可以从资源库中把字体资源拖动到这里。如果使用TTF字体，那么你需要将字体安装到操作系统，然后再在这里输入字体名称，或者点击旁边的A按钮进行选择。</p>
+<li><p><code>字体</code> 设置文字使用的字体。如果留空，表示使用全局设置字体（这时全局字体名称将以淡灰色显示）。详细请参考<a href="font.html">字体</a>。</p>
 </li>
-<li><p><code>字体大小</code> 设置文字使用的字号。如果使用的是位图字体，你需要对位图字体设置“允许动态改变字号”，这里的选项才有效。</p>
+<li><p><code>字体大小</code> 设置文字使用的字号。<strong>如果使用的是位图字体，你需要对位图字体设置“允许动态改变字号”，这里的选项才有效。</strong></p>
 </li>
-<li><p><code>颜色</code> 设置文字颜色。如果使用的是位图字体，你需要对位图字体设置“允许动态改变颜色”，这里的选项才有效。</p>
+<li><p><code>颜色</code> 设置文字颜色。<strong>如果使用的是位图字体，你需要对位图字体设置“允许动态改变颜色”，这里的选项才有效。</strong></p>
 </li>
 <li><p><code>行距</code> 每行的像素间距。</p>
 </li>
@@ -461,18 +442,8 @@
 <h2 id="GTextField"><a href="#GTextField" class="headerlink" title="GTextField"></a>GTextField</h2><p>文本支持动态创建，例如：</p>
 <figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">GTextField aTextField = <span class="keyword">new</span> GTextField(); <span class="comment">//LayaAir平台用new GBasicTextField</span></span><br><span class="line">aTextField.SetSize(<span class="number">100</span>,<span class="number">100</span>);</span><br><span class="line">aTextField.text = <span class="string">"Hello World"</span>;</span><br></pre></td></tr></table></figure>
 <p>动态改变文本的样式（字体大小、颜色等），在不同的平台，方式略有差别：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Unity/Cry</span></span><br><span class="line">TextFormat tf = aTextField.textFormat;</span><br><span class="line">tf.color = ...;</span><br><span class="line">tf.size = ...;</span><br><span class="line">aTextField.textFormat = tf;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Cocos2dx</span></span><br><span class="line">TextFormat* tf = aTextField-&gt;getTextFormat();</span><br><span class="line">tf-&gt;color = ...;</span><br><span class="line">tf-&gt;size  ...;</span><br><span class="line">aTextField-&gt;applyTextFormat();</span><br><span class="line"></span><br><span class="line"><span class="comment">//其他平台</span></span><br><span class="line">aTextField.color = ...;</span><br><span class="line">aTextField.fontSize = ...;</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Unity/Cry</span></span><br><span class="line">TextFormat tf = aTextField.textFormat;</span><br><span class="line">tf.color = ...;</span><br><span class="line">tf.size = ...;</span><br><span class="line">tf.font = ...;</span><br><span class="line">aTextField.textFormat = tf; <span class="comment">//或者 aTextField.ApplyFormat();</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Cocos2dx</span></span><br><span class="line">TextFormat* tf = aTextField-&gt;getTextFormat();</span><br><span class="line">tf-&gt;color = ...;</span><br><span class="line">tf-&gt;size = ...;</span><br><span class="line">tf-&gt;font =  ...;</span><br><span class="line">aTextField-&gt;applyTextFormat();</span><br><span class="line"></span><br><span class="line"><span class="comment">//其他平台</span></span><br><span class="line">aTextField.color = ...;</span><br><span class="line">aTextField.fontSize = ...;</span><br><span class="line">aTextField.font = ...;</span><br></pre></td></tr></table></figure>
 <p>如果要设置文本的字体为位图字体，字体名称直接使用字体的url就可以了，例如‘ui://包名/字体名’。</p>
-<h2 id="GTextInput"><a href="#GTextInput" class="headerlink" title="GTextInput"></a>GTextInput</h2><p>如果文本勾选为“输入”，则运行中的实例对象为GTextInput。</p>
-<p>可以通过<code>UIConfig.inputHighlightColor</code>和<code>UIConfig.inputCaretSize</code>修改光标的颜色和大小。注意，输入光标的大小会自动根据屏幕缩放选择最合适的宽度，一般情况下你不需要修改。</p>
-<p>输入文本在文本改变时有通知事件：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Unity/Cry</span></span><br><span class="line">aTextInput.onChanged.Add(onChanged);</span><br><span class="line"></span><br><span class="line"><span class="comment">//AS3</span></span><br><span class="line">aTextInput.addEventListener(Event.CHANGE, onChanged);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Egret</span></span><br><span class="line">aTextInput.addEventListener(Event.CHANGE, <span class="keyword">this</span>.onChanged, <span class="keyword">this</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Laya</span></span><br><span class="line">aTextInput.<span class="keyword">on</span>(laya.events.Event.INPUT, <span class="keyword">this</span>, <span class="keyword">this</span>.onChanged);</span><br></pre></td></tr></table></figure>
-<p>在获得焦点和失去焦点时有通知事件：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Unity</span></span><br><span class="line">aTextInput.onFocusIn.Add(onFocusIn);</span><br><span class="line">aTextInput.onFocusOut.Add(onFocusOut);</span><br><span class="line"></span><br><span class="line"><span class="comment">//AS3</span></span><br><span class="line">aTextInput.addEventListener(FocusEvent.FOCUS_IN, onFocusIn);</span><br><span class="line">aTextInput.addEventListener(FocusEvent.FOCUS_OUT, onFocusOut);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Egret</span></span><br><span class="line">aTextInput.addEventListener(FocusEvent.FOCUS_IN, <span class="keyword">this</span>.onFocusIn, <span class="keyword">this</span>);</span><br><span class="line">aTextInput.addEventListener(FocusEvent.FOCUS_OUT, <span class="keyword">this</span>.onFocusOut, <span class="keyword">this</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Laya</span></span><br><span class="line">aTextInput.<span class="keyword">on</span>(laya.events.Event.FOCUS, <span class="keyword">this</span>, <span class="keyword">this</span>.onFocusIn);</span><br><span class="line">aTextInput.<span class="keyword">on</span>(laya.events.Event.BLUR, <span class="keyword">this</span>, <span class="keyword">this</span>.onFocusOut);</span><br></pre></td></tr></table></figure>
-<p>如果要主动设置焦点，可以用</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">aTextInput.RequestFocus();</span><br></pre></td></tr></table></figure>
-<p>如果输入文本设置了单行，则当用户按回车键时会派发一个事件（注意，仅在PC上有效。在手机上的键盘按Done不属于支持范围内，引擎一般没有提供和手机键盘交互的接口）：</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Unity</span></span><br><span class="line">aTextInput.onSubmit.Add(onSubmit);</span><br></pre></td></tr></table></figure>
 <h2 id="UBB语法"><a href="#UBB语法" class="headerlink" title="UBB语法"></a>UBB语法</h2><p>FairyGUI支持的UBB语法有：</p>
 <ul>
 <li><p><code>[img]image_url[/img]</code> 显示一个图片。这里的image_url可以是”ui://包名/图片名”的内部url格式，也可以是一个外部资源的url。图片最终是通过GLoader显示的，支持外部资源的能力可以参阅GLoader的文档。在这里，你无法设置图片大小。如果需要需要设置图片大小，改用HTML语法。</p>

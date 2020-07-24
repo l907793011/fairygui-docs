@@ -1,7 +1,7 @@
 ---
 title: 编辑器使用基础
 type: guide_editor
-order: 0
+order: 1
 ---
 
 ## 打开项目
@@ -129,9 +129,11 @@ FairyGUI的项目在文件系统的结构为：
 
 - ![](../../images/libtb_04.png) 切换两栏视图。库视图支持两种结构，单栏和两栏。单栏就是传统的树结构；两栏则由左边的树和右边的列表组成。
 
-  ![](../../images/QQ20191206-120538.png)
+  ![](../../images/QQ20200724-151323.png)
 
 - ![](../../images/libtb_05.png) 全部收缩。
+
+- ![](../../images/libtb_06.png) 改变右栏列表显示图标的大小。
 
 ### 右键菜单
 
@@ -312,11 +314,15 @@ FairyGUI的项目在文件系统的结构为：
 
 ![](../../images/sidetb_04.png) 富文本控件。
 
+![](../../images/sidetb_22.png) 输入文本控件。
+
 ![](../../images/sidetb_05.png) 图形控件。
 
 ![](../../images/sidetb_06.png) 列表控件。
 
 ![](../../images/sidetb_07.png) 装载器控件。
+
+![](../../images/sidetb_21.png) 3D内容装载器控件。
 
 ![](../../images/sidetb_08.png) 为当前选中的元件创建一个组合。
 

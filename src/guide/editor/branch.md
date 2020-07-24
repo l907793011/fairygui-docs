@@ -1,7 +1,7 @@
 ---
 title: 分支
 type: guide_editor
-order: 3
+order: 4
 ---
 
 分支功能用于实现项目的多态设计，例如多国语言版本下UI的差别，又例如多个渠道版本下UI的差别。

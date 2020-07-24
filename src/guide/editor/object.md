@@ -1,7 +1,7 @@
 ---
 title: 元件
 type: guide_editor
-order: 10
+order: 6
 ---
 
 每个舞台中的组成元素我们称之为元件，元件的类型有很多，他们是：
@@ -87,7 +87,7 @@ order: 10
 
 - `自定义数据`
 
-  可以设置一个自定义的数据，这个数据FairyGUI不做解析，按原样发布到最后的描述文件中。开发者可以在运行时获取。获取方式是：`GObject.data`或`GObject.userData`（Cocos2dx、Vision）。
+  可以设置一个自定义的数据，这个数据FairyGUI不做解析，按原样发布到最后的描述文件中。开发者可以在运行时获取。获取方式是：`GObject.data`或`GObject.userData`（Cocos2dx、Vision）。**注意区分这里的设置和组件属性里的设置，他们获取的方式不一样。**
 
 ## GObject
 

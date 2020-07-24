@@ -1,7 +1,7 @@
 ---
 title: 发布
 type: guide_editor
-order: 4
+order: 5
 ---
 
 通过主工具栏![](../../images/maintb_15.png)按钮, 或主菜单文件->发布设置”打开发布设置对话框。
@@ -189,3 +189,5 @@ FairyGUI-Editor -batchmode -p project_desc_file [-b package_names] [-t branch_na
 - `branch_name` 可选。分支名称。不提供则发布主干。
 - `output_path` 可选。如果指定，则覆盖项目里的设置，直接使用这里指定的位置。
 - `logFile` 可选。指定一个日志文件。
+
+注意，应该在FairyGUI-Editor所在目录执行FairyGUI-Editor命令，或者利用PATH环境变量。否则FairyGUI-Editor无法启动而且可能没有任何报错信息。

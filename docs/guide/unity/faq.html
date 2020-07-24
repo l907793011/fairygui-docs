@@ -105,6 +105,11 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/skeleton.html" class="sidebar-link">骨骼动画</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/graph.html" class="sidebar-link">图形</a>
 	                </li>
 	            
@@ -115,12 +120,27 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/loader3d.html" class="sidebar-link">3D内容装载器</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/text.html" class="sidebar-link">文本</a>
 	                </li>
 	            
 	                
 	                <li>
 	                    <a href="/docs/guide/editor/richtext.html" class="sidebar-link">富文本</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/inputtext.html" class="sidebar-link">输入文本</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/font.html" class="sidebar-link">字体</a>
 	                </li>
 	            
 	                
@@ -230,7 +250,17 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/colorspace.html" class="sidebar-link">颜色空间</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/plugin.html" class="sidebar-link">插件</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/tools.html" class="sidebar-link">辅助工具</a>
 	                </li>
 	            
 	
@@ -265,6 +295,12 @@
 	                
 	                <li>
 	                    <a href="/docs/guide/sdk/cryengine.html" class="sidebar-link">Cry Engine</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/sdk/threejs.html" class="sidebar-link">ThreeJS</a>
 	                </li>
 	            
 
@@ -400,6 +436,8 @@
 <h2 id="FairyGUI可以播放视频吗"><a href="#FairyGUI可以播放视频吗" class="headerlink" title="FairyGUI可以播放视频吗"></a>FairyGUI可以播放视频吗</h2><p>播放视频的功能Unity有提供，不需要FairyGUI支持。你可以使用一个Loader，然后将视频对象的texture赋值给Loader就可以了。</p>
 <h2 id="可以用代码创建动效吗"><a href="#可以用代码创建动效吗" class="headerlink" title="可以用代码创建动效吗"></a>可以用代码创建动效吗</h2><p>动效（Transition）是为了编辑器里可视化设计提出的一个概念。如果你是全部用代码来设计UI元件的动作，那就不需要用动效了，直接用Tween来完成。可以用DoTween或者FairyGUI内置的GTween。</p>
 <h2 id="创建的Tweener调用kill-false-时偶尔会将正在播放的其他动效暂停"><a href="#创建的Tweener调用kill-false-时偶尔会将正在播放的其他动效暂停" class="headerlink" title="创建的Tweener调用kill(false)时偶尔会将正在播放的其他动效暂停"></a>创建的Tweener调用kill(false)时偶尔会将正在播放的其他动效暂停</h2><p>GTweener是重用的。注意检查你的所有代码，不要重用或者误用GTweener实例，也就是说，Tween一旦结束，GTweener实例就不要再使用了，更加不要去kill。一般建议不要保存GTweener实例。</p>
+<h2 id="FairyGUI支持SRP吗"><a href="#FairyGUI支持SRP吗" class="headerlink" title="FairyGUI支持SRP吗"></a>FairyGUI支持SRP吗</h2><p>支持的，但需要使用最新的支持相机堆叠的版本。另外，如果启用了SRP Batcher，会出现被遮罩物体显示不正常的问题，需要对着色器FairyGUI-Text和FairyGUI-Image做如下修改：</p>
+<p><img src="../../images/QQ20200724-120929.png" alt></p>
 
     
     <div class="footer">

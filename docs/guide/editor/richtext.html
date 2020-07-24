@@ -105,6 +105,11 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/skeleton.html" class="sidebar-link">骨骼动画</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/graph.html" class="sidebar-link">图形</a>
 	                </li>
 	            
@@ -115,12 +120,27 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/loader3d.html" class="sidebar-link">3D内容装载器</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/text.html" class="sidebar-link">文本</a>
 	                </li>
 	            
 	                
 	                <li>
 	                    <a href="/docs/guide/editor/richtext.html" class="sidebar-link current">富文本</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/inputtext.html" class="sidebar-link">输入文本</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/font.html" class="sidebar-link">字体</a>
 	                </li>
 	            
 	                
@@ -230,7 +250,17 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/colorspace.html" class="sidebar-link">颜色空间</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/plugin.html" class="sidebar-link">插件</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/tools.html" class="sidebar-link">辅助工具</a>
 	                </li>
 	            
 	
@@ -265,6 +295,12 @@
 	                
 	                <li>
 	                    <a href="/docs/guide/sdk/cryengine.html" class="sidebar-link">Cry Engine</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/sdk/threejs.html" class="sidebar-link">ThreeJS</a>
 	                </li>
 	            
 
@@ -361,7 +397,7 @@
 <li>普通文本不支持HTML语法（但可以使用UBB实现不同样式）；富文本支持。</li>
 </ul>
 <p>点击主工具栏中的<img src="../../images/sidetb_04.png" alt>按钮，生成一个富文本。</p>
-<h2 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h2><p><img src="../../images/QQ20191211-171911.png" alt></p>
+<h2 id="实例属性"><a href="#实例属性" class="headerlink" title="实例属性"></a>实例属性</h2><p><img src="../../images/QQ20200722-142811.png" alt></p>
 <ul>
 <li><p><img src="../../images/texttb_01.png" alt> 设置文本支持UBB语法。使用UBB语法可以使单个文本包含多种样式，例如字体大小，颜色等。请参考<a href="text.html#UBB语法">UBB语法</a>。</p>
 </li>
@@ -375,15 +411,17 @@
 </li>
 <li><p><img src="../../images/texttb_06.png" alt> 设置文本为下划线。</p>
 </li>
+<li><p><img src="../../images/texttb_09.png" alt> 设置文本为删除线。注意，只有部分引擎支持。</p>
+</li>
 <li><p><img src="../../images/texttb_07.png" alt> 表示文本只用作编辑器预览用途，发布时将会自动清除。</p>
 </li>
 <li><p><code>文本</code> 设置文本内容。富文本可直接使用<a href="#HTML语法">HTML语法</a>。当需要换行时，在编辑器里可以<strong>直接按回车</strong>，或者使用html标签“&lt;br/&gt;”亦可。代码赋值需要换行可以用“\n”。某些引擎，例如LayaAir，可能不支持回车符换行，可以使用&lt;br/&gt;试试。</p>
 </li>
-<li><p><code>字体</code> 设置文字使用的字体。<strong>你不需要每个文本设置一次字体。</strong>在项目属性里可以设置项目中所有文本默认使用的字体。运行时则通过<code>UIConfig.defaultFont</code>统一设置。如果需要使用位图字体，可以从资源库中把字体资源拖动到这里。如果使用TTF字体，那么你需要将字体安装到操作系统，然后再在这里输入字体名称，或者点击旁边的A按钮进行选择。</p>
+<li><p><code>字体</code> 设置文字使用的字体。如果留空，表示使用全局设置字体（这时全局字体名称将以淡灰色显示）。详细请参考<a href="font.html">字体</a>。</p>
 </li>
-<li><p><code>字体大小</code> 设置文字使用的字号。如果使用的是位图字体，你需要对位图字体设置“允许动态改变字号”，这里的选项才有效。</p>
+<li><p><code>字体大小</code> 设置文字使用的字号。<strong>如果使用的是位图字体，你需要对位图字体设置“允许动态改变字号”，这里的选项才有效。</strong></p>
 </li>
-<li><p><code>颜色</code> 设置文字颜色。如果使用的是位图字体，你需要对位图字体设置“允许动态改变颜色”，这里的选项才有效。</p>
+<li><p><code>颜色</code> 设置文字颜色。<strong>如果使用的是位图字体，你需要对位图字体设置“允许动态改变颜色”，这里的选项才有效。</strong></p>
 </li>
 <li><p><code>行距</code> 每行的像素间距。</p>
 </li>

@@ -1,71 +1,16 @@
 ---
 title: 文本
 type: guide_editor
-order: 15
+order: 13
 ---
 
 文本是FairyGUI的基础控件之一。文本不支持交互，鼠标/触摸感应是关闭的。
-
-## 动态字体
-
-动态字体(Dynamic Font)是指直接使用ttf字体渲染文字。ttf字体文件可能存在于操作系统中，也可能打包在游戏中。
-
-FairyGUI编辑器运行的环境，与应用实际运行的环境是不相同的。比如你在PC上制作界面，最终界面可能运行在手机上。在编辑界面时，动态字体是使用FairyGUI使用编辑器所在的系统环境的字体，在运行时，则是由实际的运行环境，例如Android系统等提供的字体。设计时的字体可以与运行时的字体不同，但建议选取效果较为相近的。
-
-设置编辑器使用的字体可以在项目属性里设置。运行时的字体则需要由代码设置：
-
-```csharp
-    //Droid Sans Fallback是安卓上支持中文的默认字体
-    UIConfig.defaultFont = 'Droid Sans Fallback'; 
-```
-
-设置运行时使用的字体需保证该字体在目标平台上也存在，否则达不到想要的效果。如果你想打包字体到目标平台，那么需要查询引擎提供的支持，比如Unity，可以这样做：[使用字体](../unity/font.html)
-
-如果你需要使用ttf文件，可以将ttf文件直接拖入编辑器（2020版本）。
-
-## 位图字体
-
-在游戏中经常有这样的设计：一些表达特别元素的字符，使用了图片来制作，例如：
-
-![](../../images/20170801102632.png)
-
-FairyGUI编辑器支持位图字体。首先，我们创建一种字体。点击主工具栏![](../../images/maintb_08.png)，然后，弹出了字体编辑窗口，我们从资源库里把制作好的数字图片拖入到窗口，并设置每个图片对应的字符，点击保存，这样我们的字体就设置好了。如果要修改每个字符对应的图片，将图片重新拖入即可。
-
-使用图片代替字符的办法，对于少量文本，这是非常方便的，但如果需要嵌入成百上千字，为每个字制作为图片，然后再每个设置对应字符，这工作量就有点大了。FairyGUI编辑器支持外部的位图字体制作工具BMFont、ShoeBox等，这些工具的使用方法请自行参考网络资料。使用外部工具最后会导出一个fnt文件**（注意1：文件格式应该选择fnt格式，不支持xml或者json）**，在编辑器点击导入素材，然后选择这个fnt文件，就可以把字体导入到编辑器里了。
-
-以下是推荐的BMFont导出设置：
-
-![](../../images/20170801103821.png)
-
-以下介绍位图字体设置界面的功能：
-
-![](../../images/QQ20191211-173400.png)
-
-- `图片` 资源库里一张图片的名字。如果是由BMFont导入的字体，则此栏为空。
-
-- `字符` 该图片对应的字符。只支持单字符。
-
-- `偏移X` 在水平方向上该字符的偏移。
-
-- `偏移Y` 在垂直方向上该字符的偏移。负数表示字符上移，整数表示字符下移，但因为文字排版都是基线对齐，下移的结果可能是整行都发生下移。
-
-- `占位` 一般来说，一个字符的水平占位宽度是由字符图片的宽度决定的。如果这里的数值不为0，则使用该值作为字符的水平占位宽度。
-
-- `字体大小` 位图字体的字号。在勾选“允许动态改变字号”后有效。
-
-- `默认占位` 统一设置所有字符的默认水平占位宽度。
-
-- `允许动态改变字号` 勾选后，使用这个字体的文本可以设置字体大小使字符图片缩放。例如，先设置位图字体的“字体大小”为12，然后文本设置里设置字号为24，那么最终位图字体将放大一倍显示。如果这里不勾选，那么无论文本设置里字号为多少，位图字体都保持原样，不进行缩放。
-
-- `允许动态改变颜色` 勾选后，使用这个字体的文本可以设置字符图片的颜色。这个改变颜色类似于改变图片元件颜色的功能。如果不勾选，那么无论文本设置里文本的颜色是什么，位图字体都保持原来的颜色。
-
-- `纹理集` 如果字体是从BMFont导入的，那么字符图片都在一张贴图上，这里对应的是贴图资源。仅作展示，不可修改。如果你要设置该字体最终发布到哪张纹理集上，那么应该进入这个贴图图片的设置窗口设置。
 
 ## 实例属性
 
 点击主工具栏中的![](../../images/sidetb_03.png)按钮，生成一个文本元件。
 
-![](../../images/QQ20191211-173325.png)
+![](../../images/QQ20200722-142338.png)
 
 - ![](../../images/texttb_01.png) 设置文本支持UBB语法。使用UBB语法可以使单个文本包含多种样式，例如字体大小，颜色等。请参考[UBB语法](text.html#UBB语法)。*（Laya/Cocos2dx版本不支持普通文本里包含多种样式，如果有这个需求，请改用富文本）*
 
@@ -79,33 +24,17 @@ FairyGUI编辑器支持位图字体。首先，我们创建一种字体。点击
 
 - ![](../../images/texttb_06.png) 设置文本为下划线。
 
+- ![](../../images/texttb_09.png) 设置文本为删除线。注意，只有部分引擎支持。
+
 - ![](../../images/texttb_07.png) 表示文本只用作编辑器预览用途，发布时将会自动清除。
-
-- ![](../../images/texttb_08.png) 设置文本用于输入。勾选后，点击选项旁边的![](../../images/QQ20191211-161858.png)按钮弹出输入类型文本的详细设置：
-  
-  ![](../../images/QQ20191211-173557.png)
-
-  - `最大长度` 允许输入的最大字符数量。0表示不限制。
-
-  - `密码` 勾选后，输入的字符将显示成“*”号。
-
-  - `输入限制` 限制用户输入的字符。一般只用在PC上。这里，不同平台的语法不一致。
-    - `AS3/Starling` 参考资料 [TextField.restrict](http://help.adobe.com/zh_CN/FlashPlatform/reference/actionscript/3/flash/text/TextField.html#restrict)。
-    - `Egret` 参考资料 [TextField.restrict](http://developer.egret.com/cn/apidoc/index/name/egret.TextField#restrict)。
-    - `Laya` 参考资料 [Input.restrict](https://layaair.ldc.layabox.com/api/?category=Core&class=laya.display.Input#restrict)。
-    - `Unity` 参考资料 [正则表达式语法](https://msdn.microsoft.com/zh-cn/library/az24scfc.aspx)。例如限制只能输入数字的表达式是：“[0-9]”。
-
-  - `键盘类型` 设置在手机上输入时，弹出的手机键盘的类型。这个具体是否有效要看引擎的支持程度。
-
-  - `提示文字` 设置输入文本内容为空时的显示内容，一般用来提示用户这里应该输入什么。这个提示文字可以使用UBB语法设置单独的颜色（不需要文本勾选UBB），例如`[color=#CCCCCC]提示文字[/color]`。
 
 - `文本` 设置文本内容。当需要换行时，在编辑器里可以**直接按回车**。用代码赋值时需要换行可以用“\n”。
 
-- `字体` 设置文字使用的字体。**你不需要每个文本设置一次字体。**在项目属性里可以设置项目中所有文本默认使用的字体。运行时则通过`UIConfig.defaultFont`统一设置。如果需要使用位图字体，可以从资源库中把字体资源拖动到这里。如果使用TTF字体，那么你需要将字体安装到操作系统，然后再在这里输入字体名称，或者点击旁边的A按钮进行选择。
+- `字体` 设置文字使用的字体。如果留空，表示使用全局设置字体（这时全局字体名称将以淡灰色显示）。详细请参考[字体](font.html)。
 
-- `字体大小` 设置文字使用的字号。如果使用的是位图字体，你需要对位图字体设置“允许动态改变字号”，这里的选项才有效。
+- `字体大小` 设置文字使用的字号。**如果使用的是位图字体，你需要对位图字体设置“允许动态改变字号”，这里的选项才有效。**
 
-- `颜色` 设置文字颜色。如果使用的是位图字体，你需要对位图字体设置“允许动态改变颜色”，这里的选项才有效。
+- `颜色` 设置文字颜色。**如果使用的是位图字体，你需要对位图字体设置“允许动态改变颜色”，这里的选项才有效。**
 
 - `行距` 每行的像素间距。
 
@@ -125,7 +54,6 @@ FairyGUI编辑器支持位图字体。首先，我们创建一种字体。点击
 
 - `投影` 设置文本的投影效果。投影效果可以看做是简化的描边效果，描边是所有方向，投影只有一个方向。投影和描边共用一个颜色设置。
 
-
 ## GTextField
 
 文本支持动态创建，例如：
@@ -143,75 +71,23 @@ FairyGUI编辑器支持位图字体。首先，我们创建一种字体。点击
     TextFormat tf = aTextField.textFormat;
     tf.color = ...;
     tf.size = ...;
-    aTextField.textFormat = tf;
+    tf.font = ...;
+    aTextField.textFormat = tf; //或者 aTextField.ApplyFormat();
 
     //Cocos2dx
     TextFormat* tf = aTextField->getTextFormat();
     tf->color = ...;
-    tf->size  ...;
+    tf->size = ...;
+    tf->font =  ...;
     aTextField->applyTextFormat();
 
     //其他平台
     aTextField.color = ...;
     aTextField.fontSize = ...;
+    aTextField.font = ...;
 ```
 
 如果要设置文本的字体为位图字体，字体名称直接使用字体的url就可以了，例如‘ui://包名/字体名’。
-
-## GTextInput
-
-如果文本勾选为“输入”，则运行中的实例对象为GTextInput。
-
-可以通过`UIConfig.inputHighlightColor`和`UIConfig.inputCaretSize`修改光标的颜色和大小。注意，输入光标的大小会自动根据屏幕缩放选择最合适的宽度，一般情况下你不需要修改。
-
-输入文本在文本改变时有通知事件：
-
-```csharp
-    //Unity/Cry
-    aTextInput.onChanged.Add(onChanged);
-
-    //AS3
-    aTextInput.addEventListener(Event.CHANGE, onChanged);
-
-    //Egret
-    aTextInput.addEventListener(Event.CHANGE, this.onChanged, this);
-
-    //Laya
-    aTextInput.on(laya.events.Event.INPUT, this, this.onChanged);
-```
-
-在获得焦点和失去焦点时有通知事件：
-
-```csharp
-    //Unity
-    aTextInput.onFocusIn.Add(onFocusIn);
-    aTextInput.onFocusOut.Add(onFocusOut);
-
-    //AS3
-    aTextInput.addEventListener(FocusEvent.FOCUS_IN, onFocusIn);
-    aTextInput.addEventListener(FocusEvent.FOCUS_OUT, onFocusOut);
-
-    //Egret
-    aTextInput.addEventListener(FocusEvent.FOCUS_IN, this.onFocusIn, this);
-    aTextInput.addEventListener(FocusEvent.FOCUS_OUT, this.onFocusOut, this);
-
-    //Laya
-    aTextInput.on(laya.events.Event.FOCUS, this, this.onFocusIn);
-    aTextInput.on(laya.events.Event.BLUR, this, this.onFocusOut);
-```
-
-如果要主动设置焦点，可以用
-
-```csharp
-    aTextInput.RequestFocus();
-```
-
-如果输入文本设置了单行，则当用户按回车键时会派发一个事件（注意，仅在PC上有效。在手机上的键盘按Done不属于支持范围内，引擎一般没有提供和手机键盘交互的接口）：
-
-```csharp
-    //Unity
-    aTextInput.onSubmit.Add(onSubmit);
-```
 
 ## UBB语法
 

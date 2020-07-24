@@ -105,6 +105,11 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/skeleton.html" class="sidebar-link">骨骼动画</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/graph.html" class="sidebar-link">图形</a>
 	                </li>
 	            
@@ -115,12 +120,27 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/loader3d.html" class="sidebar-link">3D内容装载器</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/text.html" class="sidebar-link">文本</a>
 	                </li>
 	            
 	                
 	                <li>
 	                    <a href="/docs/guide/editor/richtext.html" class="sidebar-link">富文本</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/inputtext.html" class="sidebar-link">输入文本</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/font.html" class="sidebar-link">字体</a>
 	                </li>
 	            
 	                
@@ -230,7 +250,17 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/colorspace.html" class="sidebar-link">颜色空间</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/plugin.html" class="sidebar-link current">插件</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/tools.html" class="sidebar-link">辅助工具</a>
 	                </li>
 	            
 	
@@ -265,6 +295,12 @@
 	                
 	                <li>
 	                    <a href="/docs/guide/sdk/cryengine.html" class="sidebar-link">Cry Engine</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/sdk/threejs.html" class="sidebar-link">ThreeJS</a>
 	                </li>
 	            
 
@@ -363,9 +399,23 @@
 <li>添加元件到舞台，以及设置舞台上的元件的属性。</li>
 <li>插入自定义操作到发布流程。例如自定义发布代码。</li>
 </ol>
-<h2 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h2><p>插件需要使用Lua语言开发。从<a href="https://github.com/fairygui/FairyGUI-Editor/tree/master/plugin" target="_blank" rel="noopener">仓库</a>下载最新版本的插件接口和示例。</p>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>将下载的插件Demo放入工程插件目录内，即“项目根目录/plugins”目录下。每个插件对应一个子目录。</p>
-<h2 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h2><p>可以通过输出信息到控制台进行调试。</p>
+<h2 id="插件视图"><a href="#插件视图" class="headerlink" title="插件视图"></a>插件视图</h2><p><img src="../../images/QQ20200724-151747.png" alt></p>
+<ul>
+<li><p><img src="../../images/plugintb_01.png" alt> 打开插件放置的目录。插件目录是在“项目根目录/plugins”目录下，每个插件对应一个子目录。</p>
+</li>
+<li><p><img src="../../images/plugintb_02.png" alt> 创建一个新的插件。点击后弹出对话框：</p>
+<p> <img src="../../images/QQ20200724-155544.png" alt> </p>
+<ul>
+<li><code>插件名称</code> 插件的名称将作为插件目录的名称。</li>
+<li><code>显示名称</code> 这里设置的值将显示在插件列表的标题中。</li>
+<li><code>描述</code> 这里设置的值将显示在插件列表的描述中。</li>
+<li><code>插件模板</code> 创建时可以使用一个模板，例如使用发布代码模板，模板里包含了自定义发布代码的整个流程，稍作修改就可以适应项目特殊的需求。</li>
+</ul>
+</li>
+</ul>
+<h2 id="开发插件"><a href="#开发插件" class="headerlink" title="开发插件"></a>开发插件</h2><p>从<a href="https://github.com/fairygui/FairyGUI-Editor/tree/master/plugin" target="_blank" rel="noopener">仓库</a>下载最新版本的插件接口和示例。</p>
+<p>插件需要使用Lua语言开发。编辑器开放的API可以在LuaAPI目录中找到。</p>
+<p>调试插件可以通过输出信息到控制台进行调试。</p>
 
     
     <div class="footer">

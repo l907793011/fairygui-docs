@@ -105,6 +105,11 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/skeleton.html" class="sidebar-link">骨骼动画</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/graph.html" class="sidebar-link">图形</a>
 	                </li>
 	            
@@ -115,12 +120,27 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/loader3d.html" class="sidebar-link">3D内容装载器</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/text.html" class="sidebar-link">文本</a>
 	                </li>
 	            
 	                
 	                <li>
 	                    <a href="/docs/guide/editor/richtext.html" class="sidebar-link">富文本</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/inputtext.html" class="sidebar-link">输入文本</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/font.html" class="sidebar-link">字体</a>
 	                </li>
 	            
 	                
@@ -230,7 +250,17 @@
 	            
 	                
 	                <li>
+	                    <a href="/docs/guide/editor/colorspace.html" class="sidebar-link">颜色空间</a>
+	                </li>
+	            
+	                
+	                <li>
 	                    <a href="/docs/guide/editor/plugin.html" class="sidebar-link">插件</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/tools.html" class="sidebar-link">辅助工具</a>
 	                </li>
 	            
 	
@@ -265,6 +295,12 @@
 	                
 	                <li>
 	                    <a href="/docs/guide/sdk/cryengine.html" class="sidebar-link">Cry Engine</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/sdk/threejs.html" class="sidebar-link">ThreeJS</a>
 	                </li>
 	            
 
@@ -400,6 +436,7 @@
 <li>Egret 使用egret.RES.getResAsync加载的外部位图资源。</li>
 <li>Layabox 使用Laya.loader.load加载的外部资源。</li>
 <li>Unity 使用Resources.Load加载的外部贴图资源。</li>
+<li>其他SDK请参考源码GLoader里的loadExternal方法</li>
 </ul>
 <p>例如：</p>
 <figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//AS3，加载一个网络图片</span></span><br><span class="line">aLoader.url = “http:<span class="comment">//www.fairygui.com/logo.png”;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Egret，这里demoRes是resources.json里定义的一个资源</span></span><br><span class="line">aLoader.url = “demoRes”;</span><br><span class="line"></span><br><span class="line"><span class="comment">//Unity, 这里加载的是路径为Assets/Resources/demo/aimage的一个贴图</span></span><br><span class="line">aLoader.url = “demo/aimage”;</span><br></pre></td></tr></table></figure>

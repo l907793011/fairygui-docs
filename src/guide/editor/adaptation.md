@@ -1,7 +1,7 @@
 ---
 title: 适配
 type: guide_editor
-order: 35
+order: 34
 ---
 
 FairyGUI为手游开发提供了自动适应各种设备分辨率的UI适配策略，这意味着开发者只需要制作一套UI，就可以适配所有分辨率的设备。

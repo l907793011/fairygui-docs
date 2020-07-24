@@ -151,3 +151,9 @@ UIConfig.buttonSoundVolume仅用于初始化设置，后续改变是无效的。
 ## 创建的Tweener调用kill(false)时偶尔会将正在播放的其他动效暂停
 
 GTweener是重用的。注意检查你的所有代码，不要重用或者误用GTweener实例，也就是说，Tween一旦结束，GTweener实例就不要再使用了，更加不要去kill。一般建议不要保存GTweener实例。
+
+## FairyGUI支持SRP吗
+
+支持的，但需要使用最新的支持相机堆叠的版本。另外，如果启用了SRP Batcher，会出现被遮罩物体显示不正常的问题，需要对着色器FairyGUI-Text和FairyGUI-Image做如下修改：
+
+![](../../images/QQ20200724-120929.png)

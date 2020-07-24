@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta name="generator" content="Hexo 3.9.0">
+    
+        <title>FairyGUI - 骨骼动画</title>
+    
+        <meta charset="utf-8">
+        <meta name="description" content="FairyGUI教程">
+        <meta name="keywords" content="FairyGUI,FGUI,FairyGUI教程">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="-骨骼动画FairyGUI">
+        <meta property="og:description" content="FairyGUI教程">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="骨骼动画 — FairyGUI">
+        <meta name="twitter:description" content="FairyGUI教程">
+
+      <!--  <link href='//fonts.proxy.ustclug.org/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
+
+        <!-- main page styles -->
+        <link rel="stylesheet" href="/docs/css/page.css">
+
+        <!-- this needs to be loaded before guide's inline scripts -->
+        <script src="/docs/js/vue.min.js"></script>
+        <script>window.PAGE_TYPE = "guide_editor"</script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" data-bg-text="FairyGUI">
+            <a class="menu-button"></a>
+        </div>
+        <div id="header">
+  <ul id="nav">
+    <li><a href="/docs/guide/" class="nav-link current">教程</a></li>
+<li><a href="/docs/examples/" class="nav-link">在线示例</a></li>
+<li><a href="/docs/release_notes/" class="nav-link">发行日志</a></li>
+<li><a href="/" class="nav-link">首页</a></li>
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    
+    <div class="sidebar">
+    <ul class="main-menu">
+        <li><a href="/docs/guide/" class="nav-link current">教程</a></li>
+<li><a href="/docs/examples/" class="nav-link">在线示例</a></li>
+<li><a href="/docs/release_notes/" class="nav-link">发行日志</a></li>
+<li><a href="/" class="nav-link">首页</a></li>
+    </ul>
+    <div class="list">
+        <ul class="menu-root">
+            
+
+	 			
+	                
+	                <li>
+	                    <a href="/docs/guide/index.html" class="sidebar-link">导读</a>
+	                </li>
+	            
+	
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/index.html" class="sidebar-link">编辑器使用基础</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/project_settings.html" class="sidebar-link">项目设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/package.html" class="sidebar-link">包</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/branch.html" class="sidebar-link">分支</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/publish.html" class="sidebar-link">发布</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/object.html" class="sidebar-link">元件</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/image.html" class="sidebar-link">图片</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/movieclip.html" class="sidebar-link">动画</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/skeleton.html" class="sidebar-link current">骨骼动画</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/graph.html" class="sidebar-link">图形</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/loader.html" class="sidebar-link">装载器</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/loader3d.html" class="sidebar-link">3D内容装载器</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/text.html" class="sidebar-link">文本</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/richtext.html" class="sidebar-link">富文本</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/inputtext.html" class="sidebar-link">输入文本</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/font.html" class="sidebar-link">字体</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/group.html" class="sidebar-link">组</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/component.html" class="sidebar-link">组件</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/scrollpane.html" class="sidebar-link">滚动容器</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/controller.html" class="sidebar-link">控制器</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/relation.html" class="sidebar-link">关联系统</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/label.html" class="sidebar-link">标签</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/button.html" class="sidebar-link">按钮</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/combobox.html" class="sidebar-link">下拉框</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/progressbar.html" class="sidebar-link">进度条</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/slider.html" class="sidebar-link">滑动条</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/scrollbar.html" class="sidebar-link">滚动条</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/list.html" class="sidebar-link">列表</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/tree.html" class="sidebar-link">树</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/popup.html" class="sidebar-link">Popup</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/dragdrop.html" class="sidebar-link">Drag&Drop</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/window.html" class="sidebar-link">窗口系统</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/transition.html" class="sidebar-link">动效</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/adaptation.html" class="sidebar-link">适配</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/i18n.html" class="sidebar-link">多国语言</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/export.html" class="sidebar-link">导入和导出</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/preference.html" class="sidebar-link">偏好设置</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/colorspace.html" class="sidebar-link">颜色空间</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/plugin.html" class="sidebar-link">插件</a>
+	                </li>
+	            
+	                
+	                <li>
+	                    <a href="/docs/guide/editor/tools.html" class="sidebar-link">辅助工具</a>
+	                </li>
+	            
+	
+	            
+	                
+	                
+	                <li><h3>SDK</h3></li>
+	                
+	                <li>
+	                    <a href="/docs/guide/sdk/laya.html" class="sidebar-link">LayaAir</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/sdk/egret.html" class="sidebar-link">Egret</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/sdk/cocos2dx.html" class="sidebar-link">Cocos2dx</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/sdk/creator.html" class="sidebar-link">Cocos Creator</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/sdk/cryengine.html" class="sidebar-link">Cry Engine</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/sdk/threejs.html" class="sidebar-link">ThreeJS</a>
+	                </li>
+	            
+
+	            
+	                
+	                
+	                <li><h3>SDK - Unity</h3></li>
+	                
+	                <li>
+	                    <a href="/docs/guide/unity/index.html" class="sidebar-link">显示UI面板</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/unity/transform.html" class="sidebar-link">坐标系统</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/unity/atlas.html" class="sidebar-link">纹理集的处理</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/unity/font.html" class="sidebar-link">字体的处理</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/unity/input.html" class="sidebar-link">输入处理</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/unity/event.html" class="sidebar-link">事件机制</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/unity/insert3d.html" class="sidebar-link">插入模型/粒子/Spine/Canvas</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/unity/uipainter.html" class="sidebar-link">曲面UI</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/unity/drawcall.html" class="sidebar-link">DrawCall优化</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/unity/lua.html" class="sidebar-link">在Lua中使用</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/unity/special.html" class="sidebar-link">特色功能</a>
+	                </li>
+	            
+	                
+	                
+	                <li>
+	                    <a href="/docs/guide/unity/faq.html" class="sidebar-link">常见问题</a>
+	                </li>
+	            
+
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content guide_editor with-sidebar ">
+    
+      <h1>骨骼动画</h1>
+    
+    <p>FairyGUI编辑器支持导入骨骼动画，目前支持的格式为：</p>
+<ul>
+<li>Spine 只支持3.8版本。json格式和二进制格式都支持。</li>
+<li>龙骨 支持所有版本。json格式和二进制格式都支持。</li>
+</ul>
+<p>导入骨骼动画，只需将描述文件导入即可，<strong>不需要拖入atlas描述文件或者贴图。</strong>。即导入</p>
+<ul>
+<li>Spine xxx.json/xxx.skel</li>
+<li>龙骨 xxx.json/xxx.dbbin</li>
+</ul>
+<p><img src="../../images/QQ20200716-112116.png" alt></p>
+<p>上图第一个红框中的资源是Spine动画资源，第二个红框中的资源是龙骨动画资源，请认准它们的图标。设置导出，拖入舞台等操作只对这两种资源执行即可，<strong>其他同时导入的资源不需要处理，更不要设置为导出。</strong></p>
+<p>骨骼动画发布时会保留原来的文件名，这与纹理集发布的策略不一样。纹理集发布时通常会带上前缀，例如，如果包的文件名是abc，则会发布出abc_atlas0.png这样的图片文件。但骨骼动画不会带这样的前缀。例如，如果骨骼动画相关的文件有hero.json、hero.atlas、hero.png，则发布后这3个文件会原样拷贝到发布路径中。</p>
+<h2 id="在Unity中使用"><a href="#在Unity中使用" class="headerlink" title="在Unity中使用"></a>在Unity中使用</h2><ul>
+<li><p>使用Spine</p>
+<ol>
+<li>安装Spine Runtime 3.8版本。</li>
+<li>进入Unity编辑器，在Script define symbols里增加: <code>FAIRYGUI_SPINE</code>。</li>
+<li>发布UI后，直接运行就能看到UI编辑器里放置好的Spine动画。</li>
+</ol>
+</li>
+<li><p>使用龙骨</p>
+<ol>
+<li>安装龙骨SDK for Unity。</li>
+<li>进入Unity编辑器，在Script define symbols里增加: <code>FAIRYGUI_DRAGONBONES</code>。</li>
+<li><p>发布UI后，需要手动在Unity里为龙骨资源创建Unity Data，操作见下图：</p>
+<p><img src="../../images/QQ20200721-102157.png" alt></p>
+</li>
+<li><p>运行后就能看到UI编辑器里放置好的龙骨动画。</p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="在Egret中使用"><a href="#在Egret中使用" class="headerlink" title="在Egret中使用"></a>在Egret中使用</h2><p>Egret运行时只支持载入龙骨，Spine需要先转换成龙骨才能使用。</p>
+<p>发布UI后，在Egret的资源配置文件里（default.res.json)应该有以下几个项目：</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">"url"</span>: <span class="string">"assets/UI/mecha_1004d_ske.json"</span>,</span><br><span class="line">    <span class="string">"type"</span>: <span class="string">"json"</span>,</span><br><span class="line">    <span class="string">"name"</span>: <span class="string">"mecha_1004d_ske_json"</span></span><br><span class="line">&#125;,</span><br><span class="line">&#123;</span><br><span class="line">    <span class="string">"url"</span>: <span class="string">"assets/UI/mecha_1004d_tex.json"</span>,</span><br><span class="line">    <span class="string">"type"</span>: <span class="string">"json"</span>,</span><br><span class="line">    <span class="string">"name"</span>: <span class="string">"mecha_1004d_tex_json"</span></span><br><span class="line">&#125;,</span><br><span class="line">&#123;</span><br><span class="line">    <span class="string">"url"</span>: <span class="string">"assets/UI/mecha_1004d_tex.png"</span>,</span><br><span class="line">    <span class="string">"type"</span>: <span class="string">"image"</span>,</span><br><span class="line">    <span class="string">"name"</span>: <span class="string">"mecha_1004d_tex_png"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>配置好后，运行就能看到UI编辑器里放置好的龙骨动画。</p>
+<h2 id="在Laya中使用"><a href="#在Laya中使用" class="headerlink" title="在Laya中使用"></a>在Laya中使用</h2><p>Laya引擎不能直接解析Spine或龙骨的数据文件，需要先转换成它支持的sk格式文件。</p>
+<ol>
+<li>发布UI。</li>
+<li>使用Laya的骨骼动画工具转换发布出来的数据文件。</li>
+<li>原始数据文件可以删除。</li>
+<li>运行后就能看到UI编辑器里放置好的Spine或龙骨动画。</li>
+</ol>
+<h2 id="在CocosCreator中使用"><a href="#在CocosCreator中使用" class="headerlink" title="在CocosCreator中使用"></a>在CocosCreator中使用</h2><p>发布UI后，直接运行就可以看到UI编辑器里放置好的Spine或龙骨动画。</p>
+
+    
+    <div class="footer">
+      发现错误或想贡献文档?
+      <a href="https://github.com/fairygui/fairygui.github.io/tree/master/src/guide/editor/skeleton.md" target="_blank">
+        在 Github 上编辑此文档!
+      </a>
+    </div>
+</div>
+
+                
+            </div>
+            <script src="/docs/js/smooth-scroll.min.js"></script>
+        
+
+        <!-- main custom script for sidebars, version selects etc. -->        
+        <script src="/docs/js/css.escape.js"></script>
+        <script src="/docs/js/common.js"></script>
+    </body>
+</html>

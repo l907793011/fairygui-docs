@@ -1,7 +1,7 @@
 ---
 title: 包
 type: guide_editor
-order: 2
+order: 3
 ---
 
 ## 包的定义
@@ -19,7 +19,8 @@ FairyGUI是不处理包之间的依赖关系的，如果B包导出了一个元�
 在代码里，可以通过以下API查询包之间的依赖关系：
 
 ```csharp
-    var dependencies = UIPackage.dependencies;
+    UIPackage pkg;
+    var dependencies = pkg.dependencies;
     foreach(var kv in dependencies)
     {
         Debug.Log(kv["id"]); //依赖包的id

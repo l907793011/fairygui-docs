@@ -1,7 +1,7 @@
 ---
 title: 动效
 type: guide_editor
-order: 34
+order: 33
 ---
 
 FairyGUI不仅提供了静态UI的编辑功能，而且提供了强大的动效编辑功能，让你的UI可以轻松动起来。

@@ -1,7 +1,7 @@
 ---
 title: Popup
 type: guide_editor
-order: 31
+order: 30
 ---
 
 在UI系统中我们经常需要弹出一些组件，这些组件在用户点击空白地方的情况下就会自动消失。FairyGUI内置了这个功能。
