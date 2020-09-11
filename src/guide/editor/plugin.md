@@ -30,6 +30,6 @@ order: 39
 
 从[仓库](https://github.com/fairygui/FairyGUI-Editor/tree/master/plugin)下载最新版本的插件接口和示例。
 
-插件需要使用Lua语言开发。编辑器开放的API可以在LuaAPI目录中找到。
+插件支持Lua、JS或者TS开发。编辑器开放的API可以在LuaAPI和TsAPI目录中找到。
 
 调试插件可以通过输出信息到控制台进行调试。

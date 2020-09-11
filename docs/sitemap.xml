@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.fairygui.com/docs/release_notes/index.html</loc>
+    
+    <lastmod>2020-09-11T00:43:05.942Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/index.html</loc>
+    
+    <lastmod>2020-09-10T14:55:19.871Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/plugin.html</loc>
+    
+    <lastmod>2020-09-10T14:50:09.627Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/transition.html</loc>
+    
+    <lastmod>2020-08-10T14:23:42.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/controller.html</loc>
+    
+    <lastmod>2020-08-10T14:21:08.714Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/sdk/laya.html</loc>
+    
+    <lastmod>2020-07-31T06:57:48.782Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.fairygui.com/docs/guide/editor/loader3d.html</loc>
     
     <lastmod>2020-07-24T09:25:38.823Z</lastmod>
@@ -51,63 +93,7 @@
   </url>
   
   <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/export.html</loc>
-    
-    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/object.html</loc>
-    
-    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/index.html</loc>
-    
-    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/i18n.html</loc>
-    
-    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/loader.html</loc>
-    
-    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/dragdrop.html</loc>
-    
-    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/graph.html</loc>
-    
-    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/inputtext.html</loc>
-    
-    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/colorspace.html</loc>
+    <loc>https://www.fairygui.com/docs/guide/editor/button.html</loc>
     
     <lastmod>2020-07-24T08:47:27.682Z</lastmod>
     
@@ -121,7 +107,91 @@
   </url>
   
   <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/popup.html</loc>
+    <loc>https://www.fairygui.com/docs/guide/editor/combobox.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/object.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/loader.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/colorspace.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/component.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/dragdrop.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/group.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/export.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/i18n.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/graph.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/list.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/inputtext.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/preference.html</loc>
     
     <lastmod>2020-07-24T08:47:27.681Z</lastmod>
     
@@ -135,42 +205,14 @@
   </url>
   
   <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/project_settings.html</loc>
+    <loc>https://www.fairygui.com/docs/guide/editor/label.html</loc>
     
     <lastmod>2020-07-24T08:47:27.681Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/movieclip.html</loc>
-    
-    <lastmod>2020-07-24T08:47:27.681Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/preference.html</loc>
-    
-    <lastmod>2020-07-24T08:47:27.681Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/plugin.html</loc>
-    
-    <lastmod>2020-07-24T08:47:27.681Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/richtext.html</loc>
-    
-    <lastmod>2020-07-24T08:47:27.681Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/package.html</loc>
+    <loc>https://www.fairygui.com/docs/guide/editor/relation.html</loc>
     
     <lastmod>2020-07-24T08:47:27.681Z</lastmod>
     
@@ -184,7 +226,63 @@
   </url>
   
   <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/transition.html</loc>
+    <loc>https://www.fairygui.com/docs/guide/editor/richtext.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.681Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/project_settings.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.681Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/progressbar.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.681Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/package.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.681Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/popup.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.681Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/tree.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.681Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/movieclip.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.681Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/slider.html</loc>
+    
+    <lastmod>2020-07-24T08:47:27.681Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.fairygui.com/docs/guide/editor/text.html</loc>
     
     <lastmod>2020-07-24T08:47:27.680Z</lastmod>
     
@@ -198,7 +296,7 @@
   </url>
   
   <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/text.html</loc>
+    <loc>https://www.fairygui.com/docs/guide/editor/scrollbar.html</loc>
     
     <lastmod>2020-07-24T08:47:27.680Z</lastmod>
     
@@ -208,20 +306,6 @@
     <loc>https://www.fairygui.com/docs/guide/editor/window.html</loc>
     
     <lastmod>2020-07-24T08:47:27.680Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/release_notes/index.html</loc>
-    
-    <lastmod>2020-07-14T06:42:36.332Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/sdk/laya.html</loc>
-    
-    <lastmod>2020-07-13T04:00:20.808Z</lastmod>
     
   </url>
   
@@ -275,13 +359,6 @@
   </url>
   
   <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/relation.html</loc>
-    
-    <lastmod>2019-12-17T03:49:57.418Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.fairygui.com/docs/guide/sdk/cocos2dx.html</loc>
     
     <lastmod>2019-12-12T13:40:11.468Z</lastmod>
@@ -292,83 +369,6 @@
     <loc>https://www.fairygui.com/docs/guide/unity/index.html</loc>
     
     <lastmod>2019-12-12T13:20:13.984Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/tree.html</loc>
-    
-    <lastmod>2019-12-12T13:05:47.056Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/list.html</loc>
-    
-    <lastmod>2019-12-12T13:02:23.920Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/slider.html</loc>
-    
-    <lastmod>2019-12-12T12:58:19.778Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/progressbar.html</loc>
-    
-    <lastmod>2019-12-12T12:57:33.641Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/button.html</loc>
-    
-    <lastmod>2019-12-12T12:55:25.030Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/label.html</loc>
-    
-    <lastmod>2019-12-12T12:53:17.870Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/controller.html</loc>
-    
-    <lastmod>2019-12-12T12:43:45.869Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/component.html</loc>
-    
-    <lastmod>2019-12-12T12:30:15.597Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/group.html</loc>
-    
-    <lastmod>2019-12-12T12:20:12.036Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/scrollbar.html</loc>
-    
-    <lastmod>2019-12-12T06:46:54.713Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.fairygui.com/docs/guide/editor/combobox.html</loc>
-    
-    <lastmod>2019-12-12T06:46:34.118Z</lastmod>
     
   </url>
   

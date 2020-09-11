@@ -4,63 +4,7 @@ type: guide_sdk
 order: 0
 ---
 ## 安装
-### 使用npm下载安装
-**注：目前只支持laya2.2及以上的版本**
-在你的laya工程根目录下执行以下命令：
-```shell
-$ npm install --save fairygui-layabox
-```
-安装完成后会自动在你的laya工程的对应目录下生成相应文件：
-```shell
-...
-└── your-laya-project
-    ├─.laya
-    ├─bin
-    │   │  index.html
-    │   │  ... 
-    │   ├─libs
-    │   │  │  laya.core.js
-    │   │  │  laya.html.js
-    │   │  │  ...
-    │   │  └─fairygui
-    │   │          fairygui.js
-    │   │          rawinflate.min.js
-    │   ...
-    └─libs
-        │  fairygui.d.ts
-        │  LayaAir.d.ts
-        │  ...
-    ...
-    
-```
-会在bin/index.js中自动引入相应文件：
-```js
-/**
- * 设置LayaNative屏幕方向，可设置以下值
- * landscape           横屏
- * portrait            竖屏
- * sensor_landscape    横屏(双方向)
- * sensor_portrait     竖屏(双方向)
- */
-window.screenOrientation = "sensor_landscape";
 
-//-----libs-begin-----
-loadLib("libs/laya.core.js")
-loadLib("libs/laya.ui.js")
-loadLib("libs/laya.physics.js")
-loadLib("libs/laya.html.js")
-//-----libs-end-------
-// loadLib("libs/fairygui/rawinflate.min.js");// 根据需要选择引入
-loadLib("libs/fairygui/fairygui.js");
-loadLib("js/bundle.js");
-```
-更新版本：
-```shell
-$ npm update fairygui-layabox
-```
-**注：如果你未改变laya工程对应的目录结构，自动生成才能生效**
-
-### 手动下载安装
 1. 点击[跳转](https://github.com/fairygui/FairyGUI-layabox)，使用git clone仓库或者切换到对应laya版本的分支下载并解压。
 ![切换分支](../../images/20200628211906.jpg)
 

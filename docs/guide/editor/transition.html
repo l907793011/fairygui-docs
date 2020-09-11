@@ -444,7 +444,7 @@
 </li>
 <li><p><code>Tween</code> 勾选后从这个关键帧到下一个关键帧建立一个Tween。如果没有下一个关键帧，那么这个Tween是无效的。</p>
 </li>
-<li><p><code>缓动函数</code> 时间/速度曲线。详细请参考 <a href="../../images/20170802000005.jpg">图解</a> <a href="https://greensock.com/ease-visualizer" target="_blank" rel="noopener">示例</a>。</p>
+<li><p><code>缓动函数</code> 时间/速度曲线。详细请参考 <a href="../../images/20170802000005.jpg">图解</a> <a href="https://greensock.com/ease-visualizer" target="_blank" rel="noopener">示例</a>。如果这里选择为<code>Custom</code>，则可以自定义曲线，参考<a href="#自定义缓动曲线">自定义缓动曲线</a>。</p>
 </li>
 <li><p><code>重复</code> 重复播放的次数。-1表示循环。</p>
 </li>
@@ -459,11 +459,10 @@
 </li>
 <li><p><code>使用百分比记录坐标</code> 用百分比方式记录坐标值。例如元件放置在容器水平中心时，x值就记录为50%。当进入到这帧时，无论容器的尺寸是多少，元件的坐标依然为中心即50%的位置。</p>
 </li>
-<li><p><code>使用引导线</code> 如果需要元件做曲线运动，那么可以勾选这个选项。</p>
+<li><p><code>使用引导线</code> 如果需要元件做曲线运动，那么可以勾选这个选项。引导线功能必须配合Tween使用，在Tween的开始关键帧勾选引导线功能。使用方法参考<a href="#引导线">引导线</a>。</p>
 </li>
 </ul>
-<p>引导线功能必须配合Tween使用，在Tween的开始关键帧勾选引导线功能。</p>
-<p>通过以下两种方式进入编辑引导线模式：</p>
+<h2 id="引导线"><a href="#引导线" class="headerlink" title="引导线"></a>引导线</h2><p>通过以下两种方式进入编辑引导线模式：</p>
 <ul>
 <li>点击右侧图标 <img src="../../images/QQ20191212-093212.png" alt>。</li>
 <li>双击舞台上的元件。</li>
@@ -488,6 +487,10 @@
 <p><img src="../../images/QQ20191212-094654.png" alt></p>
 </li>
 </ol>
+<h2 id="自定义缓动曲线"><a href="#自定义缓动曲线" class="headerlink" title="自定义缓动曲线"></a>自定义缓动曲线</h2><p>当缓动函数选择为<code>Custom</code>时，点击右侧按钮<img src="../../images/QQ20200810-221216.png" alt>打开曲线编辑界面：</p>
+<p>  <img src="../../images/QQ20200810-220956.png" alt></p>
+<p>  曲线的编辑方式与<a href="#引导线">引导线</a>的编辑方式相同。</p>
+<p>  白色线是当前编辑的曲线；黑色线是参考线，可通过左上角下拉框选择标准的缓动函数，可用于制作过程中对照参考。</p>
 <h2 id="Transition"><a href="#Transition" class="headerlink" title="Transition"></a>Transition</h2><p>动效的播放在代码中启动，例如：</p>
 <figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">Transition trans = aComponent.GetTransition(“peng”);</span><br><span class="line">trans.Play();</span><br></pre></td></tr></table></figure>
 <p>Play有多种原型，例如可以重复播放一定次数，可以在播放结束时回调等。例如：</p>
