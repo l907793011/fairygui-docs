@@ -133,7 +133,7 @@ order: 6
     aObject.displayObject.focalLength = 2000;
 
     //此时旋转X轴或Y轴可以有透视效果。
-    aObject.rotaionX = 30;
+    aObject.rotationX = 30;
   ```
 
 - `获得原生对象` displayObject/node*(CocosCreator)*。例如：
